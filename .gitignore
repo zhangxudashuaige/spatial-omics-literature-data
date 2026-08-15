@@ -1,0 +1,13 @@
+# Downloaded datasets and local-only article files
+data/**
+!data/.gitkeep
+papers/**/attachments/**
+!papers/**/attachments/.gitkeep
+
+# Generated checksums and temporary files
+*.tmp
+*.part
+__pycache__/
+.DS_Store
+Thumbs.db
+
