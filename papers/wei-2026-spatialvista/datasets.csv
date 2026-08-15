@@ -1,3 +1,2 @@
-dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,notes
-spatialvista-gallery,SpatialVista online gallery collection,Wei et al. 2026,multiple,multiple,3D spatial transcriptomics,,https://yanglab.westlake.edu.cn/spatialvista,To verify,catalog_only,,"Article reports 13 public datasets and 18.9 million cells; expand into one row per source dataset."
-
+dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+spatialvista-gallery,SpatialVista online gallery collection,Wei et al. 2026,multiple,multiple,3D spatial transcriptomics,,https://yanglab.westlake.edu.cn/spatialvista,To verify,catalog_only,,"topic:spatial-transcriptomics;modality:3d-st;organism:multiple;tissue:multiple;source:public-gallery;license:verify;status:catalog-only","Article reports 13 public datasets and 18.9 million cells; expand into one row per source dataset."

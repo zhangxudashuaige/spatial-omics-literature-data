@@ -22,6 +22,10 @@ SpatialVista 是面向细胞分辨率 3D 空间转录组数据的可视化生态
 - 代码许可证：BSD 3-Clause（文章中的声明；使用前仍应以仓库当前 LICENSE 为准）
 - 补充材料：https://doi.org/10.1038/s41588-026-02696-7
 
+## 标签
+
+`topic:spatial-transcriptomics` · `topic:visualization` · `modality:3d-st` · `software:spatialvista` · `organism:multiple` · `tissue:multiple` · `year:2026` · `status:cataloged`
+
 ## 本地来源记录
 
 - 原文件名：`s41588-026-02696-7.pdf`

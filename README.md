@@ -28,6 +28,7 @@ papers/                 每篇论文一个目录
 catalog/
   papers.csv             全库论文索引
   datasets.csv           全库数据索引
+  TAGGING.md             标签词表与检索规则
 scripts/                 下载与校验辅助脚本
 data/                    本机原始数据（不会提交 Git）
 ```
@@ -41,7 +42,20 @@ data/                    本机原始数据（不会提交 Git）
 5. 运行 `scripts/checksum.ps1` 生成 SHA-256，记录到数据清单。
 6. 提交 Git：`git add .`、`git commit -m "Add <paper-id>"`。
 
+## 标签与查找
+
+索引中的 `tags` 字段使用分号分隔的标准标签，例如：
+
+```text
+topic:spatial-transcriptomics;modality:3d-st;organism:mouse;status:catalog-only
+```
+
+标签命名和推荐词表见 [`catalog/TAGGING.md`](catalog/TAGGING.md)。例如，可用下面的命令查找全部 3D-ST 条目：
+
+```powershell
+rg "modality:3d-st" catalog papers
+```
+
 ## 大数据的长期方案
 
 开始阶段用“GitHub + 本地/云盘数据”最简单。以后如果需要版本化大型数据，可以接入 DVC、Git LFS、Zenodo 或 OSF；仓库继续保存索引与复现脚本，而不是复制所有公开原始数据。
-
