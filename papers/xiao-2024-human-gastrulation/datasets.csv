@@ -1,0 +1,2 @@
+dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+xiao-human-gastrulation-cs8,"人 CS8 原肠胚三维 Stereo-seq",Xiao et al. 2024,human,embryo,Stereo-seq,HRA005567,https://ngdc.cncb.ac.cn/gsa-human/browse/HRA005567,"以 GSA-Human 条款为准",linked,,"organism:human;tissue:embryo;stage:cs8;modality:stereo-seq","SpatialVista 展示 37,226 个点；论文报告 38,562 个质控后 spots。"
