@@ -1,5 +1,17 @@
 # 阅读与复现笔记
 
-- 当前优先使用 `Zhuang-ABCA-3` 的 SpatialVista 处理版进行 Jupyter 可视化测试。
-- 下载任何全量 Allen 数据前，先在说明页核对文件清单、大小和许可证。
-- 基因结果需要标记 `measured` 或 `imputed`，不可把推断表达写成 MERFISH 直接观测。
+## 建档完整性
+
+- [x] 四只小鼠 `ABCA-1/2/3/4`。
+- [x] 表达矩阵、元数据和 CCF 坐标入口与大小。
+- [x] 原始/处理成像数据、codebook 和探针入口。
+- [x] scRNA-seq FASTQ、处理后分类体系和参考用途。
+- [x] 全转录组推断表达的来源和证据等级。
+- [x] CELLxGENE、补充表和固定版本分析代码。
+- [ ] 真正下载文件后补充下载日期、本地路径和 SHA-256。
+
+## 分析注意
+
+- 当前本地 `mouse_brain_3_IQ.h5ad` 是 `Zhuang-ABCA-3` 的 SpatialVista 再处理展示版，不代表完整论文数据。
+- 基因结果必须标记 `measured` 或 `imputed`，不可把推断表达写成 MERFISH 直接观测。
+- 不同平台采用的过滤阈值不同，约 1,000 万、930 万、840 万、580 万以及 SpatialVista 的计数分别对应不同处理阶段。

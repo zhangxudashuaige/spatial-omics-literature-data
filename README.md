@@ -29,10 +29,12 @@ papers/                 每篇论文一个目录
   <paper-id>/
     README.md            论文摘要、价值、代码与数据入口
     datasets.csv         关联数据集清单
+    resources.csv        数据层级、补充材料与代码资源清单
     notes.md             阅读和复现笔记
 catalog/
   papers.csv             全库论文索引
   datasets.csv           全库数据索引
+  resources.csv          原始数据、处理数据、代码和补充材料入口
   TAGGING.md             标签词表与检索规则
 scripts/                 下载与校验辅助脚本
 data/                    本机原始数据（不会提交 Git）
@@ -47,11 +49,13 @@ data/                    本机原始数据（不会提交 Git）
 - 下载后计算 SHA-256，写回 CSV；以后即使文件改名，也能用校验值确认是不是同一份数据。
 - 同一个数据在 SpatialVista 中是“展示版”，在原论文数据库中可能还有原始序列、表达矩阵、组织图像和处理后对象；本库分别注明，不把它们混成一个概念。
 
+每篇论文按“论文完整数据资产”建档，而不是只记录某个软件使用的子集。`datasets.csv` 记录生物学数据集，`resources.csv` 记录同一研究的原始图像、表达矩阵、元数据、坐标、参考数据、补充表和代码入口。
+
 ## 新增一篇论文
 
 1. 复制 `templates/paper/`，将目录名改成 `作者-年份-关键词`。
-2. 填写论文 `README.md`、`notes.md` 和 `datasets.csv`。
-3. 在 `catalog/papers.csv` 与 `catalog/datasets.csv` 增加索引。
+2. 填写论文 `README.md`、`notes.md`、`datasets.csv` 和 `resources.csv`。
+3. 在 `catalog/papers.csv`、`catalog/datasets.csv` 与 `catalog/resources.csv` 增加索引。
 4. 数据下载到 `data/<paper-id>/raw/`，保留原文件名。
 5. 运行 `scripts/checksum.ps1` 生成 SHA-256，记录到数据清单。
 6. 提交 Git：`git add .`、`git commit -m "Add <paper-id>"`。
