@@ -1,0 +1,13 @@
+﻿cell_id,mouse_id,section_id,cell_cluster,cell_subclass,cell_class,brain_region,x,y,ccf_x,ccf_y,ccf_z,umi_count
+C001,mouse_demo,T001,EXC_001,Telencephalon excitatory neurons,Neurons,Cortex,10,10,5.1,2.0,1.0,0
+C002,mouse_demo,T001,EXC_001,Telencephalon excitatory neurons,Neurons,Cortex,20,12,5.2,2.1,1.1,1
+C003,mouse_demo,T001,EXC_002,Telencephalon excitatory neurons,Neurons,Hippocampus,30,18,5.4,2.2,1.0,0
+C004,mouse_demo,T001,GABA_010,Telencephalon inhibitory neurons,Neurons,Cortex,15,25,5.0,2.4,1.2,13
+C005,mouse_demo,T001,GABA_010,Telencephalon inhibitory neurons,Neurons,Cortex,25,28,5.2,2.5,1.3,11
+C006,mouse_demo,T001,ASC_282,Astrocytes,Astrocytes and olfactory ensheathing cells,Thalamus,38,26,5.6,2.5,1.2,0
+C007,mouse_demo,T001,OL_294,Oligodendrocytes,Oligodendrocytes,White matter,45,15,5.8,2.3,1.0,0
+C008,mouse_demo,T001,MGL_289,Microglia,Microglia,Midbrain,50,22,6.0,2.4,1.1,2
+C009,mouse_demo,T001,GABA_011,Telencephalon inhibitory neurons,Neurons,Striatum,18,38,5.1,2.8,1.4,15
+C010,mouse_demo,T001,EXC_002,Telencephalon excitatory neurons,Neurons,Hippocampus,32,40,5.5,2.9,1.5,0
+C011,mouse_demo,T001,VLMC_268,Vascular and leptomeningeal cells,Vascular cells,Meninges,43,36,5.8,2.8,1.4,0
+C012,mouse_demo,T001,EPC_284,Ependymal cells,Ventricular cells,Ventricle,52,42,6.1,3.0,1.6,1

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "使用本目录时，请引用原论文、实际使用的数据来源和本仓库。"
+title: "Han 2025 小鼠全脑空间转录组数据整理与分析"
+type: software
+authors:
+  - family-names: Han
+    given-names: Lei
+repository-code: "https://github.com/zhangxudashuaige/spatial-omics-literature-data"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Single-cell spatial transcriptomic atlas of the whole mouse brain"
+  authors:
+    - family-names: Han
+      given-names: Lei
+  journal: Neuron
+  volume: 113
+  issue: 13
+  start: 2141
+  end: 2160.e9
+  year: 2025
+  doi: 10.1016/j.neuron.2025.02.015
