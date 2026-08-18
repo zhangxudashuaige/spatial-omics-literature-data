@@ -1,0 +1,14 @@
+cell_cluster,gene,mean_expression
+EXC_001,Slc17a7,8.5
+EXC_001,Gad1,0.2
+EXC_002,Slc17a7,9.2
+EXC_002,Gad1,0.1
+GABA_010,Slc17a7,0.3
+GABA_010,Gad1,9.0
+GABA_011,Slc17a7,0.2
+GABA_011,Gad1,9.6
+ASC_282,Aldoc,8.8
+OL_294,Aldoc,3.1
+MGL_289,Aldoc,2.0
+VLMC_268,Aldoc,1.6
+EPC_284,Aldoc,4.1
