@@ -16,7 +16,7 @@
 | `wei-2026-spatialvista` | SpatialVista 软件论文 | 3D 空间转录组可视化 | 已建档；13 个展示数据已逐项登记 |
 | `zhang-2023-whole-mouse-brain-merfish` | 成年小鼠全脑 MERFISH 图谱 | 小鼠脑、MERFISH | 已建档；对应 3 个展示数据 |
 | `han-2025-mouse-brain-stereo-seq` | 小鼠全脑 Stereo-seq 图谱 | 小鼠脑、Stereo-seq | 已建档；对应 1 个展示数据 |
-| `cheng-2024-mouse-embryo-3d` | E9.5/E11.5 小鼠胚胎三维转录组 | 小鼠胚胎、Stereo-seq | 已建档；对应 2 个展示数据 |
+| `cheng-2024-mouse-embryo-3d` | E9.5/E11.5 小鼠胚胎三维转录组 | 小鼠胚胎、Stereo-seq、SBFI | 已建档；论文主数据当前不可公开获取，已建立完整清单与下载工具 |
 | `xie-2025-digital-mouse-embryo` | E7.5–E8.0 小鼠数字胚胎 | 小鼠胚胎、三维重建 | 已建档；对应 6 个展示数据 |
 | `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 已建档；对应 1 个展示数据 |
 
@@ -73,6 +73,14 @@ topic:spatial-transcriptomics;modality:3d-st;organism:mouse;status:catalog-only
 ```powershell
 rg "modality:3d-st" catalog papers
 ```
+
+`rg` 是开源全文搜索程序 **ripgrep**，不是本仓库自创的命令；上面的检索表达式由本仓库编写。请在仓库根目录的 PowerShell 中运行。若电脑没有安装 `rg`，可使用本仓库的兼容脚本：
+
+```powershell
+.\scripts\search.ps1 "modality:3d-st"
+```
+
+脚本会优先调用 `rg`；找不到 `rg` 时自动改用 Windows PowerShell 自带的 `Select-String`。更详细说明见 [`catalog/TAGGING.md`](catalog/TAGGING.md)。
 
 ## 大数据的长期方案
 

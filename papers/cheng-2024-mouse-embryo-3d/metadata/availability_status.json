@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-08-18T08:12:27Z",
+  "paper": {
+    "doi": "10.1101/2024.08.17.608366",
+    "version": "v1",
+    "data_availability_statement": "CNP0005981 was not public at preprint publication; processed data was stated to be on MOSTA3D."
+  },
+  "cnsa": {
+    "accession": "CNP0005981",
+    "project_url": "https://db.cngb.org/data_resources/project/CNP0005981/",
+    "public_api_url": "https://db.cngb.org/cnsa/ajax/project/public_view/?q=CNP0005981",
+    "http_status": 200,
+    "api_code": 2,
+    "api_error_code": 2003,
+    "api_error": "attributes does not exist",
+    "status": "not_publicly_retrievable"
+  },
+  "mosta3d": {
+    "url": "https://db.cngb.org/stomics/mosta/3d/",
+    "http_status": 404,
+    "status": "not_found"
+  },
+  "external_scrna_reference": {
+    "accession": "GSE228590",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228590",
+    "status": "public_reference_only"
+  }
+}
