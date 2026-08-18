@@ -1,0 +1,2 @@
+reference_id,title,doi,data_accession,data_url,subset_used,local_copy_policy,notes
+qiu_2024,"A single-cell time-lapse of mouse prenatal development from gastrula to birth",10.1038/s41586-024-07069-w,GSE228590,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228590,E9-E12 only,reference_links_and_mapping_tables_only,完整表达矩阵不复制进本仓库

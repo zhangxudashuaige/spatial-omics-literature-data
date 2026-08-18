@@ -1,0 +1,7 @@
+dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+xie-e7-5-rep1,"小鼠胚胎 E7.5 重复 1",Xie et al. 2025,mouse,embryo,"3D spatial transcriptomics",,https://yanglab.westlake.edu.cn/spatialvista/vis,"待核验",viewer_only,,"stage:e7.5;replicate:1;viewer:spatialvista","12,923 个点/细胞。"
+xie-e7-5-rep2,"小鼠胚胎 E7.5 重复 2",Xie et al. 2025,mouse,embryo,"3D spatial transcriptomics",,https://yanglab.westlake.edu.cn/spatialvista/vis,"待核验",viewer_only,,"stage:e7.5;replicate:2;viewer:spatialvista","7,953 个点/细胞。"
+xie-e7-75-rep1,"小鼠胚胎 E7.75 重复 1",Xie et al. 2025,mouse,embryo,"3D spatial transcriptomics",,https://yanglab.westlake.edu.cn/spatialvista/vis,"待核验",viewer_only,,"stage:e7.75;replicate:1;viewer:spatialvista","20,584 个点/细胞。"
+xie-e7-75-rep2,"小鼠胚胎 E7.75 重复 2",Xie et al. 2025,mouse,embryo,"3D spatial transcriptomics",,https://yanglab.westlake.edu.cn/spatialvista/vis,"待核验",viewer_only,,"stage:e7.75;replicate:2;viewer:spatialvista","23,349 个点/细胞。"
+xie-e8-rep1,"小鼠胚胎 E8.0 重复 1",Xie et al. 2025,mouse,embryo,"3D spatial transcriptomics",,https://yanglab.westlake.edu.cn/spatialvista/vis,"待核验",viewer_only,,"stage:e8.0;replicate:1;viewer:spatialvista","10,735 个点/细胞。"
+xie-e8-rep2,"小鼠胚胎 E8.0 重复 2",Xie et al. 2025,mouse,embryo,"3D spatial transcriptomics",,https://yanglab.westlake.edu.cn/spatialvista/vis,"待核验",viewer_only,,"stage:e8.0;replicate:2;viewer:spatialvista","26,846 个点/细胞。"

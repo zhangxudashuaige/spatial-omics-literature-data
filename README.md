@@ -1,4 +1,4 @@
-# 空间组学论文与数据集
+# 空间组学论文与数据资料库
 
 这是一个长期维护的个人研究资料库，用来记录值得保留的论文、公开数据集、下载方式、校验值和分析笔记。
 
@@ -13,9 +13,14 @@
 
 | ID | 论文 | 主题 | 状态 |
 |---|---|---|---|
-| `wei-2026-spatialvista` | SpatialVista as a unified ecosystem for high-performance visualization and exploration of 3D spatial transcriptomics data | 3D 空间转录组可视化 | 已建档；待逐项登记在线平台中的公开数据集 |
+| `wei-2026-spatialvista` | SpatialVista 软件论文 | 3D 空间转录组可视化 | 已建档；13 个展示数据已逐项登记 |
+| `zhang-2023-whole-mouse-brain-merfish` | 成年小鼠全脑 MERFISH 图谱 | 小鼠脑、MERFISH | 已建档；对应 3 个展示数据 |
+| `han-2025-mouse-brain-stereo-seq` | 小鼠全脑 Stereo-seq 图谱 | 小鼠脑、Stereo-seq | 已建档；对应 1 个展示数据 |
+| `cheng-2024-mouse-embryo-3d` | E9.5/E11.5 小鼠胚胎三维转录组 | 小鼠胚胎、Stereo-seq、SBFI | 已建档；论文主数据当前不可公开获取，已建立完整清单与下载工具 |
+| `xie-2025-digital-mouse-embryo` | E7.5–E8.0 小鼠数字胚胎 | 小鼠胚胎、三维重建 | 已建档；对应 6 个展示数据 |
+| `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 已建档；对应 1 个展示数据 |
 
-详见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)。
+总入口见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)，13 个数据与 5 篇来源论文的对应关系见 [`dataset-sources.md`](papers/wei-2026-spatialvista/dataset-sources.md)。
 
 ## 目录结构
 
@@ -24,20 +29,33 @@ papers/                 每篇论文一个目录
   <paper-id>/
     README.md            论文摘要、价值、代码与数据入口
     datasets.csv         关联数据集清单
+    resources.csv        数据层级、补充材料与代码资源清单
     notes.md             阅读和复现笔记
 catalog/
   papers.csv             全库论文索引
   datasets.csv           全库数据索引
+  resources.csv          原始数据、处理数据、代码和补充材料入口
   TAGGING.md             标签词表与检索规则
 scripts/                 下载与校验辅助脚本
 data/                    本机原始数据（不会提交 Git）
 ```
 
+## 这里到底存什么
+
+本仓库采用“索引和知识进 Git，大文件留在数据源或本地硬盘”的方式：
+
+- GitHub 保存论文条目、数据集链接、accession、许可证状态、标签、笔记、下载/分析脚本和小型 notebook。
+- `.h5ad`、FASTQ、图像等大型文件下载到本机 `data/<paper-id>/raw/`，由 `.gitignore` 阻止上传。
+- 下载后计算 SHA-256，写回 CSV；以后即使文件改名，也能用校验值确认是不是同一份数据。
+- 同一个数据在 SpatialVista 中是“展示版”，在原论文数据库中可能还有原始序列、表达矩阵、组织图像和处理后对象；本库分别注明，不把它们混成一个概念。
+
+每篇论文按“论文完整数据资产”建档，而不是只记录某个软件使用的子集。`datasets.csv` 记录生物学数据集，`resources.csv` 记录同一研究的原始图像、表达矩阵、元数据、坐标、参考数据、补充表和代码入口。
+
 ## 新增一篇论文
 
 1. 复制 `templates/paper/`，将目录名改成 `作者-年份-关键词`。
-2. 填写论文 `README.md`、`notes.md` 和 `datasets.csv`。
-3. 在 `catalog/papers.csv` 与 `catalog/datasets.csv` 增加索引。
+2. 填写论文 `README.md`、`notes.md`、`datasets.csv` 和 `resources.csv`。
+3. 在 `catalog/papers.csv`、`catalog/datasets.csv` 与 `catalog/resources.csv` 增加索引。
 4. 数据下载到 `data/<paper-id>/raw/`，保留原文件名。
 5. 运行 `scripts/checksum.ps1` 生成 SHA-256，记录到数据清单。
 6. 提交 Git：`git add .`、`git commit -m "Add <paper-id>"`。
@@ -55,6 +73,14 @@ topic:spatial-transcriptomics;modality:3d-st;organism:mouse;status:catalog-only
 ```powershell
 rg "modality:3d-st" catalog papers
 ```
+
+`rg` 是开源全文搜索程序 **ripgrep**，不是本仓库自创的命令；上面的检索表达式由本仓库编写。请在仓库根目录的 PowerShell 中运行。若电脑没有安装 `rg`，可使用本仓库的兼容脚本：
+
+```powershell
+.\scripts\search.ps1 "modality:3d-st"
+```
+
+脚本会优先调用 `rg`；找不到 `rg` 时自动改用 Windows PowerShell 自带的 `Select-String`。更详细说明见 [`catalog/TAGGING.md`](catalog/TAGGING.md)。
 
 ## 大数据的长期方案
 

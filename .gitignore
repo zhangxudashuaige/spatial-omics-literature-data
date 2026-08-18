@@ -8,6 +8,11 @@ papers/**/attachments/**
 *.tmp
 *.part
 __pycache__/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.venv/
+papers/**/metadata/*.local.json
+papers/**/*.h5ad
+!papers/**/sample_data/sample_*_cells.h5ad
 .DS_Store
 Thumbs.db
-

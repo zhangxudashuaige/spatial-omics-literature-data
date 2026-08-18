@@ -1,0 +1,4 @@
+stage,embryo_id,section_id,section_order,section_thickness_um,stereo_seq,has_sbfi,has_ssdna,has_he,qc_status,qc_notes
+E9.5,SYNTHETIC_E95,SYN_E95_S001,1,,true,true,true,false,synthetic,结构示例并非论文数据
+E9.5,SYNTHETIC_E95,SYN_E95_S002,2,,true,true,true,false,synthetic,结构示例并非论文数据
+E11.5,SYNTHETIC_E115,SYN_E115_S001,1,,true,true,true,true,synthetic,结构示例并非论文数据

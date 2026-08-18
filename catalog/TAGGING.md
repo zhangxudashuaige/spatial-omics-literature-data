@@ -27,6 +27,24 @@
 
 ## 检索示例
 
+这些代码块是 PowerShell 命令，不是在 GitHub 网页搜索框里输入。使用方法：
+
+1. 打开仓库文件夹 `spatial-omics-literature-data`。
+2. 在文件夹空白处按住 Shift 并单击右键，选择“在终端中打开”，或者先打开 PowerShell 再用 `cd` 进入仓库。
+3. 运行 `rg --version`。能显示版本号就可以直接使用下列命令。
+4. 如果提示“无法将 rg 识别为命令”，改用 `..\scripts\search.ps1` 的形式，或者在仓库根目录运行 `.\scripts\search.ps1 "标签"`。
+
+命令结构：
+
+```text
+rg "要查找的文字" 要搜索的文件夹1 要搜索的文件夹2
+```
+
+- `rg`：ripgrep 程序名，是第三方开源工具，不是本仓库编写的。
+- `"organism:mouse"`：要寻找的完整标签。
+- `catalog papers`：只在总目录和论文目录里搜索。
+- 命令只读取文件，不会修改或删除数据。
+
 ```powershell
 # 找出所有小鼠数据
 rg "organism:mouse" catalog papers
@@ -36,4 +54,12 @@ rg "license:verify" catalog papers
 
 # 找出已经下载的数据
 rg "status:downloaded" catalog papers
+```
+
+不安装 `rg` 时，等价的仓库脚本是：
+
+```powershell
+.\scripts\search.ps1 "organism:mouse"
+.\scripts\search.ps1 "license:verify"
+.\scripts\search.ps1 "status:downloaded"
 ```
