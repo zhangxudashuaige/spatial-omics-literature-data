@@ -1,0 +1,7 @@
+file_name,inspection_status,n_obs,n_vars,shape,x_type,x_dtype,x_storage,obs_columns,var_columns,obsm_keys,uns_keys,layers_keys,raw_exists,obs_names_example,var_names_example,cell_type_candidates,germ_layer_candidates,section_candidates,stage_candidates,cluster_candidates,coordinate_candidates,expression_layer_candidates,error
+GSM9046243_Embryo_E7.5_stereo_rep1.h5ad,not_inspected_download_failed,,,,,,,,,,,,,,,,,,,,,,文件未下载：NCBI连接被关闭
+GSM9046244_Embryo_E7.5_stereo_rep2.h5ad,not_inspected_download_failed,,,,,,,,,,,,,,,,,,,,,,文件未下载：NCBI连接被关闭
+GSM9046245_Embryo_E7.75_stereo_rep1.h5ad,not_inspected_download_failed,,,,,,,,,,,,,,,,,,,,,,文件未下载：NCBI连接被关闭
+GSM9046246_Embryo_E7.75_stereo_rep2.h5ad,not_inspected_download_failed,,,,,,,,,,,,,,,,,,,,,,文件未下载：NCBI连接被关闭
+GSM9046247_Embryo_E8.0_stereo_rep1.h5ad,not_inspected_download_failed,,,,,,,,,,,,,,,,,,,,,,文件未下载：NCBI连接被关闭
+GSM9046248_Embryo_E8.0_stereo_rep2.h5ad,not_inspected_download_failed,,,,,,,,,,,,,,,,,,,,,,文件未下载：NCBI连接被关闭

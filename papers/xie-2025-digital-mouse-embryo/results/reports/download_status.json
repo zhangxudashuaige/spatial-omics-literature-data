@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "SSLError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar"
+}

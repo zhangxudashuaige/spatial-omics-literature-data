@@ -1,0 +1,4 @@
+file,stage,n_obs,n_vars
+synthetic_test.h5ad,E7.5,250,10
+synthetic_test.h5ad,E7.75,250,10
+synthetic_test.h5ad,E8.0,250,10

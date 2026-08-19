@@ -1,4 +1,10 @@
 # 阅读与复现笔记
 
-- [ ] 从论文正式 PDF 的 Key resources table 核验数据仓库、accession、代码仓库和许可证。
-- [ ] 核验 SpatialVista 六个对象是原始细胞、聚合后 cell bins，还是进一步筛选的展示对象。
+- [x] 处理后数据：GEO `GSE278603`，六个 H5AD，2026-01-18 更新。
+- [x] 原始数据：BioProject `PRJNA1168072`、SRA study `SRP536234`、SRX29179015–SRX29179020。
+- [x] 作者代码：SEU-3D 与 coFAST 均已记录。
+- [ ] 网络恢复后下载 `GSE278603_RAW.tar`，记录 TAR 和六个 H5AD 的实际字节数及 SHA256。
+- [ ] 读取真实 H5AD 后确认 GEO 所写“基因 × 细胞”是否与 AnnData 的 `obs × var` 语义一致。
+- [ ] 确认细胞类型、胚层、切片、阶段、cluster 和三维坐标的真实字段。
+- [ ] 核实 GEO 数据能否再分发小型衍生 H5AD；确认前不提交真实子集。
+- [ ] 比较正式论文 285 张切片与 GEO 摘要 360 张切片的差异来源。

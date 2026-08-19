@@ -1,0 +1,43 @@
+{
+  "validated_at": "2026-08-19",
+  "real_geo_download": {
+    "status": "failed_network",
+    "downloaded": false,
+    "reason": "当前环境连接 ftp.ncbi.nlm.nih.gov 时发生 TLS EOF / connection closed；命令行、Python requests 和内置浏览器均失败。",
+    "real_h5ad_inspected": false
+  },
+  "manifest_validation": {
+    "status": "passed",
+    "files": {
+      "sample_manifest.csv": 6,
+      "sra_manifest.csv": 6,
+      "file_checksums.csv": 7,
+      "h5ad_summary.csv": 6,
+      "datasets.csv": 6
+    }
+  },
+  "synthetic_test": {
+    "status": "passed",
+    "notice": "仅用于验证代码路径，不代表 GSE278603 的真实结构或数值。",
+    "shape": [750, 10],
+    "spatial_figure": "results/figures/synthetic_spatial_coordinates.png",
+    "marker_figure": "results/figures/synthetic_Myl7_expression.png"
+  },
+  "notebook_execution": {
+    "status": "passed",
+    "count": 5,
+    "execution_mode": "在本地忽略目录中使用合成测试 H5AD 从头执行",
+    "notebooks": [
+      "01_data_inventory.ipynb",
+      "02_inspect_h5ad.ipynb",
+      "03_visualize_spatial_coordinates.ipynb",
+      "04_visualize_marker_expression.ipynb",
+      "05_compare_developmental_stages.ipynb"
+    ]
+  },
+  "environment": {
+    "runtime_used": "D:/anaconda/envs/spatialvista/python.exe",
+    "pinned_environment_files_present": true,
+    "clean_environment_install": "failed_network_during_pip_download"
+  }
+}

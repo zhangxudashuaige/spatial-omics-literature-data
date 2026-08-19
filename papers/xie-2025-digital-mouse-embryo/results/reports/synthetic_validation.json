@@ -1,0 +1,32 @@
+{
+  "notice": "验证使用完全合成数据，不代表 GSE278603 的真实结构或数值",
+  "synthetic_h5ad": "C:\\Users\\l\\Documents\\Codex\\2026-08-15\\github\\spatial-omics-literature-data\\papers\\xie-2025-digital-mouse-embryo\\data\\processed\\synthetic_test.h5ad",
+  "schema": {
+    "file_name": "synthetic_test.h5ad",
+    "inspection_status": "inspected",
+    "n_obs": 750,
+    "n_vars": 10,
+    "shape": "750 × 10",
+    "x_type": "_CSRDataset",
+    "x_dtype": "float32",
+    "x_storage": "csr_matrix",
+    "obs_columns": "[\"stage\", \"replicate\", \"cell_type\", \"germ_layer\", \"cluster\"]",
+    "var_columns": "[]",
+    "obsm_keys": "[\"spatial\", \"spatial_3d\"]",
+    "uns_keys": "[\"notice\"]",
+    "layers_keys": "[\"counts\"]",
+    "raw_exists": false,
+    "obs_names_example": "[\"synthetic_0000\", \"synthetic_0001\", \"synthetic_0002\", \"synthetic_0003\", \"synthetic_0004\"]",
+    "var_names_example": "[\"Myl7\", \"Tnnt2\", \"Mef2c\", \"Shh\", \"Cer1\"]",
+    "cell_type_candidates": "[\"cell_type\"]",
+    "germ_layer_candidates": "[\"germ_layer\"]",
+    "section_candidates": "[]",
+    "stage_candidates": "[\"stage\"]",
+    "cluster_candidates": "[\"cluster\"]",
+    "coordinate_candidates": "[{\"source\": \"obsm\", \"key\": \"spatial\", \"dimensions\": 2, \"shape\": [750, 2]}, {\"source\": \"obsm\", \"key\": \"spatial_3d\", \"dimensions\": 3, \"shape\": [750, 3]}]",
+    "expression_layer_candidates": "[\"counts\"]",
+    "error": ""
+  },
+  "spatial_figure": "C:\\Users\\l\\Documents\\Codex\\2026-08-15\\github\\spatial-omics-literature-data\\papers\\xie-2025-digital-mouse-embryo\\results\\figures\\synthetic_spatial_coordinates.png",
+  "marker_figure": "C:\\Users\\l\\Documents\\Codex\\2026-08-15\\github\\spatial-omics-literature-data\\papers\\xie-2025-digital-mouse-embryo\\results\\figures\\synthetic_Myl7_expression.png"
+}
