@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "使用本目录时，请引用原论文、GSE278603 与本仓库。"
+title: "Xie 2025 mouse embryo spatial atlas reproducibility project"
+type: software
+version: 1.0.0
+date-released: 2026-08-19
+repository-code: "https://github.com/zhangxudashuaige/spatial-omics-literature-data"
+preferred-citation:
+  type: article
+  title: "Digital reconstruction of full embryos during early mouse organogenesis"
+  authors:
+    - family-names: Xie
+      given-names: Peng
+    - family-names: Shen
+      given-names: Juan
+    - family-names: Yang
+      given-names: Yi
+  journal: Cell
+  year: 2025
+  volume: 188
+  issue: 17
+  start: 4754
+  end: 4772.e18
+  doi: 10.1016/j.cell.2025.05.035

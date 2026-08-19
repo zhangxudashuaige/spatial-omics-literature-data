@@ -1,0 +1,31 @@
+# 大型官方数据：只保存在本地
+data/external/**
+data/processed/**
+!data/external/.gitkeep
+!data/processed/.gitkeep
+
+*.h5ad
+*.h5
+*.tar
+*.tar.gz
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.sra
+*.bam
+*.sam
+*.gef
+*.gem
+*.tif
+*.tiff
+*.part
+
+# 可提交的小型材料与结果
+!data/sample/**
+!metadata/**
+!results/figures/**
+!results/reports/**
+
+.ipynb_checkpoints/
+__pycache__/
+.venv/

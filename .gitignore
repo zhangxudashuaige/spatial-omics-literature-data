@@ -11,6 +11,7 @@ __pycache__/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 .venv/
+.xie_manifest_work/
 papers/**/metadata/*.local.json
 papers/**/*.h5ad
 !papers/**/sample_data/sample_*_cells.h5ad
