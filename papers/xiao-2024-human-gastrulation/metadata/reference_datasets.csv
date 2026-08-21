@@ -1,0 +1,7 @@
+﻿accession,物种,发育阶段,数据类型,论文中的作用,官方网站,下载策略
+E-MTAB-9388,Human,CS7,scRNA-seq,前一时期人原肠胚参考与细胞类型比较,https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-9388,只记录；不默认下载
+E-MTAB-6967,Mouse,E6.5–E8.5,scRNA-seq,小鼠原肠形成参考与跨物种比较,https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-6967,只记录；不默认下载
+GSE193007,Macaca fascicularis,CS8–CS11,scRNA-seq,灵长类原肠形成和早期器官发生比较,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE193007,只记录；不默认下载
+GSE136447,Human,体外培养D6–D14,scRNA-seq,人着床后/原肠形成前后参考,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136447,只记录；不默认下载
+GSE130114,Macaca fascicularis,D12/D13/D17,scRNA-seq,猴胚早期发育比较,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130114,只记录；不默认下载
+E-MTAB-3929,Human,着床前E3–E7,scRNA-seq,人着床前胚胎参考,https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-3929,只记录；不默认下载

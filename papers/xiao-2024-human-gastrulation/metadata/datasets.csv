@@ -1,0 +1,8 @@
+﻿dataset_id,数据名称,数据模态,样本或阶段,数据来源,accession,下载链接,文件格式,已核实规模,是否可直接下载,本地保存目录,是否提交GitHub,状态
+hra005567-fastq,CS8人胚Stereo-seq原始测序,Stereo-seq FASTQ,男性CS8；约E17–19,HRA005567,HRA005567,https://download.cncb.ac.cn/gsa-human/HRA005567/,fq.gz,"256文件；1,997,710,185,424 bytes",是；应选择性下载,data/raw/HRA005567/,否,catalog-only
+hra005567-run-stats,HRA run统计,测序质控元数据,128个run,HRA005567,HRA005567,https://download.cncb.ac.cn/gsa-human/HRA005567/,xml,"128文件；304,237 bytes",是,data/external/HRA005567/run_xml/,否；仅保存清单,catalog-only
+cs8-processed-expression,62张切片处理后表达矩阵与二维坐标,Stereo-seq处理后表达,CS8；62张切片,论文方法/在线系统,未提供独立accession,,预期GEM/GEF/H5AD；未发现公开文件,未知,否,data/processed/expression/,否,missing-public-file
+cs8-xyz,PASTE配准后的三维坐标,3D坐标,"38,562个bin50",论文/在线系统,未提供独立accession,https://cs8.3dembryo.com,未发现可下载坐标表,未知,否,data/processed/coordinates/,否,missing-public-file
+cs8-annotations,逐bin50组织和细胞类型注释,注释,CS8,论文结果,未提供逐点文件,,未发现逐bin50注释表,补充表仅含cluster层级结果,否,data/processed/annotations/,否,partial
+cell-supplements,Cell补充表S1–S5,marker/cluster/TF/ortholog,CS8及跨物种参考,CELL_SUPPLEMENTS,mmc1–mmc5,https://www.sciencedirect.com/science/article/pii/S009286742400357X,xlsx,"5文件；871,504 bytes",是,data/external/cell_supplements/,否；只存清单,catalog-only
+sto-analysis-code,STO-analysis作者代码,分析代码,CS8,ZENODO10851179,Zenodo 10851179 / tag STO-analysis,https://github.com/JingtaoLab/STO-analysis/tree/STO-analysis,R/Python/Shell/README,"16文件；40,444 bytes",是,data/external/zenodo_code/,否；保留下载脚本,catalog-only

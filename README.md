@@ -18,7 +18,7 @@
 | `han-2025-mouse-brain-stereo-seq` | 小鼠全脑 Stereo-seq 图谱 | 小鼠脑、Stereo-seq | 已建档；对应 1 个展示数据 |
 | `cheng-2024-mouse-embryo-3d` | E9.5/E11.5 小鼠胚胎三维转录组 | 小鼠胚胎、Stereo-seq、SBFI | 已建档；论文主数据当前不可公开获取，已建立完整清单与下载工具 |
 | `xie-2025-digital-mouse-embryo` | E7.5–E8.0 小鼠数字胚胎 | 小鼠胚胎、三维重建 | 已建档；对应 6 个展示数据 |
-| `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 已建档；对应 1 个展示数据 |
+| `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 完整项目；384 个 HRA 文件、作者代码和 5 个补充表已核查 |
 
 总入口见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)，13 个数据与 5 篇来源论文的对应关系见 [`dataset-sources.md`](papers/wei-2026-spatialvista/dataset-sources.md)。
 
@@ -28,7 +28,7 @@
 papers/                 每篇论文一个目录
   <paper-id>/
     README.md            论文摘要、价值、代码与数据入口
-    datasets.csv         关联数据集清单
+    metadata/datasets.csv 关联数据集清单（完整项目可采用此扩展结构）
     resources.csv        数据层级、补充材料与代码资源清单
     notes.md             阅读和复现笔记
 catalog/

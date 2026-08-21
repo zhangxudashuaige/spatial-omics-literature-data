@@ -1,0 +1,22 @@
+{
+  "source": "HRA005567 official HTTPS directory",
+  "checked_date": "2026-08-21",
+  "run_directories": 128,
+  "fastq_files": 256,
+  "xml_statistics_files": 128,
+  "total_files": 384,
+  "fastq_bytes": 1997710185424,
+  "xml_bytes": 304237,
+  "total_bytes": 1997710489661,
+  "total_decimal_tb": 1.997710489661,
+  "total_tebibytes": 1.816907106023,
+  "large_files_downloaded": false,
+  "smoke_test_download": {
+    "file_name": "HRR1375369_sta.xml",
+    "size_bytes": 2381,
+    "sha256": "64af749290a69e1d2ec62032cd10cb16ac93ffb3f716e4fc00889199c278f421",
+    "git_tracking": "ignored"
+  },
+  "processed_expression_found": false,
+  "final_xyz_coordinates_found": false
+}

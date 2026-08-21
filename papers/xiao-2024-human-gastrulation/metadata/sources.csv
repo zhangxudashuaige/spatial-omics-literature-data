@@ -1,0 +1,8 @@
+﻿source_id,名称,来源类型,accession,url,访问状态,用途,许可或限制
+paper,Cell论文,论文,S009286742400357X,https://www.sciencedirect.com/science/article/pii/S009286742400357X,公开页面,研究设计、方法和数据可用性说明,出版商条款；不要重新上传PDF
+HRA005567,GSA-Human原始数据,原始数据仓库,HRA005567,https://ngdc.cncb.ac.cn/gsa-human/browse/HRA005567,Open（核查日页面状态）,原始成对FASTQ和run统计,人类数据；使用前复核GSA-Human条款
+HRA005567_HTTPS,HRA官方HTTPS目录,文件目录,HRA005567,https://download.cncb.ac.cn/gsa-human/HRA005567/,可匿名列目录/下载,真实文件清单与选择性下载,链接公开不等于可以重新分发
+PRJCA019863,BioProject,项目元数据,PRJCA019863,https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA019863,公开页面,项目层级元数据,按数据库条款引用
+ZENODO10851179,作者代码快照,代码,10.5281/zenodo.10851179,https://doi.org/10.5281/zenodo.10851179,公开,SAW、PASTE、SCC、regulon和绘图流程,Zenodo元数据CC-BY-4.0；GitHub快照无LICENSE
+CELL_SUPPLEMENTS,Cell补充表,补充材料,S009286742400357X,https://www.sciencedirect.com/science/article/pii/S009286742400357X,5个XLSX可下载,marker、缩写、细胞数、TF模块、同源基因,出版商/论文许可；本仓库不复制附件
+CS8_3D,CS8三维在线系统,在线可视化,cs8.3dembryo.com,https://cs8.3dembryo.com,在线,交互查看三维结果,不是处理后文件下载仓库
