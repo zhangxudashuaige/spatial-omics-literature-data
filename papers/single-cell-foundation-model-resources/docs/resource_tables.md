@@ -54,7 +54,7 @@
 | DS026 | CITE-seq | multiomics | GSE100866 | https://doi.org/10.1038/nmeth.4380 |
 | DS027 | CyTOF | multiomics | not uniquely specified by survey | https://doi.org/10.1038/nprot.2012.026 |
 | DS028 | 10x Multiome PBMC | multiomics | 10x Genomics public dataset |  |
-| DS029 | BMMC | multiomics | NeurIPS 2021 Open Problems collection | https://openproblems.bio/about/ |
+| DS029 | BMMC | multiomics | NeurIPS 2021 Open Problems collection | https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/158f3069a435b314a80bdcb024f8e422-Abstract-round2.html |
 | DS030 | ASAP PBMC | multiomics | GSE156478 | https://doi.org/10.1038/s41587-021-00927-2 |
 | DS031 | Human lung cancer drug-response | drug_response | GSE149383 | https://doi.org/10.1038/s41467-021-21884-z |
 | DS032 | Oral squamous cancer drug-response | drug_response | GSE117872 | https://doi.org/10.1038/s41467-018-07261-3 |
@@ -64,6 +64,42 @@
 | DS036 | GTEx | atlas_and_disease | dbGaP phs000424 | https://doi.org/10.1126/science.aaz1776 |
 | DS037 | COVID-19 integration benchmark | atlas_and_disease | composite benchmark | https://doi.org/10.1038/s41587-021-01001-7 |
 | DS038 | PanglaoDB downstream collection | cell_annotation_and_clustering; atlas_and_disease | PanglaoDB | https://doi.org/10.1093/database/baz046 |
+
+## 下游数据原始论文
+
+| paper_id | title | year | journal_or_venue | related_dataset_ids | paper_url |
+|---|---|---|---|---|---|
+| zheng-2017-pbmc68k | Massively parallel digital transcriptional profiling of single cells | 2017 | Nature Communications | DS001 | https://doi.org/10.1038/ncomms14049 |
+| baron-2016-pancreas | A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure | 2016 | Cell Systems | DS004 | https://doi.org/10.1016/j.cels.2016.08.011 |
+| muraro-2016-pancreas | A Single-Cell Transcriptome Atlas of the Human Pancreas | 2016 | Cell Systems | DS005 | https://doi.org/10.1016/j.cels.2016.09.002 |
+| segerstolpe-2016-pancreas | Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes | 2016 | Cell Metabolism | DS006 | https://doi.org/10.1016/j.cmet.2016.08.020 |
+| macparland-2018-liver | Single cell RNA sequencing of human liver reveals distinct intrahepatic macrophage populations | 2018 | Nature Communications | DS007 | https://doi.org/10.1038/s41467-018-06318-7 |
+| schirmer-2019-ms | Neuronal vulnerability and multilineage diversity in multiple sclerosis | 2019 | Nature | DS008 | https://doi.org/10.1038/s41586-019-1404-z |
+| regev-2017-human-cell-atlas | The Human Cell Atlas | 2017 | eLife | DS009 | https://doi.org/10.7554/eLife.27041 |
+| han-2020-human-cell-landscape | Construction of a human cell landscape at single-cell level | 2020 | Nature | DS010 | https://doi.org/10.1038/s41586-020-2157-4 |
+| tabula-sapiens-2022 | The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans | 2022 | Science | DS011 | https://doi.org/10.1126/science.abl4896 |
+| tabula-muris-2018 | Single-cell transcriptomics of 20 mouse organs creates a Tabula Muris | 2018 | Nature | DS012 | https://doi.org/10.1038/s41586-018-0590-4 |
+| litvinukova-2020-heart | Cells of the adult human heart | 2020 | Nature | DS013 | https://doi.org/10.1038/s41586-020-2797-4 |
+| sikkema-2023-lung-atlas | An integrated cell atlas of the lung in health and disease | 2023 | Nature Medicine | DS014 | https://doi.org/10.1038/s41591-023-02327-2 |
+| adamson-2016-perturb-seq | A Multiplexed Single-Cell CRISPR Screening Platform Enables Systematic Dissection of the Unfolded Protein Response | 2016 | Cell | DS015 | https://doi.org/10.1016/j.cell.2016.11.048 |
+| norman-2019-perturb-seq | Exploring genetic interaction manifolds constructed from rich single-cell phenotypes | 2019 | Science | DS016 | https://doi.org/10.1126/science.aax4438 |
+| replogle-2022-perturb-seq | Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq | 2022 | Cell | DS017 | https://doi.org/10.1016/j.cell.2022.05.013 |
+| dixit-2016-perturb-seq | Perturb-Seq: Dissecting Molecular Circuits with Scalable Single-Cell RNA Profiling of Pooled Genetic Screens | 2016 | Cell | DS018 | https://doi.org/10.1016/j.cell.2016.11.038 |
+| srivatsan-2020-sci-plex | Massively multiplex chemical transcriptomics at single-cell resolution | 2020 | Science | DS019 | https://doi.org/10.1126/science.aax6234 |
+| yao-2023-mouse-brain-atlas | A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain | 2023 | Nature | DS020 | https://doi.org/10.1038/s41586-023-06812-z |
+| he-2021-cosmx-smi | High-plex imaging of RNA and proteins at subcellular resolution in fixed tissue by spatial molecular imaging | 2021 | Nature Biotechnology | DS021;DS022 | https://doi.org/10.1038/s41587-021-01006-2 |
+| stoeckius-2017-cite-seq | Simultaneous epitope and transcriptome measurement in single cells | 2017 | Nature Methods | DS026 | https://doi.org/10.1038/nmeth.4380 |
+| finck-2013-cytof-workflow | An Experimentally and Computationally Optimized Mass Cytometry Workflow | 2013 | Nature Protocols | DS027 | https://doi.org/10.1038/nprot.2012.026 |
+| luecken-2021-bmmc-sandbox | A sandbox for prediction and integration of DNA, RNA, and proteins in single cells | 2021 | NeurIPS Datasets and Benchmarks | DS029 | https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/158f3069a435b314a80bdcb024f8e422-Abstract-round2.html |
+| mimitou-2021-asap-seq | Scalable, multimodal profiling of chromatin accessibility, gene expression and protein levels in single cells | 2021 | Nature Biotechnology | DS030 | https://doi.org/10.1038/s41587-021-00927-2 |
+| aissa-2021-lung-cancer-drug-response | Single-cell transcriptional changes associated with drug tolerance and response to combination therapies in cancer | 2021 | Nature Communications | DS031 | https://doi.org/10.1038/s41467-021-21884-z |
+| sharma-2018-oral-cancer-drug-response | Longitudinal single-cell RNA sequencing of patient-derived primary cells reveals drug-induced infidelity in stem cell hierarchy | 2018 | Nature Communications | DS032 | https://doi.org/10.1038/s41467-018-07261-3 |
+| liu-2020-deepcdr | DeepCDR: a hybrid graph convolutional network for predicting cancer drug response | 2020 | Bioinformatics | DS033 | https://doi.org/10.1093/bioinformatics/btaa822 |
+| zheng-2023-scad | Enabling Single-Cell Drug Response Annotations from Bulk RNA-Seq Using SCAD | 2023 | Advanced Science | DS034 | https://doi.org/10.1002/advs.202204113 |
+| weinstein-2013-tcga-pan-cancer | The Cancer Genome Atlas Pan-Cancer analysis project | 2013 | Nature Genetics | DS035 | https://doi.org/10.1038/ng.2764 |
+| gtex-2020-atlas | The GTEx Consortium atlas of genetic regulatory effects across human tissues | 2020 | Science | DS036 | https://doi.org/10.1126/science.aaz1776 |
+| lotfollahi-2021-scarches | Mapping single-cell data to reference atlases by transfer learning | 2021 | Nature Biotechnology | DS037 | https://doi.org/10.1038/s41587-021-01001-7 |
+| franzen-2019-panglaodb | PanglaoDB: a web server for exploration of mouse and human single-cell RNA sequencing data | 2019 | Database | DS038 | https://doi.org/10.1093/database/baz046 |
 
 ## 数据平台
 

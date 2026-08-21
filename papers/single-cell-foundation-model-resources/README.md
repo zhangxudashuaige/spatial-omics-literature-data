@@ -23,23 +23,27 @@
 |---|---|---:|---|
 | 预训练语料 | [`metadata/pretraining_corpora.csv`](metadata/pretraining_corpora.csv) | 15 | 历史语料规模、当前规模、来源和公开程度 |
 | 下游数据 | [`metadata/downstream_datasets.csv`](metadata/downstream_datasets.csv) | 38 | 数据任务、accession、官方入口、原始论文 |
+| 原始论文 | [`metadata/original_papers.csv`](metadata/original_papers.csv) | 31 | 可唯一追溯的下游数据来源论文及论文—数据关系 |
 | 数据平台 | [`metadata/data_platforms.csv`](metadata/data_platforms.csv) | 9 | 平台用途、API、登录和访问限制 |
 | 模型仓库 | [`metadata/model_repositories.csv`](metadata/model_repositories.csv) | 22 | 官方仓库、论文、权重、许可和安装状态 |
 | 模型—数据关系 | [`metadata/task_model_matrix.csv`](metadata/task_model_matrix.csv) | 74 | 哪个模型如何使用哪个语料或数据集 |
 
 <!-- GENERATED_SUMMARY_START -->
-当前目录包含 **15** 个预训练语料、**38** 个唯一的下游数据集、**9** 个数据平台、**22** 个模型（其中 **20** 个确认官方仓库）和 **74** 条模型—数据—任务关系。完整自动表格见 [`docs/resource_tables.md`](docs/resource_tables.md)。
+当前目录包含 **15** 个预训练语料、**38** 个唯一的下游数据集、**31** 篇下游数据原始论文、**9** 个数据平台、**22** 个模型（其中 **20** 个确认官方仓库）和 **74** 条模型—数据—任务关系。完整自动表格见 [`docs/resource_tables.md`](docs/resource_tables.md)。
 <!-- GENERATED_SUMMARY_END -->
 
 ## “原始论文”是怎么记录的
 
 `downstream_datasets.csv` 中新增了：
 
+- `original_paper_id`
 - `original_paper_title`
 - `original_paper_doi`
 - `original_paper_url`
 
-如果数据来自正式研究，这三个字段指向产生数据或首次系统发表数据的论文。如果条目是 10x Genomics、Vizgen 等厂商公开示例，且没有独立数据论文，则明确写为 `no independent dataset paper`，不会拿平台方法论文冒充数据论文。若综述只写了技术类别（例如“CyTOF data”）而没有唯一 accession，也会明确标记 `not uniquely specified by survey`。
+如果数据来自正式研究，这些字段指向产生数据或首次系统发表数据的论文。如果条目是 10x Genomics、Vizgen 等厂商公开示例，且没有独立数据论文，则明确写为 `no independent dataset paper`，不会拿平台方法论文冒充数据论文。若综述只写了技术类别（例如“CyTOF data”）而没有唯一 accession，也会明确标记 `not uniquely specified by survey`。
+
+31 篇可唯一定位的来源论文同时保存为 [`paper_records/`](paper_records/) 下的独立中文条目，并登记在全库 `catalog/papers.csv`。每个条目记录论文元数据、官方入口、关联数据和 PDF 保存状态。另有 6 个厂商示例数据没有独立数据论文，项目保留官方数据页并明确说明，不虚构论文。
 
 ## 怎么查和下载
 
