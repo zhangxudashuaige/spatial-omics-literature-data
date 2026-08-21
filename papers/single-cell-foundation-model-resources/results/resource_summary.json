@@ -2,6 +2,7 @@
   "counts": {
     "pretraining_corpora": 15,
     "downstream_datasets": 38,
+    "original_dataset_papers": 31,
     "data_platforms": 9,
     "models": 22,
     "task_model_relations": 74
@@ -49,9 +50,9 @@
   "url_check": {
     "unique_urls": 153,
     "status_counts": {
-      "ok": 105,
-      "http_error": 5,
-      "network_error": 29,
+      "ok": 93,
+      "http_error": 3,
+      "network_error": 43,
       "access_restricted": 14
     },
     "not_found_urls": [],

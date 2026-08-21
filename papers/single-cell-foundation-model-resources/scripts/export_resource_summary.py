@@ -25,10 +25,12 @@ def main() -> int:
     platforms = read("data_platforms.csv")
     models = read("model_repositories.csv")
     relations = read("task_model_matrix.csv")
+    papers = read("original_papers.csv")
     summary = {
         "counts": {
             "pretraining_corpora": len(corpora),
             "downstream_datasets": len(datasets),
+            "original_dataset_papers": len(papers),
             "data_platforms": len(platforms),
             "models": len(models),
             "task_model_relations": len(relations),

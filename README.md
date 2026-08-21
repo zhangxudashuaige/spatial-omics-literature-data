@@ -19,7 +19,7 @@
 | `cheng-2024-mouse-embryo-3d` | E9.5/E11.5 小鼠胚胎三维转录组 | 小鼠胚胎、Stereo-seq、SBFI | 已建档；论文主数据当前不可公开获取，已建立完整清单与下载工具 |
 | `xie-2025-digital-mouse-embryo` | E7.5–E8.0 小鼠数字胚胎 | 小鼠胚胎、三维重建 | 已建档；对应 6 个展示数据 |
 | `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 完整项目；384 个 HRA 文件、作者代码和 5 个补充表已核查 |
-| `zhang-2025-single-cell-foundation-model-survey` | 单细胞基础模型综述 | 单细胞基础模型、预训练语料、下游基准 | 完整资源目录；15 个预训练语料、38 个下游数据集、9 个平台和 22 个模型已逐项登记 |
+| `zhang-2025-single-cell-foundation-model-survey` | 单细胞基础模型综述 | 单细胞基础模型、预训练语料、下游基准 | 完整资源目录；38 个下游数据集及 31 篇可唯一定位的原始论文均已独立登记 |
 
 SpatialVista 数据入口见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)，单细胞基础模型综述资源入口见 [`papers/single-cell-foundation-model-resources/README.md`](papers/single-cell-foundation-model-resources/README.md)。
 
