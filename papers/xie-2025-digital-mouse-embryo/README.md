@@ -67,7 +67,7 @@ python scripts/download_geo_processed.py --sample GSM9046244
 # 跳过总包，直接逐个下载六个 H5AD
 python scripts/download_geo_processed.py --mode files
 
-# 安全解压六个 H5AD
+# 只有报告显示 mode=archive 时才需要解压；mode=files 时 H5AD 已就位
 python scripts/extract_geo_archive.py
 
 # 逐文件读取实际结构，使用 backed='r'

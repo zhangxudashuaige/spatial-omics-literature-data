@@ -53,7 +53,9 @@ python scripts/inspect_h5ad.py data/external/GSE278603/h5ad/GSM9046244_Embryo_E7
 python scripts/extract_geo_archive.py
 ```
 
-目标目录：`data/external/GSE278603/h5ad/`。脚本先检查 TAR 成员路径，阻止目录穿越，并只提取清单中的六个 H5AD。
+只有 `download_status.json` 显示 `mode` 为 `archive` 时才运行这一步；如果显示 `files`，六个 H5AD 已经直接保存在目标目录，无需解压。
+
+目标目录：`data/external/GSE278603/h5ad/`。解压脚本先检查 TAR 成员路径，阻止目录穿越，并只提取清单中的六个 H5AD。
 
 ## 4. 检查 H5AD
 
