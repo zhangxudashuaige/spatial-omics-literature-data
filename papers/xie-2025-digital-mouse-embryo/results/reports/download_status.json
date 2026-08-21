@@ -1,5 +1,54 @@
 {
+  "mode": "link_check",
   "ok": false,
-  "error": "SSLError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
-  "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar"
+  "archive_endpoints": [
+    {
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSE278603&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE278603&format=file"
+    },
+    {
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='ftp.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar"
+    }
+  ],
+  "sample_endpoints": [
+    {
+      "gsm_accession": "GSM9046243",
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSM9046243&file=GSM9046243_Embryo_E7.5_stereo_rep1.h5ad&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM9046243&file=GSM9046243_Embryo_E7.5_stereo_rep1.h5ad&format=file"
+    },
+    {
+      "gsm_accession": "GSM9046244",
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSM9046244&file=GSM9046244_Embryo_E7.5_stereo_rep2.h5ad&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM9046244&file=GSM9046244_Embryo_E7.5_stereo_rep2.h5ad&format=file"
+    },
+    {
+      "gsm_accession": "GSM9046245",
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSM9046245&file=GSM9046245_Embryo_E7.75_stereo_rep1.h5ad&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM9046245&file=GSM9046245_Embryo_E7.75_stereo_rep1.h5ad&format=file"
+    },
+    {
+      "gsm_accession": "GSM9046246",
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSM9046246&file=GSM9046246_Embryo_E7.75_stereo_rep2.h5ad&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM9046246&file=GSM9046246_Embryo_E7.75_stereo_rep2.h5ad&format=file"
+    },
+    {
+      "gsm_accession": "GSM9046247",
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSM9046247&file=GSM9046247_Embryo_E8.0_stereo_rep1.h5ad&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM9046247&file=GSM9046247_Embryo_E8.0_stereo_rep1.h5ad&format=file"
+    },
+    {
+      "gsm_accession": "GSM9046248",
+      "ok": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.ncbi.nlm.nih.gov', port=443): Max retries exceeded with url: /geo/download/?acc=GSM9046248&file=GSM9046248_Embryo_E8.0_stereo_rep2.h5ad&format=file (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM9046248&file=GSM9046248_Embryo_E8.0_stereo_rep2.h5ad&format=file"
+    }
+  ]
 }

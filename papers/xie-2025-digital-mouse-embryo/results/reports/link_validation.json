@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-08-20",
+  "official_catalog": {
+    "status": "verified",
+    "source": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278603",
+    "evidence": "GEO 官方页面公开列出六个样本、802.8 MB 的 GSE278603_RAW.tar，并标明 TAR of H5AD。"
+  },
+  "binary_endpoints": {
+    "status": "verified_by_official_download_links",
+    "archive_gateway": "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE278603&format=file",
+    "archive_ftp_https": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE278nnn/GSE278603/suppl/GSE278603_RAW.tar",
+    "sample_endpoint_count": 6,
+    "manifest": "metadata/sample_manifest.csv"
+  },
+  "local_runtime": {
+    "status": "blocked_by_local_tls_environment",
+    "curl_error": "SEC_E_NO_CREDENTIALS",
+    "python_requests_error": "SSL: UNEXPECTED_EOF_WHILE_READING",
+    "interpretation": "官方链接存在且下载按钮解析成功；当前机器不能完成 TLS 传输，因此真实文件仍未下载。"
+  },
+  "download_strategy": [
+    "NCBI GEO 总包网关",
+    "NCBI FTP HTTPS 总包镜像",
+    "六个独立 H5AD 下载端点"
+  ]
+}

@@ -1,10 +1,20 @@
 {
-  "validated_at": "2026-08-19",
+  "validated_at": "2026-08-20",
   "real_geo_download": {
     "status": "failed_network",
     "downloaded": false,
-    "reason": "当前环境连接 ftp.ncbi.nlm.nih.gov 时发生 TLS EOF / connection closed；命令行、Python requests 和内置浏览器均失败。",
+    "reason": "GEO 官方页面与下载按钮已确认链接存在；当前环境连接 NCBI 时发生 Schannel SEC_E_NO_CREDENTIALS 或 Python SSL EOF。",
     "real_h5ad_inspected": false
+  },
+  "download_link_validation": {
+    "official_geo_catalog": "passed",
+    "archive_endpoint_count": 2,
+    "individual_h5ad_endpoint_count": 6,
+    "local_runtime_transfer": "failed_tls_environment",
+    "downloader_compile": "passed",
+    "hdf5_magic_validator": "passed",
+    "six_h5ad_tar_validator": "passed",
+    "mock_stream_download_and_sha256": "passed"
   },
   "manifest_validation": {
     "status": "passed",

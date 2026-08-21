@@ -13,6 +13,8 @@
 - SEU-3D：https://github.com/RainyBlue-w/SEU-3D
 - coFAST：https://github.com/feiyoung/coFAST
 
+所有可直接使用的数据链接集中列在 [可用数据链接](docs/data_links.md)。脚本不会依赖网页手工点击，而是直接读取 `metadata/sample_manifest.csv` 中的官方 URL。
+
 ## 研究对象和六个数据文件
 
 研究对象是 E7.5、E7.75 和 E8.0 的完整小鼠胚胎，每个阶段有两个生物学重复，共六个处理后 H5AD。Cell 论文报告分析了 285 张连续切片；GEO 页面摘要仍写 360 张切片。仓库同时保留这两个来源口径，不擅自把它们改成同一个数字。
@@ -53,11 +55,17 @@ cd papers\xie-2025-digital-mouse-embryo
 conda env create -f environment.yml
 conda activate xie-embryo-2025
 
-# 只检查 URL，不下载
+# 检查总包和六个 H5AD 的 URL，不下载完整文件
 python scripts/download_geo_processed.py --check-url
 
-# 实际下载约 802.8 MB 的官方 TAR，支持续传和重试
+# 自动下载：总包网关 → FTP 总包 → 六个独立 H5AD
 python scripts/download_geo_processed.py
+
+# 只下载最小样本 E7.5 rep2，用来先验证网络和分析流程
+python scripts/download_geo_processed.py --sample GSM9046244
+
+# 跳过总包，直接逐个下载六个 H5AD
+python scripts/download_geo_processed.py --mode files
 
 # 安全解压六个 H5AD
 python scripts/extract_geo_archive.py
@@ -69,7 +77,7 @@ python scripts/inspect_h5ad.py
 jupyter lab notebooks
 ```
 
-详细步骤见 [下载指南](docs/download_guide.md) 和 [H5AD 结构说明](docs/h5ad_schema.md)。
+详细步骤见 [可用数据链接](docs/data_links.md)、[下载指南](docs/download_guide.md) 和 [H5AD 结构说明](docs/h5ad_schema.md)。
 
 ## Notebook 用途
 
@@ -89,7 +97,7 @@ GitHub 保存：中文文档、CSV 清单、下载与校验脚本、Notebook、�
 
 ## 当前下载状态
 
-2026-08-19 在本机实际尝试访问官方 HTTPS、HTTP、FTP 和内置浏览器下载通道，分别遇到 `SSL/TLS connection failed`、`Empty reply from server`、`response reading failed` 和 `ERR_CONNECTION_CLOSED`。因此本次提交不声称已经下载或检查真实 H5AD；清单中的 SHA256 与 shape 保持空白，并把失败状态明确记录。脚本已完整保留，网络恢复后可续传。
+2026-08-20 已从 GEO 官方页面再次确认总包和六个 H5AD 均公开存在，官方“下载”按钮能够解析到二进制下载端点。本机直接连接 NCBI 时仍发生 Windows Schannel 凭据错误或 Python `SSL EOF`，这是当前运行环境的 TLS/网络问题，不代表链接失效。为避免单点失败，下载脚本已提供 NCBI 总包网关、FTP 总包和六个独立 H5AD 三层路径；失败下载保留 `.part`，网络恢复后可续传。
 
 仓库当前提交的 `results/figures/`、`results/tables/` 和 `synthetic_validation.json` 只证明分析流程能够运行，全部来自明确标注的合成测试对象，不是论文数据的生物学结果。
 

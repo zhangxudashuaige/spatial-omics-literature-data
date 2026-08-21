@@ -3,6 +3,8 @@
 - [x] 处理后数据：GEO `GSE278603`，六个 H5AD，2026-01-18 更新。
 - [x] 原始数据：BioProject `PRJNA1168072`、SRA study `SRP536234`、SRX29179015–SRX29179020。
 - [x] 作者代码：SEU-3D 与 coFAST 均已记录。
+- [x] 2026-08-20 从 GEO 官方页面复核总包与六个独立 H5AD 下载端点。
+- [x] 下载脚本支持 GEO 总包网关、FTP HTTPS 镜像与逐个 H5AD 三层回退，并验证 TAR/HDF5 文件头。
 - [ ] 网络恢复后下载 `GSE278603_RAW.tar`，记录 TAR 和六个 H5AD 的实际字节数及 SHA256。
 - [ ] 读取真实 H5AD 后确认 GEO 所写“基因 × 细胞”是否与 AnnData 的 `obs × var` 语义一致。
 - [ ] 确认细胞类型、胚层、切片、阶段、cluster 和三维坐标的真实字段。
