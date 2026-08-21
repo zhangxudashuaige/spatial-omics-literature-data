@@ -1,0 +1,75 @@
+model_name,dataset_name,task,usage_type,input_modality,output_type,metric,source_reference,notes
+scBERT,PanglaoDB corpus,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",约1M cells
+UCE,IMA,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",36M cells
+GeneFormer,Genecorpus-30M,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",27.4M cells
+CellPLM,CellPLM pretraining corpus,foundation pretraining,pretraining,scRNA-seq; spatial transcriptomics,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",9M scRNA-seq + 2M spatial cells
+scFoundation,scFoundation pretraining collection,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",>50M cells
+Nicheformer,SpatialCorpus-110M,foundation pretraining,pretraining,scRNA-seq; targeted spatial transcriptomics,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",综述约57M cells
+tGPT,tGPT transcriptome corpus,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",22.3M cells
+scGPT,CELLxGENE pretraining corpus,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",33M cells
+CellLM,PanglaoDB + CancerSCEM,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",约2M cells
+LangCell,scLibrary,foundation pretraining,pretraining,scRNA-seq + text,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",27.5M cell-text pairs
+scCello,CELLxGENE pretraining set,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",22M cells
+scPRINT,CELLxGENE pretraining corpus,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",50M cells
+scMulan,hECA-10M,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",10M cells
+GeneCompass,scCompass-126M,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",126M cells
+CellFM,CellFM 100M corpus,foundation pretraining,pretraining,scRNA-seq,pretrained representation,self-supervised objective,"Zhang et al., ACL 2025 Appendix C",约100M cells
+scBERT,Zheng68K,cell type annotation,fine_tuning,scRNA-seq,cell labels,accuracy; macro/weighted F1,Yang et al. 2022,
+scBERT,Baron pancreas,cell type annotation,validation,scRNA-seq,cell labels,accuracy; macro F1,Yang et al. 2022,
+scBERT,Muraro pancreas,cell type annotation,validation,scRNA-seq,cell labels,accuracy/F1,Yang et al. 2022,
+scBERT,Segerstolpe pancreas,cell type annotation,validation,scRNA-seq,cell labels,accuracy/F1,Yang et al. 2022,
+scBERT,MacParland liver,cell type annotation,validation,scRNA-seq,cell labels,accuracy/F1,Yang et al. 2022,
+CellPLM,PBMC 5K,annotation/denoising,validation,scRNA-seq,labels/denoised expression,task-specific,Wen et al. 2023,
+CellPLM,MERSCOPE FFPE immuno-oncology,spatial transcriptomic imputation,validation,spatial transcriptomics,imputed expression,correlation/task-specific,Wen et al. 2023,
+CellPLM,Adamson Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,post-perturbation expression,Pearson correlation,Wen et al. 2023,
+CellPLM,Norman Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,post-perturbation expression,Pearson correlation,Wen et al. 2023,
+CellPLM,Multiple Sclerosis,cell type annotation,validation,snRNA-seq,cell labels,accuracy/F1,Wen et al. 2023,
+scFoundation,Zheng68K,cell type annotation,fine_tuning,scRNA-seq,cell labels,accuracy/F1,Hao et al. 2024,
+scFoundation,Baron pancreas,cell type annotation,validation,scRNA-seq,cell labels,accuracy/F1,Hao et al. 2024,
+scFoundation,Segerstolpe pancreas,cell type annotation,validation,scRNA-seq,cell labels,accuracy/F1,Hao et al. 2024,
+scFoundation,CDR / DeepCDR benchmark,cancer drug response regression,fine_tuning,bulk expression + drug graph,IC50,PCC; RMSE; MAE,Hao et al. 2024,
+scFoundation,SCAD drug-response collection,single-cell drug response,fine_tuning,bulk + scRNA-seq,sensitive/resistant labels,AUROC/AUPRC,Hao et al. 2024,
+Nicheformer,MERFISH mouse brain,spatial label/composition,fine_tuning,MERFISH,spatial labels/composition,accuracy; R2; MAE,Schaar et al. 2024,
+Nicheformer,CosMx human liver,spatial composition,validation,CosMx SMI,composition/density,R2; MAE,Schaar et al. 2024,
+Nicheformer,CosMx human lung,spatial composition,validation,CosMx SMI,composition/density,R2; MAE,Schaar et al. 2024,
+Nicheformer,Xenium human lung,spatial prediction,validation,Xenium,labels/density,R2; MAE,Schaar et al. 2024,
+Nicheformer,Xenium human colon,spatial prediction,validation,Xenium,labels/density,R2; MAE,Schaar et al. 2024,
+tGPT,Human Cell Atlas,clustering/lineage,validation,scRNA-seq,embeddings/trajectory,silhouette/task-specific,Shen et al. 2023,
+tGPT,Human Cell Landscape,clustering/lineage,validation,scRNA-seq,embeddings/trajectory,task-specific,Shen et al. 2023,
+tGPT,Tabula Muris,annotation/lineage,validation,scRNA-seq,embeddings/labels,task-specific,Shen et al. 2023,
+tGPT,TCGA,bulk clinical representation,external_reference,bulk RNA-seq,subtype/prognosis features,AUROC/survival metrics,Shen et al. 2023,
+tGPT,GTEx,bulk tissue representation,external_reference,bulk RNA-seq,tissue features,classification metrics,Shen et al. 2023,
+scGPT,Multiple Sclerosis,cell type annotation,fine_tuning,snRNA-seq,cell labels,accuracy; macro F1,Cui et al. 2024,
+scGPT,COVID-19 integration benchmark,data integration,fine_tuning,scRNA-seq,integrated embedding,scIB metrics,Cui et al. 2024,
+scGPT,Norman Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,expression change,Pearson correlation,Cui et al. 2024,
+scGPT,Adamson Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,expression change,Pearson correlation,Cui et al. 2024,
+scGPT,Replogle Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,expression change,Pearson correlation,Cui et al. 2024,
+scGPT,PBMC 10K,cell type annotation,validation,scRNA-seq,cell labels,accuracy/F1,Cui et al. 2024,
+scGPT,10x Multiome PBMC,multiomics integration,fine_tuning,RNA + ATAC,joint embedding/modality prediction,AUROC/scIB,Cui et al. 2024,
+scGPT,BMMC,multiomics integration,fine_tuning,RNA + ATAC/protein,joint embedding/modality prediction,competition/scIB metrics,Cui et al. 2024,
+scGPT,ASAP PBMC,multiomics integration,validation,ATAC + protein,joint embedding,scIB metrics,Cui et al. 2024,
+CellLM,Zheng68K,cell type annotation,fine_tuning,scRNA-seq,cell labels,accuracy; F1,Zhao et al. 2023,
+CellLM,Baron pancreas,cell type annotation,validation,scRNA-seq,cell labels,accuracy; F1,Zhao et al. 2023,
+CellLM,Human lung cancer drug-response,drug sensitivity,fine_tuning,scRNA-seq,sensitive/resistant labels,F1,Zhao et al. 2023,
+CellLM,Oral squamous cancer drug-response,drug sensitivity,fine_tuning,scRNA-seq,sensitive/resistant labels,F1,Zhao et al. 2023,
+LangCell,PBMC 10K,cell-text retrieval/annotation,validation,scRNA-seq + text,aligned embeddings/labels,retrieval/accuracy,Zhao et al. 2024,
+LangCell,Tabula Sapiens,cell identity understanding,validation,scRNA-seq + text,labels/retrieval,accuracy/retrieval,Zhao et al. 2024,
+scCello,CDR / DeepCDR benchmark,drug response prediction,fine_tuning,expression + drug features,drug response,task-specific,Yuan et al. 2024,
+scPRINT,Dixit Perturb-seq,gene network/perturbation evaluation,validation,Perturb-seq,GRN/embeddings,AUPRC/correlation,Kalfon et al. 2024,
+scPRINT,Replogle Perturb-seq,gene network/perturbation evaluation,validation,Perturb-seq,GRN/embeddings,AUPRC/correlation,Kalfon et al. 2024,
+scPRINT,Lung Atlas,cell annotation,validation,scRNA-seq,cell labels,accuracy/F1,Kalfon et al. 2024,
+scMulan,Human Cell Landscape,zero-shot annotation/integration,zero_shot_evaluation,scRNA-seq,cell labels/embedding,accuracy/scIB,Bian et al. 2024,
+scMulan,COVID-19 integration benchmark,integration,zero_shot_evaluation,scRNA-seq,integrated embedding,scIB metrics,Bian et al. 2024,
+GeneCompass,Multiple Sclerosis,cell type annotation,fine_tuning,snRNA-seq,cell labels,accuracy/F1,Yang et al. 2024,
+GeneCompass,Srivatsan chemical perturbation,drug response prediction,fine_tuning,sci-Plex,dose/response expression,correlation,Yang et al. 2024,
+CellFM,PanglaoDB downstream collection,gene function prediction,fine_tuning,scRNA-seq,gene functions,AUROC/F1,Zeng et al. 2024,
+CellFM,Adamson Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,expression change,Pearson correlation,Zeng et al. 2024,
+CellFM,Norman Perturb-seq,perturbation prediction,fine_tuning,Perturb-seq,expression change,Pearson correlation,Zeng et al. 2024,
+Cell2Sentence,GTEx,bulk text-conditioned analysis,external_reference,bulk RNA-seq + text,generated labels/text,task-specific,Levine et al. 2023,
+ChatCell,Human lung cancer drug-response,drug sensitivity dialogue,fine_tuning,gene sentence + prompt,sensitive/resistant text answer,accuracy/F1,Fang et al. 2024,
+ChatCell,Oral squamous cancer drug-response,drug sensitivity dialogue,fine_tuning,gene sentence + prompt,sensitive/resistant text answer,accuracy/F1,Fang et al. 2024,
+scELMo,CITE-seq,multiomics representation,validation,RNA + protein,embeddings/labels,task-specific,Liu et al. 2023,
+scELMo,CyTOF,cross-modality representation,validation,mass cytometry,embeddings/labels,task-specific,Liu et al. 2023,
+CELLama,Tabula Sapiens,cell embedding/annotation,validation,scRNA-seq + metadata sentence,cell embeddings,clustering/accuracy,Choi et al. 2024,
+CELLama,COVID-19 integration benchmark,context-aware embedding,validation,scRNA-seq + metadata sentence,cell embeddings,integration metrics,Choi et al. 2024,
+scChat,COVID-19 integration benchmark,contextualized analysis,external_reference,AnnData + natural language,analysis and explanation,human/analysis-specific,Lu et al. 2024,

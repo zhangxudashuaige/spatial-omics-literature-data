@@ -1,0 +1,60 @@
+{
+  "counts": {
+    "pretraining_corpora": 15,
+    "downstream_datasets": 38,
+    "data_platforms": 9,
+    "models": 22,
+    "task_model_relations": 74
+  },
+  "corpus_access_types": {
+    "direct/partial": 1,
+    "partial": 6,
+    "direct": 4,
+    "not publicly located": 2,
+    "reconstructable": 1,
+    "partial/direct derived resources": 1
+  },
+  "dataset_access_types": {
+    "direct": 26,
+    "mixed": 3,
+    "direct/registration may vary": 1,
+    "direct/terms apply": 2,
+    "registration may be required": 1,
+    "not uniquely located": 1,
+    "mixed/controlled": 2,
+    "composite": 1,
+    "direct/aggregated": 1
+  },
+  "official_model_repositories": 20,
+  "models_without_confirmed_official_code": [
+    "CellLM",
+    "scInterpreter"
+  ],
+  "datasets_without_independent_paper": [
+    "PBMC 5K",
+    "PBMC 10K",
+    "Xenium human lung",
+    "Xenium human colon",
+    "MERSCOPE FFPE immuno-oncology",
+    "10x Multiome PBMC"
+  ],
+  "datasets_without_paper_url": [
+    "PBMC 5K",
+    "PBMC 10K",
+    "Xenium human lung",
+    "Xenium human colon",
+    "MERSCOPE FFPE immuno-oncology",
+    "10x Multiome PBMC"
+  ],
+  "url_check": {
+    "unique_urls": 153,
+    "status_counts": {
+      "ok": 105,
+      "http_error": 5,
+      "network_error": 29,
+      "access_restricted": 14
+    },
+    "not_found_urls": [],
+    "note": "429/503通常为限流或临时服务错误；network_error表示本次检查无法判定，不等同于链接失效。"
+  }
+}
