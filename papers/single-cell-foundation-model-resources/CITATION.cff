@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "使用本资源目录时，请引用ACL综述；使用具体模型或数据时请同时引用其原始论文。"
+title: "单细胞基础语言模型资源目录（ACL 2025）"
+type: dataset
+authors:
+  - name: "spatial-omics-literature-data contributors"
+version: 1.0.0
+date-released: 2026-08-21
+repository-code: "https://github.com/zhangxudashuaige/spatial-omics-literature-data"
+preferred-citation:
+  type: conference-paper
+  title: "A Survey on Foundation Language Models for Single-cell Biology"
+  authors:
+    - family-names: Zhang
+      given-names: Fan
+    - family-names: Chen
+      given-names: Hao
+    - family-names: Zhu
+      given-names: Zhihong
+    - family-names: Zhang
+      given-names: Ziheng
+    - family-names: Lin
+      given-names: Zhenxi
+    - family-names: Qiao
+      given-names: Ziyue
+    - family-names: Zheng
+      given-names: Yefeng
+    - family-names: Wu
+      given-names: Xian
+  year: 2025
+  conference:
+    name: "ACL 2025"
+  doi: "10.18653/v1/2025.acl-long.26"
+  url: "https://aclanthology.org/2025.acl-long.26/"
