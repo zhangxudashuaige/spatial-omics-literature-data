@@ -1,0 +1,148 @@
+schema_version: 1
+manifest_updated: "2026-08-28"
+project: TABULA paper data resources
+paper:
+  title: "Tabula: A Tabular Self-Supervised Foundation Model for Single-Cell Transcriptomics"
+  authors: Jiayuan Ding; Jianhui Lin; Shiyu Jiang; Yixin Wang; Ziyang Miao; Zhaoyu Fang; Jiliang Tang; Min Li; Xiaojie Qiu
+  venue: NeurIPS 2025
+  doi: 10.52202/085713-3467
+  paper_url: https://papers.nips.cc/paper_files/paper/2025/hash/95d590995a8722259c61e094b62b25ac-Abstract-Conference.html
+pretraining:
+  source: CZ CELLxGENE Census
+  source_url: https://chanzuckerberg.github.io/cellxgene-census/index.html
+  paper_reported_cells: 15000000
+  paper_reported_studies: 196
+  paper_reported_tissues: 133
+  paper_reported_cell_types: 422
+  paper_reported_gene_vocabulary: 23156
+  paper_reported_hvg_per_study_approx: 1200
+  paper_reported_tissue_clients: 8
+  exact_census_version: null
+  exact_cell_id_manifest: null
+  license_or_use_restrictions: CELLxGENE Census aggregates source datasets with dataset-specific licenses; query outputs must retain source dataset provenance and be checked before redistribution.
+  reproducibility_status: unresolved
+  unresolved_reason: The paper's exact Census build, complete cell IDs, and per-study filtering manifest are not public.
+  sample_query:
+    local_path: data/tabula/sample/sample.h5ad
+    manifest_path: data/tabula/sample/sample_manifest.json
+    census_version: user_must_supply_explicit_date
+    default_is_primary_data: true
+    download_status: not_run_on_this_windows_host
+    reproducibility_status: API_query_reproducible_but_not_paper_exact_subset
+imputation:
+  - dataset_name: PBMC5K
+    purpose: gene imputation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: Jurkat
+    purpose: gene imputation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: Melanoma
+    purpose: gene imputation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: hPancreas
+    purpose: gene imputation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+perturbation:
+  - dataset_name: Adamson
+    purpose: perturbation prediction
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: Norman
+    purpose: perturbation prediction
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: Replogle
+    purpose: perturbation prediction
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+annotation:
+  - dataset_name: hPancreas
+    purpose: cell type annotation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: Myeloid
+    purpose: cell type annotation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+  - dataset_name: Cell Lines
+    purpose: cell type annotation
+    exact_source: null
+    exact_version: null
+    preprocessing: null
+    download_status: not_downloaded
+    reproducibility_status: unresolved
+code_and_resources:
+  - resource_id: tabula-code
+    resource_type: code
+    source_url: https://github.com/aristoteleo/tabula
+    commit: 65b5f7ebf36a534da42de94570c108539af05541
+    commit_date: "2026-08-09T17:13:55-07:00"
+    local_path: null
+    size_bytes: null
+    sha256: null
+    download_date: "2026-08-28"
+    license_or_use_restrictions: Non-Commercial License; personal, educational, and non-commercial use only.
+    reproducibility_status: resolved_version_pointer
+  - resource_id: tabula-reproducibility
+    resource_type: reproducibility_code_placeholder
+    source_url: https://github.com/aristoteleo/tabula-reproducibility
+    commit: 4be23be8b58f4482593af434c7eb5a5debeab495
+    local_path: null
+    size_bytes: null
+    sha256: null
+    download_date: "2026-08-28"
+    license_or_use_restrictions: Repository currently has no license file and contains only a preparation notice; do not copy code until terms and files are published.
+    reproducibility_status: unresolved
+  - resource_id: cellxgene-census
+    resource_type: data_api
+    source_url: https://chanzuckerberg.github.io/cellxgene-census/index.html
+    commit: null
+    local_path: null
+    size_bytes: null
+    sha256: null
+    download_date: null
+    license_or_use_restrictions: Source-dataset-specific terms; retain dataset_id provenance.
+    reproducibility_status: versioned_api_available
+  - resource_id: tabula-vocab-current-code-resource
+    resource_type: gene_token_vocabulary_not_expression_data
+    source_url: https://raw.githubusercontent.com/aristoteleo/tabula/65b5f7ebf36a534da42de94570c108539af05541/resource/vocab.json
+    commit: 65b5f7ebf36a534da42de94570c108539af05541
+    local_path: data/tabula/sample/vocab.json
+    size_bytes: 1378337
+    sha256: 7b21f7e6f89ac1679cb736f7744ced4c2bd84d8e62de377e2a27431a3d9bca82
+    entry_count: 60697
+    paper_reported_gene_vocabulary: 23156
+    download_date: "2026-08-28"
+    license_or_use_restrictions: Non-Commercial License inherited from the pinned TABULA repository; preserve attribution and do not use commercially.
+    reproducibility_status: resolved_file_but_relationship_to_paper_vocab_unresolved

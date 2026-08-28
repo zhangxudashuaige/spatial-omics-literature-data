@@ -1,0 +1,107 @@
+schema_version: 1
+manifest_updated: "2026-08-28"
+project: GraphSAGE paper data resources
+paper:
+  title: Inductive Representation Learning on Large Graphs
+  authors: William L. Hamilton; Rex Ying; Jure Leskovec
+  venue: NeurIPS 2017
+  paper_url: https://arxiv.org/abs/1706.02216
+project_homepage: https://snap.stanford.edu/graphsage/
+code:
+  repository: https://github.com/williamleif/GraphSAGE
+  commit: a0fdef95dca7b456dab01cb35034717c8b6dd017
+  commit_date: "2018-09-19T15:27:00-04:00"
+  license: MIT
+datasets:
+  - dataset_id: graphsage-ppi
+    name: Protein-Protein Interactions (GraphSAGE official preprocessed package)
+    source_url: https://snap.stanford.edu/graphsage/ppi.zip
+    upstream_source: https://thebiogrid.org/
+    file_name: ppi.zip
+    local_path: data/graphsage/raw/ppi.zip
+    size_bytes: 27029260
+    size_evidence: official SNAP host Content-Length observed 2026-08-28
+    sha256: 53aeb76e54fd41b645e7edb48b62929240b89839495396b048086fd212503fbd
+    download_date: "2026-08-28"
+    download_status: downloaded_and_verified
+    license_or_use_restrictions: GraphSAGE project page does not state a separate license for this preprocessed package; verify BioGRID and project terms before redistribution.
+    reproducibility_status: official_preprocessed_package_identified
+    git_tracking: ignored
+  - dataset_id: graphsage-reddit
+    name: Reddit (GraphSAGE official preprocessed package)
+    source_url: https://snap.stanford.edu/graphsage/reddit.zip
+    upstream_source: Reddit posts collected via Pushshift; exact upstream snapshot terms are not stated on the GraphSAGE page.
+    file_name: reddit.zip
+    local_path: data/graphsage/raw/reddit.zip
+    size_bytes: 1308432264
+    size_evidence: official SNAP host Content-Length observed 2026-08-28
+    sha256: null
+    download_date: null
+    download_status: partial_download_resume_available
+    partial_file_name: reddit.zip.part
+    partial_size_bytes_observed: 3239294
+    license_or_use_restrictions: GraphSAGE project page does not state a separate data license; do not redistribute without checking source-platform and dataset terms.
+    reproducibility_status: official_preprocessed_package_identified
+    git_tracking: ignored
+  - dataset_id: graphsage-citation-wos
+    name: Web of Science citation data
+    source_url: null
+    upstream_source: Web of Science
+    file_name: null
+    local_path: null
+    size_bytes: null
+    sha256: null
+    download_date: null
+    download_status: not_downloaded_license_required
+    license_or_use_restrictions: GraphSAGE project page states that the data can be made available only to groups or individuals with valid Web of Science licenses.
+    reproducibility_status: restricted
+    git_tracking: not_applicable
+  - dataset_id: graphsage-toy-ppi-example
+    name: Official GraphSAGE example_data toy PPI
+    source_url: https://github.com/williamleif/GraphSAGE/tree/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data
+    upstream_source: GraphSAGE code repository at fixed commit
+    file_name: multiple
+    local_path: data/graphsage/example/
+    size_bytes: 60558927
+    sha256: null
+    download_date: "2026-08-28"
+    download_status: copied_from_fixed_commit
+    license_or_use_restrictions: MIT License from the GraphSAGE code repository; preserve attribution and license notice.
+    reproducibility_status: resolved
+    git_tracking: tracked
+example_files:
+  - file_name: toy-ppi-G.json
+    local_path: data/graphsage/example/toy-ppi-G.json
+    size_bytes: 28516499
+    sha256: bcd3c3e21a0758ce5672301aac5ef985831269842cacbc9981b3d6a78eb35f1d
+    source_url: https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data/toy-ppi-G.json
+    download_date: "2026-08-28"
+    license_or_use_restrictions: MIT
+  - file_name: toy-ppi-id_map.json
+    local_path: data/graphsage/example/toy-ppi-id_map.json
+    size_bytes: 213860
+    sha256: 3ff15b49d6b48ebd445de10adfcb8b28da7851adb79e2396fc7cd96bdce22a77
+    source_url: https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data/toy-ppi-id_map.json
+    download_date: "2026-08-28"
+    license_or_use_restrictions: MIT
+  - file_name: toy-ppi-class_map.json
+    local_path: data/graphsage/example/toy-ppi-class_map.json
+    size_bytes: 5507260
+    sha256: 9a537e82bba53a98052a0b7b23c55cb94ceb5866281192bfc72f19d3e3dc101c
+    source_url: https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data/toy-ppi-class_map.json
+    download_date: "2026-08-28"
+    license_or_use_restrictions: MIT
+  - file_name: toy-ppi-feats.npy
+    local_path: data/graphsage/example/toy-ppi-feats.npy
+    size_bytes: 5902080
+    sha256: c78b404b3bc8b0d60ecfe77d7593658ce0f5d745fa9a14ef8463febf324e10c8
+    source_url: https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data/toy-ppi-feats.npy
+    download_date: "2026-08-28"
+    license_or_use_restrictions: MIT
+  - file_name: toy-ppi-walks.txt
+    local_path: data/graphsage/example/toy-ppi-walks.txt
+    size_bytes: 20419228
+    sha256: dc83b6feab11d092748eaeb01a0c38a3ed99f0f74241d263ca93904b8e6e222c
+    source_url: https://raw.githubusercontent.com/williamleif/GraphSAGE/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data/toy-ppi-walks.txt
+    download_date: "2026-08-28"
+    license_or_use_restrictions: MIT

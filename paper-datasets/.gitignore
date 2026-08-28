@@ -1,0 +1,35 @@
+# 本项目的大型或可重新下载数据
+data/**/raw/
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
+data/**/*.h5ad
+data/**/*.h5
+data/**/*.npy
+data/**/model_outputs/
+data/**/checkpoints/
+data/**/*.pt
+data/**/*.pth
+data/**/*.csv
+data/**/*.safetensors
+
+# 允许提交经过确认的小样例；GraphSAGE 官方示例中的 NPY 是特例
+!data/graphsage/example/
+!data/graphsage/example/**
+!data/tabula/sample/
+!data/tabula/sample/**
+!data/heist/sample/
+!data/heist/sample/**
+
+# 但 TABULA 查询得到的 H5AD 即使很小也默认不提交；先核实来源数据许可
+data/tabula/sample/*.h5ad
+data/heist/sample/*.pt
+data/heist/sample/*.h5ad
+data/heist/sample/*.csv
+
+# Python/Jupyter 临时文件
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.part
+*.tmp

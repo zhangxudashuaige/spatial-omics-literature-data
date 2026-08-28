@@ -1,0 +1,114 @@
+schema_version: 1
+manifest_updated: "2026-08-28"
+project: HEIST paper data resources
+paper:
+  title: "HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data"
+  venue: ICLR 2026
+  paper_url: https://openreview.net/forum?id=lK82jpa8jr
+  project_url: https://graph-and-geometric-learning.github.io/projects/heist
+notes:
+  - The complete 22.3M-cell pretraining corpus is not distributed as one unified download package.
+  - Exact source files, snapshots and licenses remain unresolved unless explicitly marked otherwise.
+  - Never substitute a similarly named third-party dataset for an unresolved official version.
+pretraining:
+  reported_total_cells: 22300000
+  reported_tissue_slices: 124
+  reported_organs: 15
+  primary_technologies: [MERFISH, Xenium]
+  reproducibility_status: unresolved
+  reason: Complete cell IDs, per-file versions and a unified official download manifest are not published.
+  sources:
+    - dataset_id: heist-pretrain-10x
+      provider: 10x Genomics
+      reported_cells: 13300000
+      technology: Xenium
+      source_url: https://www.10xgenomics.com/datasets
+      exact_download_url: null
+      exact_version: null
+      license_or_use_restrictions: verify_on_source
+      status: unresolved
+      local_path: data/heist/raw/pretraining/10x/
+      git_tracking: ignored
+    - dataset_id: heist-pretrain-vizgen
+      provider: Vizgen
+      reported_cells: 8700000
+      technology: MERFISH
+      source_url: https://vizgen.com/
+      exact_download_url: null
+      exact_version: null
+      license_or_use_restrictions: verify_on_source
+      status: unresolved
+      local_path: data/heist/raw/pretraining/vizgen/
+      git_tracking: ignored
+    - dataset_id: heist-pretrain-sea-ad
+      provider: SEA-AD / Allen Institute
+      reported_cells: 360000
+      technology: MERFISH
+      source_url: https://portal.brain-map.org/explore/seattle-alzheimers-disease
+      exact_download_url: null
+      exact_version: null
+      license_or_use_restrictions: verify_on_source
+      status: unresolved
+      local_path: data/heist/raw/pretraining/sea-ad/
+      git_tracking: ignored
+cell_annotation:
+  - {dataset_id: sea-ad, tissue: brain, reported_cells: 360000, reported_slices: null, technology: MERFISH, status: unresolved}
+  - {dataset_id: lung-cancer, tissue: lung-cancer, reported_cells: 100000, reported_slices: 1, technology: MERFISH, status: unresolved}
+  - {dataset_id: dfci, tissue: cancer-tissue, reported_cells: 125512, reported_slices: 58, technology: CODEX, status: unresolved}
+  - {dataset_id: upmc, tissue: cancer-tissue, reported_cells: 2164932, reported_slices: 308, technology: CODEX, status: unresolved}
+  - {dataset_id: charville, tissue: cancer-tissue, reported_cells: 632180, reported_slices: 292, technology: CODEX, status: unresolved}
+cell_clustering:
+  - {dataset_id: sea-ad, expected_file: "data/sea_graphs_<model_suffix>.pt", status: unresolved}
+  - {dataset_id: lung-cancer, expected_file: "data/merfish_lung_<model_suffix>.pt", status: unresolved}
+  - {dataset_id: dfci, expected_file: "data/dfci_graphs_<model_suffix>.pt", status: unresolved}
+  - {dataset_id: upmc, expected_file: "data/upmc_graphs_<model_suffix>.pt", status: unresolved}
+  - {dataset_id: charville, expected_file: "data/charville_graphs_<model_suffix>.pt", status: unresolved}
+tissue_classification:
+  - {dataset_id: dfci, reported_cells: 125512, reported_slices: 58, technology: CODEX, label_fields_seen_in_code: [pTR_label, primary_outcome, recurrence], status: unresolved}
+  - {dataset_id: upmc, reported_cells: 2164932, reported_slices: 308, technology: CODEX, label_fields_seen_in_code: [pTR_label, primary_outcome, recurrence], status: unresolved}
+  - {dataset_id: charville, reported_cells: 632180, reported_slices: 292, technology: CODEX, label_fields_seen_in_code: [pTR_label, primary_outcome, recurrence], status: unresolved}
+gene_or_protein_imputation:
+  - dataset_id: melanoma
+    reported_cells: 540000
+    reported_slices: 54
+    technology: MIBI
+    task: [immunotherapy_response, protein_imputation]
+    code_expected_file: data/melanoma_preprocessed/R10C2.pt
+    status: unresolved
+  - dataset_id: placenta
+    reported_cells: 1000000
+    reported_slices: 212
+    technology: Xenium
+    task: [condition_classification, gene_imputation]
+    code_expected_file: SCGFM/data/placenta/02021424.pt
+    status: unresolved
+model_and_code:
+  code:
+    repository: https://github.com/Graph-and-Geometric-Learning/HEIST
+    commit: b83615df17126581294b0ba3c8a3b30f7860c6ff
+    commit_date_observed: "2026-08-04"
+    license: CC-BY-4.0 reported by repository README
+    local_path: data/heist/raw/code/HEIST/
+    git_tracking: ignored
+    status: resolved_repository_revision
+    inspected_files:
+      - preprocessing.md
+      - utils/preprocess.py
+      - calculate_rep.py
+      - eval_cell_classification.py
+      - eval_cell_clustering.py
+      - eval_gene_imputation.py
+  model:
+    repository: https://huggingface.co/HirenMadhu/HEIST
+    revision: e68434fc0b27a3d8dc94e258c26471acb8ffbfb9
+    revision_status: resolved_by_official_huggingface_api_2026-08-28
+    model_card_license: MIT
+    reported_parameters: 10400000
+    tensor_type: F32
+    local_path: data/heist/raw/model/
+    git_tracking: ignored
+  official_links:
+    - https://github.com/Graph-and-Geometric-Learning/HEIST
+    - https://graph-and-geometric-learning.github.io/projects/heist
+    - https://huggingface.co/HirenMadhu/HEIST
+    - https://openreview.net/forum?id=lK82jpa8jr
