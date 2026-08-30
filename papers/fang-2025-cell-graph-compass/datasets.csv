@@ -1,0 +1,2 @@
+dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+cgcompass-scdata,"Cell-GraphCompass scData 处理包","Fang et al. 2025",human,multi-tissue,"scRNA-seq;graph tensors",Zenodo:14650474,https://zenodo.org/records/14650474,unresolved,partially_downloaded,0718023070988d51519ab4f3e740ebfd,"model:cell-graph-compass;source:zenodo;status:partially-downloaded","约2.64GB；不等于完整ScCompass-h50M原始语料。"

@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-08-30",
+  "files": [
+    {
+      "file": "E7-9h_cellbin_tdr_v2.h5ad",
+      "expected_size_bytes": 513301759,
+      "local_partial_size_bytes": 253214720,
+      "verification_status": "incomplete_resumable_partial_not_verified"
+    },
+    {
+      "file": "E9-10h_cellbin_tdr_v2.h5ad",
+      "expected_size_bytes": null,
+      "local_partial_size_bytes": 0,
+      "verification_status": "official_source_confirmed_download_not_started"
+    }
+  ],
+  "resume_command": "python scripts/download_drosophila.py --download",
+  "note": "Partial files are under raw/ and ignored by Git. H5AD inspection is intentionally deferred until exact-size completion."
+}

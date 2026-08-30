@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-08-30",
+  "file": "scData.zip",
+  "expected_size_bytes": 2642248462,
+  "local_partial_size_bytes": 224934924,
+  "verification_status": "incomplete_resumable_partial_not_verified",
+  "resume_command": "python scripts/download_zenodo.py --download",
+  "note": "The .part file is under raw/ and is ignored by Git. MD5 verification runs only after all expected bytes arrive."
+}

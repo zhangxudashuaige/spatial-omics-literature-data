@@ -1,0 +1,43 @@
+{
+  "source_repository": "https://github.com/QiangweiPeng/stVCR",
+  "commit": "26aa79a63eba7a5e21726b1eb95bf6bb61cfe699",
+  "verified_on": "2026-08-29",
+  "tutorial_seed": 19491001,
+  "datasets": {
+    "sim_data_rectangle": {
+      "h5ad_shape": [9858, 3],
+      "obs_columns": ["time", "theta"],
+      "obsm": {"X_input": [9858, 3], "spatial": [9858, 2], "spatial_gt": [9858, 2]},
+      "observed_times": [0, 0.5, 1, 1.5, 2, 2.5],
+      "truth_sequence_length": 60,
+      "sha256": "85d69569e1675fe7fb5b83d4e6c05618c8ff8087299e799fd342ad2818b14726"
+    },
+    "sim_data_heart2duck": {
+      "h5ad_shape": [3799, 3],
+      "obs_columns": ["time", "theta", "growth_rate", "cell_type"],
+      "obsm": {"X_input": [3799, 3], "spatial": [3799, 2], "spatial_gt": [3799, 2], "spatial_velocity": [3799, 2]},
+      "observed_times": [0, 0.25, 0.5, 0.75, 1],
+      "cell_type_counts": {"type_1": 2873, "type_2": 646, "type_3": 280},
+      "truth_sequence_length": 101,
+      "sha256": "da88f717bf9349cb9ccdfc197c8cd862d96518f5fdf609106fe255fa18f8ef39"
+    },
+    "sim_data_bio_prior": {
+      "h5ad_shape": [4349, 3],
+      "obs_columns": ["time", "theta", "type"],
+      "obsm": {"X_input": [4349, 3], "spatial": [4349, 2], "spatial_gt": [4349, 2]},
+      "observed_times": [0, 1],
+      "cell_type_counts": {"type1": 349, "type2": 4000},
+      "truth_sequence_length": 21,
+      "sha256": "4a520fceb315931d5a509d707ad50fe1dc8ae2150fd7af32e1e96d40c9166eb4"
+    },
+    "sim_data_bio_prior_5pts": {
+      "h5ad_shape": [10819, 3],
+      "obs_columns": ["time", "theta", "type"],
+      "obsm": {"X_input": [10819, 3], "spatial": [10819, 2], "spatial_gt": [10819, 2]},
+      "observed_times": [0, 0.25, 0.5, 0.75, 1],
+      "cell_type_counts": {"type1": 819, "type2": 10000},
+      "truth_sequence_length": 41,
+      "sha256": "ccf99bc6faf9d3cb2461e0bf411832f1c5f9f7941a279266029fcde0e2f35b6d"
+    }
+  }
+}

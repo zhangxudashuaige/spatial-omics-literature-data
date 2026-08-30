@@ -1,0 +1,2 @@
+dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+sctrans-seven-benchmarks,"SCTrans七个公开scRNA-seq数据","Lin et al. 2024",human,"blood;pancreas;liver;lung",scRNA-seq,"SRP073767;GSE84133;GSE81608;E-MTAB-5061;GSE85241;GSE115469",https://www.ijcai.org/proceedings/2024/0658.pdf,source-specific,partially_downloaded,,"model:sctrans;task:cell-type-annotation;status:partially-downloaded","六个明确accession已核对；Lung精确版本待验证。"

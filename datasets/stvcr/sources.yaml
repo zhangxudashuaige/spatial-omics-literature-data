@@ -1,0 +1,20 @@
+module: stvcr
+verified_on: '2026-08-29'
+paper:
+  title: 'stVCR: spatiotemporal dynamics of single cells'
+  doi: 'https://doi.org/10.1038/s41592-026-03010-3'
+  code_ocean: 'https://doi.org/10.24433/CO.9796381.v1'
+code:
+  url: 'https://github.com/QiangweiPeng/stVCR'
+  commit: '26aa79a63eba7a5e21726b1eb95bf6bb61cfe699'
+  downloaded_on: '2026-08-29'
+  license: GPL-3.0-or-commercial
+  notes: repository LICENSE offers GPL-3.0 for open-source use or a commercial license
+axolotl:
+  raw_project: 'https://db.cngb.org/search/project/CNP0002068/'
+  processed_portal: 'https://db.cngb.org/stomics/artista/'
+drosophila:
+  provenance: 'Spateo processed 3D embryo data, as linked by the official stVCR tutorial'
+  e7_9h: 'https://www.dropbox.com/s/bvstb3en5kc6wui/E7-9h_cellbin_tdr_v2.h5ad?dl=1'
+  e9_10h: 'https://www.dropbox.com/s/q02sx6acvcqaf35/E9-10h_cellbin_tdr_v2.h5ad?dl=1'
+

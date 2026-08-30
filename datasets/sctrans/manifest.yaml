@@ -1,0 +1,172 @@
+schema_version: 1
+module: sctrans
+verified_on: '2026-08-29'
+datasets:
+  - name: Zheng68K
+    accession: SRP073767
+    tissue: peripheral blood
+    species: Homo sapiens
+    sequencing_protocol: 10X Chromium/GemCode
+    source_url: 'https://www.10xgenomics.com/cn/datasets/fresh-68-k-pbm-cs-donor-a-1-standard-1-1-0'
+    original_cell_count: 68450_reported_by_10x_paper_context
+    paper_cell_count: 68450
+    paper_population_count: 11
+    expression_unit: UMI counts; transformed SCTrans input unresolved
+    raw_file_format: SRA FASTQ
+    processed_file_format: 10X matrix/barcodes/genes
+    gene_identifier_type: unresolved_for_exact_SCTrans_input
+    cell_label_column: derived by original 10X PBMC analysis; exact SCTrans file unresolved
+    donor_column: one_donor_reported
+    batch_column: unresolved
+    preprocessing_status: incomplete_in_SCTrans_paper
+    checksum: 'sha256:3f35f37ff344bc9b32f97cd003ac986ebb9b5d7f31006c53dff4cb38da267931; md5:0c8c546cbadc8ea8eb45be6cfe040852'
+    expected_size: 'filtered matrix 124442812 bytes; raw matrix 165315959 bytes (official CDN HEAD verified 2026-08-29)'
+    license: verify_10x_and_SRA_terms
+    local_path: raw/zheng68k
+    download_date: '2026-08-30'
+    verification_status: official_filtered_matrix_downloaded_and_archive_verified; exact_SCTrans_labels_and_input_unresolved
+    notes: 'official matrix actual shape is 32738 genes x 68579 barcodes with 37323295 nonzero entries; used for classification, imbalance, gene selection, marker validation, reconstruction and ablation; paper uses 68450 labeled cells'
+  - name: Baron_human_pancreas
+    accession: GSE84133
+    tissue: pancreas
+    species: Homo sapiens
+    sequencing_protocol: inDrop
+    source_url: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133'
+    original_cell_count: verify_downloaded_human_samples
+    paper_cell_count: 8569
+    paper_population_count: 14
+    expression_unit: unresolved_for_exact_SCTrans_input
+    raw_file_format: SRA FASTQ
+    processed_file_format: GEO supplementary/Bioconductor SingleCellExperiment
+    gene_identifier_type: inspect_runtime
+    cell_label_column: inspect_runtime
+    donor_column: inspect_runtime
+    batch_column: inspect_runtime
+    preprocessing_status: Bioconductor route available; exact author preprocessing unresolved
+    checksum: pending_download
+    expected_size: query_source
+    license: verify_GEO_and_original_study_terms
+    local_path: raw/pancreas/baron
+    download_date: null
+    verification_status: accession_and_original_paper_verified
+    notes: cross-platform pancreas experiment uses alpha/beta/delta/gamma only
+  - name: Xin_pancreas
+    accession: GSE81608
+    tissue: pancreas
+    species: Homo sapiens
+    sequencing_protocol: SMARTer
+    source_url: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81608'
+    original_cell_count: inspect_source
+    paper_cell_count: 1449
+    paper_population_count: 4
+    expression_unit: unresolved_for_exact_SCTrans_input
+    raw_file_format: SRA FASTQ
+    processed_file_format: GEO supplementary/Bioconductor SingleCellExperiment
+    gene_identifier_type: inspect_runtime
+    cell_label_column: inspect_runtime
+    donor_column: inspect_runtime
+    batch_column: inspect_runtime
+    preprocessing_status: exact subset rule unresolved
+    checksum: pending_download
+    expected_size: query_source
+    license: verify_GEO_and_original_study_terms
+    local_path: raw/pancreas/xin
+    download_date: null
+    verification_status: accession_and_original_paper_verified; paper_count_requires_subset_reproduction
+    notes: paper reports four populations
+  - name: Segerstolpe_pancreas
+    accession: E-MTAB-5061
+    tissue: pancreas
+    species: Homo sapiens
+    sequencing_protocol: SMART-Seq2
+    source_url: 'https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-5061'
+    original_cell_count: inspect_source
+    paper_cell_count: 2133
+    paper_population_count: 13
+    expression_unit: unresolved_for_exact_SCTrans_input
+    raw_file_format: FASTQ/ArrayExpress
+    processed_file_format: BioStudies/Bioconductor SingleCellExperiment
+    gene_identifier_type: inspect_runtime
+    cell_label_column: inspect_runtime
+    donor_column: inspect_runtime
+    batch_column: inspect_runtime
+    preprocessing_status: exact SCTrans preprocessing unresolved
+    checksum: pending_download
+    expected_size: query_source
+    license: verify_BioStudies_and_original_study_terms
+    local_path: raw/pancreas/segerstolpe
+    download_date: null
+    verification_status: accession_and_original_paper_verified
+    notes: cross-platform pancreas experiment
+  - name: Muraro_pancreas
+    accession: GSE85241
+    tissue: pancreas
+    species: Homo sapiens
+    sequencing_protocol: CEL-Seq2
+    source_url: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE85241'
+    original_cell_count: inspect_source
+    paper_cell_count: 2122
+    paper_population_count: 9
+    expression_unit: unresolved_for_exact_SCTrans_input
+    raw_file_format: SRA FASTQ
+    processed_file_format: GEO supplementary/Bioconductor SingleCellExperiment
+    gene_identifier_type: inspect_runtime
+    cell_label_column: inspect_runtime
+    donor_column: inspect_runtime
+    batch_column: inspect_runtime
+    preprocessing_status: exact SCTrans preprocessing unresolved
+    checksum: pending_download
+    expected_size: query_source
+    license: verify_GEO_and_original_study_terms
+    local_path: raw/pancreas/muraro
+    download_date: null
+    verification_status: accession_and_original_paper_verified
+    notes: cross-platform pancreas experiment
+  - name: MacParland_liver
+    accession: GSE115469
+    tissue: liver
+    species: Homo sapiens
+    sequencing_protocol: 10X Chromium
+    source_url: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115469'
+    original_cell_count: source_contains_five_patients; inspect_files
+    paper_cell_count: 8444
+    paper_population_count: 13
+    expression_unit: CSV expression matrix; exact transform unresolved
+    raw_file_format: SRA FASTQ
+    processed_file_format: csv.gz and txt.gz
+    gene_identifier_type: inspect_runtime
+    cell_label_column: GSE115469_CellClusterType.txt.gz mapping
+    donor_column: inspect_runtime
+    batch_column: patient
+    preprocessing_status: exact SCTrans subset/normalization unresolved
+    checksum: pending_download
+    expected_size: 'GEO reports Data.csv.gz 103.1 MB; CellClusterType.txt.gz 76.6 KB'
+    license: verify_GEO_and_original_study_terms
+    local_path: raw/macparland
+    download_date: null
+    verification_status: accession_and_files_verified; SCTrans_subset_pending
+    notes: used for reconstruction and ablation
+  - name: Lung
+    accession: 'candidate figshare 11981034.v2'
+    tissue: lung
+    species: Homo sapiens
+    sequencing_protocol: 10X Genomics Chromium v2
+    source_url: 'https://doi.org/10.6084/m9.figshare.11981034.v2'
+    original_cell_count: '39778 lung nuclei plus a separate 17451 bronchiole epithelial-cell component'
+    paper_cell_count: 39778
+    paper_population_count: 9
+    expression_unit: count matrices reported by Figshare
+    raw_file_format: source-specific matrix/metadata
+    processed_file_format: source-specific matrix/metadata
+    gene_identifier_type: inspect_runtime
+    cell_label_column: metadata contains cell type; exact 9-class mapping unresolved
+    donor_column: patient_ID_reported
+    batch_column: patient/sample
+    preprocessing_status: Figshare reports Seurat3; exact SCTrans filtering unresolved
+    checksum: pending_if_confirmed
+    expected_size: query_Figshare_API
+    license: verify_Figshare_item_license
+    local_path: raw/lung
+    download_date: null
+    verification_status: needs_verification
+    notes: count and platform match, but do not claim exact SCTrans dataset until label mapping/source citation is confirmed

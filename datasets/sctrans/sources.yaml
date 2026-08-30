@@ -1,0 +1,48 @@
+module: sctrans
+verified_on: '2026-08-29'
+paper:
+  title: 'SCTrans: Multi-scale scRNA-seq Sub-vector Completion Transformer for Gene-selective Cell Type Annotation'
+  url: 'https://www.ijcai.org/proceedings/2024/0658.pdf'
+datasets:
+  zheng68k:
+    accession: SRP073767
+    source: 'https://www.10xgenomics.com/cn/datasets/fresh-68-k-pbm-cs-donor-a-1-standard-1-1-0'
+    analysis_code: 'https://github.com/10XGenomics/single-cell-3prime-paper'
+    original_paper: 'https://doi.org/10.1038/ncomms14049'
+    verified_processed_files:
+      - url: 'https://cf.10xgenomics.com/samples/cell-exp/1.1.0/fresh_68k_pbmc_donor_a/fresh_68k_pbmc_donor_a_filtered_gene_bc_matrices.tar.gz'
+        size_bytes: 124442812
+      - url: 'https://cf.10xgenomics.com/samples/cell-exp/1.1.0/fresh_68k_pbmc_donor_a/fresh_68k_pbmc_donor_a_raw_gene_bc_matrices.tar.gz'
+        size_bytes: 165315959
+  baron:
+    accession: GSE84133
+    source: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133'
+    original_paper: 'https://doi.org/10.1016/j.cels.2016.08.011'
+  xin:
+    accession: GSE81608
+    source: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81608'
+    original_paper: 'https://doi.org/10.1016/j.cmet.2016.08.018'
+  segerstolpe:
+    accession: E-MTAB-5061
+    source: 'https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-5061'
+    original_paper: 'https://doi.org/10.1016/j.cmet.2016.08.020'
+  muraro:
+    accession: GSE85241
+    source: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE85241'
+    original_paper: 'https://doi.org/10.1016/j.cels.2016.09.002'
+  macparland:
+    accession: GSE115469
+    source: 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115469'
+    original_paper: 'https://doi.org/10.1038/s41467-018-06318-7'
+    verified_supplementary_files:
+      - GSE115469_Data.csv.gz
+      - GSE115469_CellClusterType.txt.gz
+  lung_candidate:
+    accession: 'figshare:11981034.v2'
+    source: 'https://doi.org/10.6084/m9.figshare.11981034.v2'
+    status: needs_verification
+    note: cell count and 10X platform match, but the exact SCTrans 9-class mapping and preprocessing are not explicitly identified
+bioconductor:
+  package: scRNAseq
+  source: 'https://bioconductor.org/packages/scRNAseq/'
+  note: runtime script records Bioconductor/scRNAseq versions and date; do not assume current release equals authors version
