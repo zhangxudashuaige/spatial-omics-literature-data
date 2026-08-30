@@ -11,6 +11,7 @@ __pycache__/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 .venv/
+.venv-scmamba/
 .xie_manifest_work/
 papers/**/metadata/*.local.json
 papers/**/*.h5ad
@@ -53,3 +54,17 @@ datasets/**/inspection.local.*
 .DS_Store
 Thumbs.db
 tmp/
+
+# scMamba：完整多组学对象、下载与检查点仅保存在本地
+scmamba-data/datasets/**/raw/
+scmamba-data/datasets/**/downloads/
+scmamba-data/datasets/**/download_status.local.json
+scmamba-data/datasets/**/inspection.local.json
+scmamba-data/datasets/**/pairing.local.json
+scmamba-data/checkpoints/*.pt
+scmamba-data/checkpoints/*.pth
+scmamba-data/checkpoints/*.ckpt
+scmamba-data/results/
+scmamba-data/**/*.h5mu
+scmamba-data/**/*.h5ad
+!scmamba-data/examples/README.md

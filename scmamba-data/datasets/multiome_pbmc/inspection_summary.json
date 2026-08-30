@@ -1,0 +1,42 @@
+{
+  "file_name": "PBMC.h5mu",
+  "download_date": "2026-08-30",
+  "size_bytes": 775504179,
+  "sha256": "d7989b7d733b3267a533f5a6ba946ff96845b9b6b198a1bb114c562520b9b42e",
+  "modalities": {
+    "rna": {
+      "shape": [9631, 36601],
+      "matrix_type": "backed CSR",
+      "dtype": "float32",
+      "obs_columns": ["cell_type"],
+      "var_columns": ["gene_ids", "feature_types", "genome", "interval"],
+      "layers": [],
+      "obsm": [],
+      "uns": []
+    },
+    "atac": {
+      "shape": [9631, 108377],
+      "matrix_type": "backed CSR",
+      "dtype": "float32",
+      "obs_columns": ["cell_type"],
+      "var_columns": ["gene_ids", "feature_types", "genome", "interval"],
+      "layers": [],
+      "obsm": [],
+      "uns": []
+    }
+  },
+  "pairing": {
+    "same_count": true,
+    "same_order": true,
+    "intersection": 9631,
+    "rna_only": 0,
+    "atac_only": 0,
+    "duplicate_rna_ids": 0,
+    "duplicate_atac_ids": 0
+  },
+  "paper_reported_postprocessing_dimensions": {
+    "rna_genes": 29095,
+    "atac_regions": 107194
+  },
+  "note": "统计摘要可进入Git；完整H5MU与本地抽样H5MU均被忽略。"
+}

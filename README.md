@@ -24,8 +24,11 @@
 | `fang-2025-cell-graph-compass` | Cell-GraphCompass | 单细胞图基础模型 | Zenodo 处理后数据包、构图先验与评测数据分层登记；50M 预训练语料不冒充公开包 |
 | `peng-2026-stvcr` | stVCR | 时空单细胞动力学 | 固定官方代码版本，已实检四套模拟数据，登记蝾螈与果蝇真实数据 |
 | `lin-2024-sctrans` | SCTrans | 基因选择式细胞类型注释 | 7 个公开 scRNA-seq 数据集的原论文、来源、下载与跨平台处理记录 |
+| `yuan-2025-scmamba` | scMamba | 单细胞多组学基础模型 | 8 套 RNA+ATAC/RNA+ADT/RNA 数据已登记；作者 Dropbox 当前仅有 PBMC.h5mu，检查点为空 |
 
 SpatialVista 数据入口见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)，单细胞基础模型综述资源入口见 [`papers/single-cell-foundation-model-resources/README.md`](papers/single-cell-foundation-model-resources/README.md)，GraphSAGE/TABULA/HEIST 数据入口见 [`paper-datasets/README.md`](paper-datasets/README.md)。Cell-GraphCompass、stVCR 与 SCTrans 同时保存了 [`papers/`](papers/) 中的论文条目和 [`datasets/`](datasets/) 中的可复现数据模块。
+
+scMamba 的独立数据入口见 [`scmamba-data/README.md`](scmamba-data/README.md)，同时在 [`papers/yuan-2025-scmamba/`](papers/yuan-2025-scmamba/) 保存论文记录。
 
 ## 目录结构
 

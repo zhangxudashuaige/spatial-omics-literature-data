@@ -1,0 +1,2 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+scmamba-eight-benchmarks,"scMamba八套单细胞多组学数据",human,"blood;brain;fetal tissues;bone marrow","RNA+ATAC;RNA+ADT;RNA",GSE207308;GSE214637;GSE194122,https://arxiv.org/abs/2506.20697,source-specific,partially_linked,,"topic:single-cell;topic:multi-omics;model:scmamba;status:partially-linked","作者Dropbox当前仅有PBMC.h5mu；其余精确处理文件状态unresolved。"

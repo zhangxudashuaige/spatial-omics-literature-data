@@ -1,0 +1,18 @@
+{
+  "official_repository": "https://github.com/23AIBox/scMamba",
+  "commit": "4887c0a8ab060b2482384d2294fe265b633d2406",
+  "source_config": "https://raw.githubusercontent.com/23AIBox/scMamba/4887c0a8ab060b2482384d2294fe265b633d2406/config_files/scmamba2_config.json",
+  "rna_atac": {
+    "decoder1": {"role": "RNA", "patch_size": 256, "d_model": 512, "d_embedding": 64, "layers": 10},
+    "decoder2": {"role": "ATAC", "patch_size": 256, "d_model": 512, "d_embedding": 64, "layers": 12}
+  },
+  "rna_adt": {
+    "decoder1": {"role": "RNA", "patch_size": 256, "d_model": 512, "d_embedding": 64, "layers": 8},
+    "decoder2": {"role": "ADT", "patch_size": 128, "d_model": 512, "d_embedding": 64, "layers": 4}
+  },
+  "checkpoint_inventory": {
+    "checked_at": "2026-08-30",
+    "status": "empty_folder",
+    "files": []
+  }
+}
