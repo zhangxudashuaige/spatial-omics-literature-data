@@ -1,0 +1,11 @@
+folder,file_name,google_drive_file_id,reported_size,category,download_status
+151673,adj.csv,1bOKLASneVF3Z6g6-cyl9cYsqswL3bJgx,315.7 MB,derived_adjacency,not_downloaded
+151673,expression_matrix.h5,1HIYxU7JnpXXygN1GtekMb-3YPnzDkl3N,13.9 MB,expression,downloaded_verified
+151673,histology.tif,1Mx5SBdnI350Q4N7aLSYvfnROtfQRxQfz,508.7 MB,histology,not_downloaded
+151673,positions.txt,1Qok4238zfmRiDOZiK2WhspLX1X7q3DUP,182 KB,coordinates,downloaded_verified
+151673,results.h5ad,1oEmD4zYSmyJPg1OD327ghCKHY0DAh-Cn,63.8 MB,model_output,not_downloaded
+151673,sample_data.h5ad,1_oUkwa85hXG9l25zaUJsmCLjbKLKaCXZ,66.1 MB,processed_input,not_downloaded
+Mouse_brain,MA1_histology.tif,1_HoUEYb0_xucTSww6PXde2-p0cBgCvIT,386 MB,histology,not_downloaded
+Mouse_brain,MA1.h5ad,1WtS3vKVFqNzUfvgQqx2xyfkWWFFefTFe,119.8 MB,processed_input,not_downloaded
+Mouse_brain,MP1_histology.tif,1nayHOQo14DwDlGVfyDGq1WxPN3XZVcQ5,386 MB,histology,not_downloaded
+Mouse_brain,MP1.h5ad,1090gVEYmkhhQMHIkckgokYR9vzVjg6ge,119.2 MB,processed_input,not_downloaded

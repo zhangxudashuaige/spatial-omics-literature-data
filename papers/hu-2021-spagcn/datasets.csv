@@ -1,0 +1,2 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+spagcn-seven-datasets,"SpaGCN七套空间转录组评测数据",mixed,"pancreas;brain;cortex;olfactory bulb;hypothalamus","ST;Visium;Slide-seqV2;STARmap;MERFISH","GSE111672;SCP815;Dryad:8t8s248",https://doi.org/10.1038/s41592-021-01255-8,source-specific,partially_downloaded,,"topic:spatial-transcriptomics;method:gcn;model:spagcn;status:partially-downloaded","官方151673示例表达和坐标已本地实检；其他大数据保存入口和清单。"

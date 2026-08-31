@@ -1,0 +1,3 @@
+dataset_id,name,role,source,status,notes
+stofm-corpus-88m,SToCorpus-88M,pretraining,https://huggingface.co/datasets/Toycat/SToCorpus-88M,inventory_complete,"1869 files; 979490255888 bytes; full corpus not downloaded"
+stofm-downstream-six,SToFM six downstream resources,evaluation,../../SToFM-data/manifests/downstream_datasets.csv,linked,"source-specific licenses and exact subsets apply"
