@@ -2,6 +2,8 @@
 
 这是一个长期维护的个人研究资料库，用来记录值得保留的论文、公开数据集、下载方式、校验值和分析笔记。
 
+不知道数据在哪里时，先看 **[`DATA_INDEX.md`](DATA_INDEX.md)**。它集中列出每篇论文的数据入口、当前是否真的下载、缺少什么以及对应下载命令。
+
 ## 使用原则
 
 - Git 里保存：元数据、笔记、数据来源、下载脚本、校验值和小型结果。
@@ -21,6 +23,9 @@
 | `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 完整项目；384 个 HRA 文件、作者代码和 5 个补充表已核查 |
 | `zhang-2025-single-cell-foundation-model-survey` | 单细胞基础模型综述 | 单细胞基础模型、预训练语料、下游基准 | 完整资源目录；38 个下游数据集及 31 篇可唯一定位的原始论文均已独立登记 |
 | `paper-datasets` | GraphSAGE、TABULA 与 HEIST 数据资料 | 图机器学习、单细胞与空间组学基础模型 | 官方来源、固定版本、下载/检查脚本与合规小样例；未公开的精确训练清单均标记 unresolved |
+| `hamilton-2017-graphsage` | GraphSAGE | 图表示学习 | PPI与toy已校验；Reddit部分下载；Citation受限 |
+| `ding-2025-tabula` | TABULA | 单细胞基础模型 | 精确15M预训练细胞清单尚未公开 |
+| `madhu-2026-heist` | HEIST | 空间转录组与蛋白组图基础模型 | 22.3M预训练数据无统一公开包，精确版本持续核对 |
 | `fang-2025-cell-graph-compass` | Cell-GraphCompass | 单细胞图基础模型 | Zenodo 处理后数据包、构图先验与评测数据分层登记；50M 预训练语料不冒充公开包 |
 | `peng-2026-stvcr` | stVCR | 时空单细胞动力学 | 固定官方代码版本，已实检四套模拟数据，登记蝾螈与果蝇真实数据 |
 | `lin-2024-sctrans` | SCTrans | 基因选择式细胞类型注释 | 7 个公开 scRNA-seq 数据集的原论文、来源、下载与跨平台处理记录 |
