@@ -1,4 +1,4 @@
 dataset_id,role,source,status,notes
-heist-pretraining,pretraining,../../paper-datasets/manifests/heist.yaml,unresolved,"22.3M cells; 124 slices; 15 organs; no unified package"
-heist-downstream,downstream,../../paper-datasets/manifests/heist.yaml,registered_unresolved,"七组下游资源按代码期望结构登记"
+heist-pretraining,pretraining,../../datasets/paper_datasets/manifests/heist.yaml,unresolved,"22.3M cells; 124 slices; 15 organs; no unified package"
+heist-downstream,downstream,../../datasets/paper_datasets/manifests/heist.yaml,registered_unresolved,"七组下游资源按代码期望结构登记"
 

@@ -59,7 +59,7 @@ Google Drive 根目录实际包含 `151673/` 与 `Mouse_brain/`：
 ## Windows PowerShell 使用
 
 ```powershell
-cd spagcn-data
+cd datasets/spagcn
 conda env create -f environment.yml
 conda activate spagcn-data
 

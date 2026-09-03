@@ -4,10 +4,12 @@
 
 不知道数据在哪里时，先看 **[`DATA_INDEX.md`](DATA_INDEX.md)**。它集中列出每篇论文的数据入口、当前是否真的下载、缺少什么以及对应下载命令。
 
+在其他工作区继续维护前，必须先阅读 **[`docs/DATA_REPOSITORY_STANDARD.md`](docs/DATA_REPOSITORY_STANDARD.md)**。该文档规定目录、manifest、下载状态、来源、许可证、校验值、样例和大文件处理方式。
+
 ## 使用原则
 
 - Git 里保存：元数据、笔记、数据来源、下载脚本、校验值和小型结果。
-- 大型数据不直接提交：原始数据放在本机 `data/`，该目录已被忽略。
+- 大型数据不直接提交：模型项目原始数据统一放在本机 `datasets/<模块>/raw/`；传统论文项目可保留在 `papers/<paper-id>/data/`。这些目录由 `.gitignore` 排除。
 - 出版商 PDF 默认不公开上传：只记录 DOI 和本机文件校验值；确认许可后再放入 `papers/<id>/attachments/`。
 - 每个数据集记录来源、版本、许可证、获取日期和处理过程，以便复现。
 
@@ -22,7 +24,7 @@
 | `xie-2025-digital-mouse-embryo` | E7.5–E8.0 小鼠数字胚胎 | 小鼠胚胎、三维重建 | 已建档；对应 6 个展示数据 |
 | `xiao-2024-human-gastrulation` | 人原肠胚三维重建 | 人胚胎、Stereo-seq | 完整项目；384 个 HRA 文件、作者代码和 5 个补充表已核查 |
 | `zhang-2025-single-cell-foundation-model-survey` | 单细胞基础模型综述 | 单细胞基础模型、预训练语料、下游基准 | 完整资源目录；38 个下游数据集及 31 篇可唯一定位的原始论文均已独立登记 |
-| `paper-datasets` | GraphSAGE、TABULA 与 HEIST 数据资料 | 图机器学习、单细胞与空间组学基础模型 | 官方来源、固定版本、下载/检查脚本与合规小样例；未公开的精确训练清单均标记 unresolved |
+| `datasets/paper_datasets` | GraphSAGE、TABULA 与 HEIST 数据资料 | 图机器学习、单细胞与空间组学基础模型 | 官方来源、固定版本、下载/检查脚本与合规小样例；未公开的精确训练清单均标记 unresolved |
 | `hamilton-2017-graphsage` | GraphSAGE | 图表示学习 | PPI与toy已校验；Reddit部分下载；Citation受限 |
 | `ding-2025-tabula` | TABULA | 单细胞基础模型 | 精确15M预训练细胞清单尚未公开 |
 | `madhu-2026-heist` | HEIST | 空间转录组与蛋白组图基础模型 | 22.3M预训练数据无统一公开包，精确版本持续核对 |
@@ -33,13 +35,7 @@
 | `hu-2021-spagcn` | SpaGCN | 空间域识别与空间变异基因 | 7 套论文数据及官方教程数据已登记；两个小型教程输入已实检但不提交 Git |
 | `zhao-2025-stofm` | SToFM | 多尺度空间转录组基础模型 | SToCorpus-88M 的 1,869 个真实文件与 979.49 GB 总量已用官方 API 核验；未下载全量语料 |
 
-SpatialVista 数据入口见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)，单细胞基础模型综述资源入口见 [`papers/single-cell-foundation-model-resources/README.md`](papers/single-cell-foundation-model-resources/README.md)，GraphSAGE/TABULA/HEIST 数据入口见 [`paper-datasets/README.md`](paper-datasets/README.md)。Cell-GraphCompass、stVCR 与 SCTrans 同时保存了 [`papers/`](papers/) 中的论文条目和 [`datasets/`](datasets/) 中的可复现数据模块。
-
-scMamba 的独立数据入口见 [`scmamba-data/README.md`](scmamba-data/README.md)，同时在 [`papers/yuan-2025-scmamba/`](papers/yuan-2025-scmamba/) 保存论文记录。
-
-SpaGCN 的数据入口、下载与检查工具见 [`spagcn-data/README.md`](spagcn-data/README.md)，论文记录见 [`papers/hu-2021-spagcn/`](papers/hu-2021-spagcn/)。
-
-SToFM 的预训练语料清单、下游数据和复现工具见 [`SToFM-data/README.md`](SToFM-data/README.md)，论文记录见 [`papers/zhao-2025-stofm/`](papers/zhao-2025-stofm/)。
+所有模型和数据项目现在统一从 **[`datasets/`](datasets/)** 进入。SpatialVista 数据入口见 [`papers/wei-2026-spatialvista/README.md`](papers/wei-2026-spatialvista/README.md)，单细胞基础模型综述资源入口见 [`papers/single-cell-foundation-model-resources/README.md`](papers/single-cell-foundation-model-resources/README.md)。论文说明放在 [`papers/`](papers/)，数据清单、下载和检查脚本只从 [`datasets/`](datasets/) 查找。
 
 ## 目录结构
 
@@ -56,8 +52,8 @@ catalog/
   resources.csv          原始数据、处理数据、代码和补充材料入口
   TAGGING.md             标签词表与检索规则
 scripts/                 下载与校验辅助脚本
-data/                    本机原始数据（不会提交 Git）
-datasets/                模型论文的数据模块、manifest、下载/检查脚本
+data/                    旧版兼容占位目录；不再作为新项目入口
+datasets/                所有数据模块、manifest、下载/检查脚本（统一数据入口）
 ```
 
 ## 这里到底存什么
@@ -65,7 +61,7 @@ datasets/                模型论文的数据模块、manifest、下载/检查�
 本仓库采用“索引和知识进 Git，大文件留在数据源或本地硬盘”的方式：
 
 - GitHub 保存论文条目、数据集链接、accession、许可证状态、标签、笔记、下载/分析脚本和小型 notebook。
-- `.h5ad`、FASTQ、图像等大型文件下载到本机 `data/<paper-id>/raw/`，由 `.gitignore` 阻止上传。
+- `.h5ad`、FASTQ、图像等大型文件优先下载到本机 `datasets/<模块>/raw/`，由 `.gitignore` 阻止上传。
 - 下载后计算 SHA-256，写回 CSV；以后即使文件改名，也能用校验值确认是不是同一份数据。
 - 同一个数据在 SpatialVista 中是“展示版”，在原论文数据库中可能还有原始序列、表达矩阵、组织图像和处理后对象；本库分别注明，不把它们混成一个概念。
 
@@ -76,7 +72,7 @@ datasets/                模型论文的数据模块、manifest、下载/检查�
 1. 复制 `templates/paper/`，将目录名改成 `作者-年份-关键词`。
 2. 填写论文 `README.md`、`notes.md`、`datasets.csv` 和 `resources.csv`。
 3. 在 `catalog/papers.csv`、`catalog/datasets.csv` 与 `catalog/resources.csv` 增加索引。
-4. 数据下载到 `data/<paper-id>/raw/`，保留原文件名。
+4. 为论文建立 `datasets/<module-id>/` 数据模块，数据下载到其中的 `raw/`，保留原文件名。
 5. 运行 `scripts/checksum.ps1` 生成 SHA-256，记录到数据清单。
 6. 提交 Git：`git add .`、`git commit -m "Add <paper-id>"`。
 

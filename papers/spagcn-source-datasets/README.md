@@ -11,5 +11,5 @@ SpaGCN 自身没有产生这些公开空间组学数据。为防止只记住 Spa
 | 小鼠嗅球 Spatial Transcriptomics | Ståhl et al., 2016 | <https://doi.org/10.1126/science.aaf2403> |
 | 小鼠下丘脑 MERFISH | Moffitt et al., 2018 | <https://doi.org/10.1126/science.aau5324> |
 
-具体下载入口和状态见 [`spagcn-data/data_manifest.csv`](../../spagcn-data/data_manifest.csv)。10x 小鼠脑是供应商公开数据页，不冒充成独立论文。
+具体下载入口和状态见 [`datasets/spagcn/data_manifest.csv`](../../datasets/spagcn/data_manifest.csv)。10x 小鼠脑是供应商公开数据页，不冒充成独立论文。
 

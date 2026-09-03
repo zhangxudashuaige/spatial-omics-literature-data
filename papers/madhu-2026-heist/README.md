@@ -7,5 +7,5 @@
 - [官方代码](https://github.com/Graph-and-Geometric-Learning/HEIST)
 - [模型](https://huggingface.co/HirenMadhu/HEIST)
 
-10x、Vizgen、SEA-AD 预训练来源以及 DFCI、UPMC、Charville、Melanoma、Placenta、Lung Cancer 下游数据见 [`paper-datasets/manifests/heist.yaml`](../../paper-datasets/manifests/heist.yaml)。22.3M 细胞不是一个统一公开下载包；无法确认精确文件、版本或许可的条目保持 `unresolved`。
+10x、Vizgen、SEA-AD 预训练来源以及 DFCI、UPMC、Charville、Melanoma、Placenta、Lung Cancer 下游数据见 [`datasets/paper_datasets/manifests/heist.yaml`](../../datasets/paper_datasets/manifests/heist.yaml)。22.3M 细胞不是一个统一公开下载包；无法确认精确文件、版本或许可的条目保持 `unresolved`。
 

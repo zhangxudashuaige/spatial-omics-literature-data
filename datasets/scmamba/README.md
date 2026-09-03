@@ -35,7 +35,7 @@
 ## Windows PowerShell 使用
 
 ```powershell
-cd scmamba-data
+cd datasets/scmamba
 conda env create -f environment.yml
 conda activate scmamba-data
 

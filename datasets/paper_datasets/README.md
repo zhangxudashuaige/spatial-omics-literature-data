@@ -57,7 +57,7 @@ py -3.13 .\scripts\inspect_heist_sample.py .\data\heist\raw\your_file.h5ad
 ### 1. 下载 GraphSAGE 官方数据
 
 ```powershell
-cd .\paper-datasets
+cd .\datasets\paper_datasets
 .\scripts\download_graphsage.ps1 -Dataset PPI
 .\scripts\download_graphsage.ps1 -Dataset Reddit
 ```

@@ -35,7 +35,7 @@
 ## Windows PowerShell 使用
 
 ```powershell
-cd "SToFM-data"
+cd "datasets/stofm"
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
