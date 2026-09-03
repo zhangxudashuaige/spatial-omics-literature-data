@@ -1,0 +1,28 @@
+# 大型实验数据和模型只保存在本地
+datasets/**/raw/
+datasets/**/downloads/
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.ckpt
+results/
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.h5
+*.h5ad
+*.h5mu
+*.loom
+*.mtx
+*.mtx.gz
+*.pt
+*.pth
+*.ckpt
+*.tar
+*.tar.gz
+*.zip
+__pycache__/
+.ipynb_checkpoints/
+
+# 只有人工核对许可和大小后，才可显式解除下面某个样例文件的忽略。
+!examples/README.md

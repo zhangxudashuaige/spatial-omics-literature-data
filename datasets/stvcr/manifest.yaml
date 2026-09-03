@@ -1,0 +1,200 @@
+schema_version: 1
+module: stvcr
+verified_on: '2026-08-29'
+official_code:
+  repository: 'https://github.com/QiangweiPeng/stVCR'
+  commit: 26aa79a63eba7a5e21726b1eb95bf6bb61cfe699
+  license: GPL-3.0-or-commercial
+  dependencies:
+    status: no_lockfile_or_requirements_file_at_pinned_commit
+    observed_imports: [scanpy, anndata, numpy, scipy, torch, stvcr]
+datasets:
+  - name: sim_data_rectangle
+    category: simulation
+    biological_object: synthetic cell groups
+    species: synthetic
+    tissue: not_applicable
+    spatial_dimension: 2
+    time_points: [0, 0.5, 1.0, 1.5, 2.0, 2.5]
+    sequencing_technology: simulation
+    accession: null
+    source_url: 'https://github.com/QiangweiPeng/stVCR/tree/26aa79a63eba7a5e21726b1eb95bf6bb61cfe699/datasets/sim_data_rectangle'
+    source_repository: stVCR
+    file_name: sim_data_rectangle.h5ad plus exp/spa/time pickle files
+    file_format: [h5ad, pickle]
+    expected_size: 'h5ad 1,385,440 bytes; companion files listed by fetch script'
+    checksum: 'sha256:85d69569e1675fe7fb5b83d4e6c05618c8ff8087299e799fd342ad2818b14726'
+    number_of_cells: 9858
+    number_of_genes: 3
+    expression_matrix_field: X; float64 dense HDF5 dataset; X_input also in obsm
+    spatial_coordinate_field: obsm/spatial; ground truth in obsm/spatial_gt
+    cell_type_field: not_present_in_h5ad
+    sample_field: obs/time
+    preprocessing: synthetic; reported rotations 8/16/24/32/40 degrees after t0
+    license: repository_GPL-3.0-or-commercial
+    download_date: '2026-08-29'
+    local_path: raw/simulation/rectangle
+    verification_status: downloaded_checksum_and_schema_verified
+    notes: companion exp/spa/time pickle lists have length 60; tutorial seed 19491001; v/p/g are not direct H5AD fields
+  - name: sim_data_heart2duck
+    category: simulation
+    biological_object: synthetic complex shape transition
+    species: synthetic
+    tissue: not_applicable
+    spatial_dimension: 2
+    time_points: [0, 0.25, 0.5, 0.75, 1]
+    sequencing_technology: simulation
+    accession: null
+    source_url: 'https://github.com/QiangweiPeng/stVCR/tree/26aa79a63eba7a5e21726b1eb95bf6bb61cfe699/datasets/sim_data_heart2duck'
+    source_repository: stVCR
+    file_name: sim_data_heart2duck.h5ad plus exp/spa/time pickle files
+    file_format: [h5ad, pickle]
+    expected_size: 'h5ad 640,671 bytes'
+    checksum: 'sha256:da88f717bf9349cb9ccdfc197c8cd862d96518f5fdf609106fe255fa18f8ef39'
+    number_of_cells: 3799
+    number_of_genes: 3
+    expression_matrix_field: X; float64 dense HDF5 dataset; X_input also in obsm
+    spatial_coordinate_field: obsm/spatial; truth in obsm/spatial_gt; velocity in obsm/spatial_velocity
+    cell_type_field: obs/cell_type; type_1=2873, type_2=646, type_3=280
+    sample_field: obs/time
+    preprocessing: synthetic; group-specific proliferation rates
+    license: repository_GPL-3.0-or-commercial
+    download_date: '2026-08-29'
+    local_path: raw/simulation/heart2duck
+    verification_status: downloaded_checksum_and_schema_verified
+    notes: official notebook is misspelled heart2cuck; companion truth lists length 101
+  - name: sim_data_bio_prior
+    category: simulation
+    biological_object: background and migrating synthetic cells
+    species: synthetic
+    tissue: not_applicable
+    spatial_dimension: 2
+    time_points: [0, 1]
+    sequencing_technology: simulation
+    accession: null
+    source_url: 'https://github.com/QiangweiPeng/stVCR/tree/26aa79a63eba7a5e21726b1eb95bf6bb61cfe699/datasets/sim_data_bio_prior'
+    source_repository: stVCR
+    file_name: sim_data_bio_prior.h5ad plus exp/spa/time pickle files
+    file_format: [h5ad, pickle]
+    expected_size: 'h5ad 644,085 bytes'
+    checksum: 'sha256:4a520fceb315931d5a509d707ad50fe1dc8ae2150fd7af32e1e96d40c9166eb4'
+    number_of_cells: 4349
+    number_of_genes: 3
+    expression_matrix_field: X; float64 dense HDF5 dataset; X_input also in obsm
+    spatial_coordinate_field: obsm/spatial; ground truth in obsm/spatial_gt
+    cell_type_field: obs/type; type2=4000, type1=349
+    sample_field: obs/time
+    preprocessing: two-time-point synthetic experiment with transition prior
+    license: repository_GPL-3.0-or-commercial
+    download_date: '2026-08-29'
+    local_path: raw/simulation/bio_prior_2pts
+    verification_status: downloaded_checksum_and_schema_verified
+    notes: tests benefit of cell-type transition prior with sparse time observations; companion truth lists length 21
+  - name: sim_data_bio_prior_5pts
+    category: simulation
+    biological_object: synthetic cells with denser temporal observations
+    species: synthetic
+    tissue: not_applicable
+    spatial_dimension: 2
+    time_points: [0, 0.25, 0.5, 0.75, 1]
+    sequencing_technology: simulation
+    accession: null
+    source_url: 'https://github.com/QiangweiPeng/stVCR/tree/26aa79a63eba7a5e21726b1eb95bf6bb61cfe699/datasets/sim_data_bio_prior_5pts'
+    source_repository: stVCR
+    file_name: sim_data_bio_prior_5pts.h5ad plus exp/spa/time pickle files
+    file_format: [h5ad, pickle]
+    expected_size: 'h5ad 1,506,267 bytes'
+    checksum: 'sha256:ccf99bc6faf9d3cb2461e0bf411832f1c5f9f7941a279266029fcde0e2f35b6d'
+    number_of_cells: 10819
+    number_of_genes: 3
+    expression_matrix_field: X; float64 dense HDF5 dataset; X_input also in obsm
+    spatial_coordinate_field: obsm/spatial; ground truth in obsm/spatial_gt
+    cell_type_field: obs/type; type2=10000, type1=819
+    sample_field: obs/time
+    preprocessing: denser counterpart of bio_prior
+    license: repository_GPL-3.0-or-commercial
+    download_date: '2026-08-29'
+    local_path: raw/simulation/bio_prior_5pts
+    verification_status: downloaded_checksum_and_schema_verified
+    notes: compares dense and sparse observation schedules; companion truth lists length 41
+  - name: ARTISTA_axolotl_brain_regeneration
+    category: processed_experimental
+    biological_object: regenerating axolotl brain sections
+    species: Ambystoma mexicanum
+    tissue: brain
+    spatial_dimension: 2
+    time_points: [2_DPI, 5_DPI, 10_DPI, 15_DPI, 20_DPI, 30_DPI, 60_DPI]
+    sequencing_technology: Stereo-seq
+    accession: CNP0002068
+    source_url: 'https://db.cngb.org/stomics/artista/'
+    source_repository: CNGB/ARTISTA
+    file_name: dynamic_portal; inventory_requires_manual_session
+    file_format: unresolved
+    expected_size: unresolved
+    checksum: null
+    number_of_cells: unresolved
+    number_of_genes: unresolved
+    expression_matrix_field: unresolved
+    spatial_coordinate_field: unresolved
+    cell_type_field: unresolved
+    sample_field: unresolved
+    preprocessing: ARTISTA processed; exact downloadable artifacts require portal inspection
+    license: verify_CNGB_usage_terms
+    download_date: null
+    local_path: raw/axolotl_brain
+    verification_status: manual_interaction_required
+    notes: paper mainly uses 2, 5, 10, 15 and 20 DPI; do not bypass login
+  - name: Drosophila_E7-9h_3D
+    category: processed_experimental
+    biological_object: Drosophila embryo
+    species: Drosophila melanogaster
+    tissue: whole embryo
+    spatial_dimension: 3
+    time_points: [8]
+    sequencing_technology: Stereo-seq
+    accession: external_Spateo_processed
+    source_url: 'https://www.dropbox.com/s/bvstb3en5kc6wui/E7-9h_cellbin_tdr_v2.h5ad?dl=1'
+    source_repository: Spateo-linked Dropbox
+    file_name: E7-9h_cellbin_tdr_v2.h5ad
+    file_format: h5ad
+    expected_size: '513301759 bytes (official Dropbox response verified 2026-08-29)'
+    checksum: pending_download
+    number_of_cells: pending_download
+    number_of_genes: pending_download
+    expression_matrix_field: X_expected_but_must_verify
+    spatial_coordinate_field: pending_download
+    cell_type_field: pending_download
+    sample_field: pending_download
+    preprocessing: processed 3D cell-bin object
+    license: verify_original_data_terms
+    download_date: null
+    local_path: raw/drosophila_3d/E7-9h_cellbin_tdr_v2.h5ad
+    verification_status: source_confirmed_by_official_tutorial; local_resumable_partial_not_verified
+    notes: 'paper maps E7-9h to t=8; local .part reached 253214720 bytes on 2026-08-30 and is not a valid complete H5AD; 重点组织 CNS/midgut/amnioserosa'
+  - name: Drosophila_E9-10h_3D
+    category: processed_experimental
+    biological_object: Drosophila embryo
+    species: Drosophila melanogaster
+    tissue: whole embryo
+    spatial_dimension: 3
+    time_points: [9.5]
+    sequencing_technology: Stereo-seq
+    accession: external_Spateo_processed
+    source_url: 'https://www.dropbox.com/s/q02sx6acvcqaf35/E9-10h_cellbin_tdr_v2.h5ad?dl=1'
+    source_repository: Spateo-linked Dropbox
+    file_name: E9-10h_cellbin_tdr_v2.h5ad
+    file_format: h5ad
+    expected_size: probe_with_download_script
+    checksum: pending_download
+    number_of_cells: pending_download
+    number_of_genes: pending_download
+    expression_matrix_field: X_expected_but_must_verify
+    spatial_coordinate_field: pending_download
+    cell_type_field: pending_download
+    sample_field: pending_download
+    preprocessing: processed 3D cell-bin object
+    license: verify_original_data_terms
+    download_date: null
+    local_path: raw/drosophila_3d/E9-10h_cellbin_tdr_v2.h5ad
+    verification_status: source_confirmed_by_official_tutorial; download_pending
+    notes: paper maps E9-10h to t=9.5; compare shared genes after download

@@ -1,0 +1,2 @@
+dataset_id,name,revision,reported_slices,reported_cells_or_spots,organisms,technologies,api_file_count,api_size_bytes,repository_url,license,inventory_date,download_status,local_path,notes
+stofm-corpus-88m,SToCorpus-88M,6f699f128416e8d55d6ab74976e964caec98b157,1912,88180000,"human;mouse","MERFISH;Xenium;CosMx;Stereo-seq;Slide-seqV2;SeekSpace",1869,979490255888,https://huggingface.co/datasets/Toycat/SToCorpus-88M,MIT,2026-08-31,inventory_only,data/raw/,"总量来自HfApi逐文件求和；未下载全量数据"

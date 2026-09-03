@@ -1,0 +1,4 @@
+dataset_id,role,source,status,notes
+tabula-pretraining,pretraining,https://chanzuckerberg.github.io/cellxgene-census/index.html,unresolved,"15M精确细胞清单和Census版本未公开"
+tabula-downstream,downstream,../../paper-datasets/manifests/tabula.yaml,registered_not_downloaded,"按imputation/perturbation/annotation分类；不使用同名替代版本"
+

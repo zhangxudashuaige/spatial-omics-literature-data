@@ -1,0 +1,6 @@
+dataset_id,role,source,status,notes
+graphsage-ppi,benchmark,https://snap.stanford.edu/graphsage/ppi.zip,downloaded_and_verified,"完整ZIP在本机raw目录，不进入Git"
+graphsage-reddit,benchmark,https://snap.stanford.edu/graphsage/reddit.zip,partial_download,"需要续传并计算SHA256"
+graphsage-citation,benchmark,Web of Science,restricted,"需要有效WoS许可"
+graphsage-toy-ppi,example,https://github.com/williamleif/GraphSAGE/tree/a0fdef95dca7b456dab01cb35034717c8b6dd017/example_data,tracked_and_verified,"MIT许可的小型官方样例"
+

@@ -1,0 +1,3 @@
+dataset_id,name,original_paper,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+stvcr-simulations,"stVCR 四套官方模拟数据","Peng et al. 2026",synthetic,synthetic,"simulated expression and coordinates",commit:26aa79a63eba7a5e21726b1eb95bf6bb61cfe699,https://github.com/QiangweiPeng/stVCR,GPL-3.0,downloaded,,"model:stvcr;data-level:simulation;status:downloaded","H5AD和pickle已下载到本地raw并检查，不进Git。"
+stvcr-real-data,"ARTISTA蝾螈与Spateo果蝇数据","Peng et al. 2026",mixed,"brain;embryo","spatial transcriptomics",CNP0002068,https://db.cngb.org/stomics/artista/,source-specific,partially_linked,,"model:stvcr;data-level:processed;status:partially-linked","果蝇文件来自官方教程中的Dropbox链接；蝾螈页面按官方权限操作。"

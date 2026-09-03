@@ -1,0 +1,135 @@
+schema_version: 1
+module: cell_graph_compass
+verified_on: '2026-08-29'
+official_code_commit: e3a959d143d2930da93c96752ede7940a440f0db
+datasets:
+  - name: ScCompass-h50M
+    category: pretraining_corpus
+    biological_object: human single-cell transcriptomes
+    task: masked-expression reconstruction and cell embedding pretraining
+    source_url: null
+    original_reference: 'https://doi.org/10.1093/nsr/nwaf255'
+    file_format: not_publicly_packaged
+    expected_size: unknown
+    checksum: null
+    species: Homo sapiens
+    number_of_cells_or_samples: '>50,000,000 cells; subset of ScCompass-126M'
+    number_of_genes: unresolved
+    preprocessing: exact cell list and complete preprocessing recipe not publicly packaged
+    license: unresolved
+    local_path: null
+    download_status: external/not-publicly-packaged
+    notes: scData.zip is not this complete raw pretraining corpus.
+  - name: NCBI Gene textual descriptions
+    category: graph_prior
+    biological_object: gene text annotations
+    task: gene semantic prior
+    source_url: 'https://www.ncbi.nlm.nih.gov/gene/'
+    original_reference: NCBI Gene
+    file_format: text/derived embeddings
+    expected_size: unresolved
+    checksum: null
+    species: Homo sapiens
+    number_of_cells_or_samples: not_applicable
+    number_of_genes: unresolved
+    preprocessing: textual descriptions are embedded by the model pipeline
+    license: verify_NCBI_terms
+    local_path: raw/graph_priors
+    download_status: external
+    notes: graph-building resource, not downstream evaluation data
+  - name: TFTG and TRRUST TF-target edges
+    category: graph_prior
+    biological_object: transcription-factor target relationships
+    task: regulatory graph construction
+    source_url: 'https://www.grnpedia.org/trrust/'
+    original_reference: TFTG/TRRUST as cited by the paper
+    file_format: edge list
+    expected_size: unresolved
+    checksum: null
+    species: Homo sapiens
+    number_of_cells_or_samples: not_applicable
+    number_of_genes: unresolved
+    preprocessing: exact release and merged-edge rules unresolved
+    license: unresolved
+    local_path: raw/graph_priors
+    download_status: unresolved
+    notes: do not substitute a newer database release silently
+  - name: gene co-expression edges
+    category: graph_prior
+    biological_object: gene pairs
+    task: co-expression graph construction
+    source_url: null
+    original_reference: paper methods
+    file_format: edge list
+    expected_size: unresolved
+    checksum: null
+    species: Homo sapiens
+    number_of_cells_or_samples: derived from pretraining corpus
+    number_of_genes: unresolved
+    preprocessing: Pearson correlation coefficient greater than 0.6
+    license: inherits_source_data_terms
+    local_path: raw/graph_priors
+    download_status: derived/not_publicly_packaged
+    notes: graph-building resource, not an evaluation dataset
+  - name: chromosome-proximity edges
+    category: graph_prior
+    biological_object: nearby genes on the same chromosome
+    task: chromosome graph construction
+    source_url: null
+    original_reference: paper methods
+    file_format: edge list
+    expected_size: unresolved
+    checksum: null
+    species: Homo sapiens
+    number_of_cells_or_samples: not_applicable
+    number_of_genes: unresolved
+    preprocessing: exact genome build and distance rule require code-level verification
+    license: unresolved
+    local_path: raw/graph_priors
+    download_status: derived
+    notes: graph-building resource, not an evaluation dataset
+  - name: scData.zip
+    category: processed_training_and_evaluation_bundle
+    biological_object: processed single-cell datasets and checkpoints
+    task: downstream examples and released weights
+    source_url: 'https://zenodo.org/records/14650474/files/scData.zip?download=1'
+    original_reference: 'https://zenodo.org/records/14650474'
+    file_format: zip containing LMDB/directories/checkpoints
+    expected_size: 2642248462 bytes
+    checksum: 'md5:0718023070988d51519ab4f3e740ebfd'
+    species: mixed; inspect per dataset
+    number_of_cells_or_samples: unresolved per member
+    number_of_genes: inspect per member
+    preprocessing: processed by authors; inspect archive Readme and code
+    license: not_stated_on_record_page; verify_before_redistribution
+    local_path: raw/scData.zip
+    download_status: available
+    notes: public processed package; not the complete 50M-cell raw pretraining corpus
+downstream_evaluation:
+  gene_function_classification:
+    datasets: six paper-defined tasks
+    status: unresolved_until_archive_inspection
+  grn_inference:
+    datasets: [STRING, ChIP-seq]
+    status: source_versions_unresolved
+  batch_correction:
+    datasets: [PCortex, PBMC, COVID-19]
+    status: official_readme_links_recorded; exact preprocessing requires archive inspection
+  cell_annotation:
+    datasets: [Multiple_Sclerosis, Myeloid, hPancreas]
+    status: official_readme_links_recorded; exact preprocessing requires archive inspection
+  perturbation_prediction:
+    datasets: [Norman_Perturb-seq]
+    source_url: 'https://dataverse.harvard.edu/api/access/datafile/6154020'
+    status: available_external; exact processing requires official code
+bulk_knockout:
+  mouse_single_cell_pretraining:
+    reported_scale: approximately 20M mouse single cells
+    status: external/unresolved
+  ARCHS4:
+    reported_scale: approximately 700K raw samples; approximately 300K after QC
+    status: exact release unresolved
+  author_GEO_knockout_collection:
+    reported_scale: '>3300 knockout instances; >27000 genes; >1100 perturbation conditions'
+    status: not_publicly_packaged_as_a_traceable_standalone_dataset
+

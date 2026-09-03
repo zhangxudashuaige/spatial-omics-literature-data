@@ -1,0 +1,35 @@
+{
+  "inspection_date": "2026-08-30",
+  "source_folder_id": "1zten54vkjorp26T4iD0ApQGa9ut5eY42",
+  "expression_matrix": {
+    "file": "expression_matrix.h5",
+    "size_bytes": 14566416,
+    "sha256": "cd33ca0792e2d2430864ba01a8fd5516ccea195cff068c602a8f89821e42f610",
+    "h5_internal_shape_gene_by_barcode": [33538, 4992],
+    "analysis_shape_spot_by_gene": [4992, 33538],
+    "nonzero_entries": 9120826,
+    "dtype": "int32"
+  },
+  "positions": {
+    "file": "positions.txt",
+    "size_bytes": 186583,
+    "sha256": "c1ce0eafc855982bb2a9773f147ce6c5aef68dfd06600caa8a7e7a0e6f7cc5e8",
+    "rows": 4992,
+    "columns": ["barcode", "in_tissue", "array_row", "array_col", "pixel_row", "pixel_col"]
+  },
+  "alignment": {
+    "matched_ids": 4992,
+    "expression_without_coordinates": 0,
+    "coordinates_without_expression": 0,
+    "duplicate_expression_ids": 0,
+    "duplicate_coordinate_ids": 0
+  },
+  "local_sample_test": {
+    "shape": [200, 500],
+    "seed": 20210728,
+    "h5ad_size_bytes": 629504,
+    "h5ad_sha256": "ebb2a1923a27c4978921b67a75ffafd0c11de38b5d987fe2a36451e71176780e",
+    "git_tracking": false,
+    "note": "仅用于本地程序检查；未提交Git。"
+  }
+}

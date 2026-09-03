@@ -1,0 +1,23 @@
+module: cell_graph_compass
+verified_on: '2026-08-29'
+paper:
+  title: 'Cell-GraphCompass: Modeling Single Cells with Graph Structure Foundation Model'
+  doi: 'https://doi.org/10.1093/nsr/nwaf255'
+  preprint: 'https://www.biorxiv.org/content/10.1101/2024.06.04.597354v1'
+code:
+  url: 'https://github.com/epang-ucas/Cell-Graph-Compass'
+  commit: 'e3a959d143d2930da93c96752ede7940a440f0db'
+zenodo:
+  record: 14650474
+  api: 'https://zenodo.org/api/records/14650474'
+  page: 'https://zenodo.org/records/14650474'
+  files:
+    - name: Readme.txt
+      size_bytes: 2290
+      md5: 009088913f5ff881b41c5331da28d1f4
+      url: 'https://zenodo.org/records/14650474/files/Readme.txt?download=1'
+    - name: scData.zip
+      size_bytes: 2642248462
+      md5: 0718023070988d51519ab4f3e740ebfd
+      url: 'https://zenodo.org/records/14650474/files/scData.zip?download=1'
+

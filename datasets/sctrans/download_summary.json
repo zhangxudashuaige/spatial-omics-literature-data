@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-30",
+  "dataset": "Zheng68K official filtered gene-barcode matrix",
+  "source_url": "https://cf.10xgenomics.com/samples/cell-exp/1.1.0/fresh_68k_pbmc_donor_a/fresh_68k_pbmc_donor_a_filtered_gene_bc_matrices.tar.gz",
+  "archive_size_bytes": 124442812,
+  "sha256": "3f35f37ff344bc9b32f97cd003ac986ebb9b5d7f31006c53dff4cb38da267931",
+  "md5": "0c8c546cbadc8ea8eb45be6cfe040852",
+  "matrix_market_shape_genes_by_barcodes": [32738, 68579],
+  "matrix_market_nonzero_entries": 37323295,
+  "paper_labeled_cell_count": 68450,
+  "interpretation": "The official filtered matrix contains 68579 barcodes. SCTrans reports 68450 labeled cells, so an unresolved label/filter list is still needed to reconstruct the exact paper input."
+}
