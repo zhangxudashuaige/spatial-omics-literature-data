@@ -1,0 +1,11 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+perturbqa-k562,"K562 CRISPRi问答基准",human,K562,scRNA-seq,N/A,https://github.com/genentech/PerturbQA,CC BY 4.0,metadata_only,,topic:perturbation-qa;cell-line:K562;tasks:DE;direction;GSE,"PerturbQA加工后的问答标签；不重新处理原始百万级单细胞矩阵"
+perturbqa-rpe1,"RPE1 CRISPRi问答基准",human,RPE1,scRNA-seq,N/A,https://github.com/genentech/PerturbQA,CC BY 4.0,metadata_only,,topic:perturbation-qa;cell-line:RPE1,"PerturbQA基准数据"
+perturbqa-hepg2,"HepG2 CRISPRi问答基准",human,HepG2,scRNA-seq,N/A,https://github.com/genentech/PerturbQA,CC BY 4.0,metadata_only,,topic:perturbation-qa;cell-line:HepG2,"PerturbQA基准数据"
+perturbqa-jurkat,"Jurkat CRISPRi问答基准",human,Jurkat,scRNA-seq,N/A,https://github.com/genentech/PerturbQA,CC BY 4.0,metadata_only,,topic:perturbation-qa;cell-line:Jurkat,"PerturbQA基准数据"
+perturbqa-k562-set,"K562集合扰动基准",human,K562,scRNA-seq,N/A,https://github.com/genentech/PerturbQA,CC BY 4.0,metadata_only,,topic:perturbation-qa;cell-line:K562;type:set,"K562集合扰动数据"
+perturbqa-kg,"生物知识图谱",multiple,multiple,knowledge_graph,zenodo:14915312,https://doi.org/10.5281/zenodo.14915312,CC BY-NC 4.0,metadata_only,,topic:knowledge-graph;source:zenodo;CORUM,"kg.zip；包含CORUM等知识图谱；CORUM为CC BY-NC 4.0"
+perturbqa-gene-summary,"基因自然语言摘要",multiple,multiple,text,zenodo:14915312,https://doi.org/10.5281/zenodo.14915312,CC BY 4.0,metadata_only,,topic:gene-summary;source:zenodo,"gene_summary.zip；基因的自然语言描述摘要"
+perturbqa-summer-outputs,"Summer模型输出",multiple,multiple,model_output,zenodo:14915312,https://doi.org/10.5281/zenodo.14915312,CC BY 4.0,metadata_only,,topic:model-output;model:summer,"summer_outputs.zip和summer_enrichment.zip；Summer检索增强模型的预测输出"
+perturbqa-ablation,"消融模型输出",multiple,multiple,model_output,zenodo:14915312,https://doi.org/10.5281/zenodo.14915312,CC BY 4.0,metadata_only,,topic:model-output;ablation:no-cot;ablation:no-retrieve,"llm-nocot.zip和llm-noretrieve.zip；No-CoT和No-Retrieval消融结果"
+perturbqa-results,"最终评价结果",multiple,multiple,results,zenodo:14915312,https://doi.org/10.5281/zenodo.14915312,CC BY 4.0,metadata_only,,topic:results;evaluation,"results.zip；最终评价指标和统计结果"

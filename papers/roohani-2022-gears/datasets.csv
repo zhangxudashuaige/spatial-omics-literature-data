@@ -1,0 +1,7 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+gears-norman,"Norman 2019 CRISPRa 扰动数据",human,K562,scRNA-seq,GSE133344,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,CC BY 4.0,metadata_only,,topic:perturbation;model:gears;cell-line:K562;technology:CRISPRa,"GEARS官方预处理数据可通过PertData加载；包含230种扰动、109738个细胞"
+gears-adamson,"Adamson 2016 扰动数据",human,K562,scRNA-seq,GSE90546,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546,CC BY 4.0,metadata_only,,topic:perturbation;model:gears;cell-line:K562,"GEARS支持的评测数据集"
+gears-dixit,"Dixit 2016 Perturb-seq数据",human,K562,scRNA-seq,GSE90063,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063,CC BY 4.0,metadata_only,,topic:perturbation;model:gears;cell-line:K562,"GEARS支持的评测数据集"
+gears-replogle,"Replogle 2022 大规模CRISPRi筛选",human,"RPE-1;K562",scRNA-seq,GSE146194;GSE184369,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146194,CC BY 4.0,metadata_only,,topic:perturbation;model:gears;scale:large-scale,"GEARS可加载的大规模筛选数据；需确认官方支持的数据名称"
+gears-go-graph,"Gene Ontology 知识图谱",multiple,multiple,knowledge_graph,N/A,https://geneontology.org/,GO开放许可证,metadata_only,,topic:knowledge-graph;model:gears;type:GO,"用于构建GEARS的基因相似度图；Jaccard相似度"
+gears-coexpression-graph,"共表达知识图谱",multiple,multiple,knowledge_graph,N/A,N/A,source-specific,metadata_only,,topic:knowledge-graph;model:gears;type:coexpression,"由训练集基因Pearson相关性构建的共表达图"

@@ -1,0 +1,6 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+scperturb-rna-protein,"scPerturb RNA和蛋白质数据",multiple,multiple,"scRNA-seq;protein",zenodo:13350497,https://zenodo.org/records/13350497,CC BY 4.0,metadata_only,,topic:perturbation-database;modality:rna;modality:protein;source:zenodo,"约43GB；包含genetic_rna、drug_rna、multimodal_rna_protein等分类"
+scperturb-atac,"scPerturb ATAC数据",multiple,multiple,scATAC-seq,zenodo:7058382,https://zenodo.org/records/7058382,CC BY 4.0,metadata_only,,topic:perturbation-database;modality:atac;source:zenodo,"ATAC模态扰动数据"
+scperturb-adamson,"Adamson 2016 10X数据",human,K562,scRNA-seq,GSM2406675,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM2406675,CC BY 4.0,metadata_only,,topic:perturbation;cell-line:K562;example,"约34.6MB；推荐作为第一个下载的小型示例"
+scperturb-norman,"Norman 2019 过滤后数据",human,K562,scRNA-seq,GSE133344,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,CC BY 4.0,metadata_only,,topic:perturbation;cell-line:K562,"约698.7MB；根据磁盘空间选择是否下载"
+scperturb-minimal-example,"最小扰动示例数据",multiple,multiple,scRNA-seq,N/A,N/A,CC BY 4.0,downloaded,,topic:example;size:minimal,"6细胞×4基因；2control+2GeneA+1GeneB+1组合；30KB；已生成并提交"

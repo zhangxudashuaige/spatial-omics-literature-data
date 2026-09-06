@@ -1,0 +1,10 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+sctherapy-aml-p5,"AML Patient 5 单细胞数据",human,bone_marrow,scRNA-seq,SRR30720408,https://www.ncbi.nlm.nih.gov/sra/SRR30720408,controlled,metadata_only,,topic:cancer;cancer:AML;patient:P5;source:sra,"AML患者原始单细胞数据；download_sra.ps1默认仅预览，需确认后下载"
+sctherapy-aml-p6,"AML Patient 6 单细胞数据",human,bone_marrow,scRNA-seq,SRR30720407,https://www.ncbi.nlm.nih.gov/sra/SRR30720407,controlled,metadata_only,,topic:cancer;cancer:AML;patient:P6;source:sra,"AML患者原始单细胞数据"
+sctherapy-aml-p12,"AML Patient 12 单细胞数据",human,bone_marrow,scRNA-seq,SRR30720406,https://www.ncbi.nlm.nih.gov/sra/SRR30720406,controlled,metadata_only,,topic:cancer;cancer:AML;patient:P12;source:sra,"AML患者原始单细胞数据"
+sctherapy-ega-aml,"AML受控数据(EGA)",human,bone_marrow,scRNA-seq,"EGAS00001004614;EGAS00001004444",https://ega-archive.org/,controlled,restricted,,topic:cancer;cancer:AML;source:ega;access:controlled,"EGA受控人类数据；仅记录accession和申请流程；不尝试绕过权限"
+sctherapy-ega-hgsc,"HGSC受控数据(EGA)",human,ovary,scRNA-seq,"EGAS00001005010;EGAS00001005066",https://ega-archive.org/,controlled,restricted,,topic:cancer;cancer:HGSC;source:ega;access:controlled,"高级别浆液性卵巢癌受控数据；仅记录accession和申请流程"
+sctherapy-seurat,"处理后Seurat对象",human,"bone_marrow;ovary",scRNA-seq,zenodo:13340927,https://doi.org/10.5281/zenodo.13340927,CC BY 4.0,metadata_only,,topic:processed;format:seurat;source:zenodo,"作者处理后的Seurat v5对象；优先下载；inspect_seurat.R可检查"
+sctherapy-lincs,"LINCS 2020 药物诱导表达",human,multiple,scRNA-seq,N/A,https://clue.io/data,source-specific,metadata_only,,topic:training-data;database:lincs;type:drug-expression,"LightGBM训练数据之一；药物诱导的基因表达变化"
+sctherapy-pharmacodb,"PharmacoDB 药物剂量响应",human,multiple,pharmacology,N/A,https://pharmacodb.ca/,source-specific,metadata_only,,topic:training-data;database:pharmacodb;type:drug-response,"LightGBM训练数据之一；药物剂量-细胞抑制率"
+sctherapy-pubchem,"PubChem 药物结构",multiple,multiple,chemistry,N/A,https://www.ncbi.nlm.nih.gov/pccompound,public,metadata_only,,topic:training-data;database:pubchem;type:drug-structure,"LightGBM训练数据之一；药物化学结构"

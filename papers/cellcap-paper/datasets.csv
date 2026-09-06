@@ -1,0 +1,6 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+cellcap-simulation,"CellCap模拟数据",multiple,multiple,scRNA-seq,N/A,https://github.com/broadinstitute/CellCap,CC BY 4.0,metadata_only,,topic:simulation;model:cellcap,"spatial_sim和spatial_sim_distance_metrics_df；小型可运行示例"
+cellcap-mono,"CellCap人单核细胞数据",human,blood,scRNA-seq,N/A,https://github.com/broadinstitute/CellCap,CC BY 4.0,metadata_only,,topic:perturbation;cell-type:monocytes;model:cellcap,"CellCap_1MPBMC_Mono.h5ad和model.pt；如不存在或需Git LFS，在README记录缺失情况"
+cellcap-norman,"Norman 2019 CRISPRa数据",human,K562,scRNA-seq,GSE133344,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,CC BY 4.0,metadata_only,,topic:perturbation;cell-line:K562;technology:CRISPRa,"下载公开补充文件；整理为AnnData；.X保存原始整数计数；.obsm['X_target']保存multi-hot扰动矩阵"
+cellcap-ega-5376,"EGA受控数据 EGAS00001005376",multiple,multiple,scRNA-seq,EGAS00001005376,https://ega-archive.org/,controlled,restricted,,topic:controlled;source:ega,"EGA受控人类数据；仅记录accession和申请流程；不尝试绕过访问控制"
+cellcap-ega-7764,"EGA受控数据 EGAD00001007764",multiple,multiple,scRNA-seq,EGAD00001007764,https://ega-archive.org/,controlled,restricted,,topic:controlled;source:ega,"EGA受控人类数据；仅记录accession和申请流程"
