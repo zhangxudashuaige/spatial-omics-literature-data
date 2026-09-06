@@ -1,0 +1,11 @@
+source_id,source_name,source_type,url,data_type,access_level,license,notes
+clinicaltrials_gov,ClinicalTrials.gov,clinical_trial_registry,https://clinicaltrials.gov,IBD临床试验信息,public,public,"IBD药物临床试验注册信息；可通过API查询"
+drugbank,DrugBank,drug_database,https://go.drugbank.com/,药物靶点和机制,registered,DB license,"药物靶点、机制、相互作用；需注册学术账号"
+disgenet,DisGeNET,disease_gene_database,https://www.disgenet.org/,IBD相关基因,public,CC BY-NC-SA,"疾病-基因关联数据库"
+opentargets,Open Targets,drug_target_platform,https://www.opentargets.org/,药物靶点优先级,public,Apache 2.0,"药物靶点优先级平台；整合多组学证据"
+pubchem,PubChem,chemical_database,https://pubchem.ncbi.nlm.nih.gov/,化合物结构和活性,public,public,"化合物结构、活性、临床试验信息"
+l1000cds2,L1000 CDS2,drug_expression_database,https://clue.io/,药物诱导基因表达,registered,academic,"LINCS L1000药物扰动表达数据；需注册"
+harmonizome,Harmonizome,gene_function_database,https://maayanlab.cloud/Harmonizome/,基因功能注释,public,public,"整合多源基因功能注释"
+reactome,Reactome,pathway_database,https://reactome.org/,通路注释,public,CC BY 4.0,"通路数据库；用于布尔网络构建"
+kegg,KEGG,pathway_database,https://www.genome.jp/kegg/,通路注释,restricted,KEGG license,"通路数据库；学术使用需注意许可证"
+go,Gene Ontology,gene_annotation,https://geneontology.org/,基因功能注释,public,CC BY 4.0,"基因本体论注释"

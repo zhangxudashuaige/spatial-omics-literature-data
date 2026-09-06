@@ -1,0 +1,4 @@
+dataset_id,repository,species,tissue,disease,treatment,cohort_role,sample_count_reported,expression_platform,raw_url,processed_url,response_label_available,notes
+GSE83687,GEO,Homo sapiens,colon,IBD (UC/CD),anti-TNF,boolean_network_training,pending,Affymetrix,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83687,https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83687,pending,"原始IBD布尔网络主要训练数据；同时用于独立验证"
+GSE73661,GEO,Homo sapiens,colon,IBD (UC),Infliximab,boolean_network_training,23,Affymetrix HG-U133 Plus 2.0,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73661,https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE73661,yes,"原始IBD布尔网络主要训练数据；同时用于训练和验证；注意数据泄漏"
+GSE6731,GEO,Homo sapiens,colon,IBD (UC),Infliximab,boolean_network_training,pending,Affymetrix HG-U133A,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE6731,https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE6731,pending,"较早的IBD队列；用于布尔网络构建"
