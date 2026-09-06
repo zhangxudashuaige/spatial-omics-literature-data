@@ -1,0 +1,4 @@
+filename,filepath,md5,size_bytes,download_date,verified,notes
+AdamsonWeissman2016_GSM2406675_10X001.h5ad,data/raw/,,,,,,pending_download
+NormanWeissman2019_filtered.h5ad,data/raw/,,,,,,pending_download
+minimal_perturbation.h5ad,examples/,,,,,,included_in_repo

@@ -1,0 +1,54 @@
+{
+  "description": "X-Cell 核心训练数据 X-Atlas/Pisces 清单",
+  "last_updated": "2026-09-05",
+  "resources": [
+    {
+      "name": "X-Atlas/Pisces",
+      "category": "core_training_data",
+      "source_url": "https://huggingface.co/datasets/Xaira-Therapeutics/X-Atlas-Pisces",
+      "paper_role": "X-Cell 模型的核心训练数据，包含 25.6M 细胞的 CRISPRi 扰动表达谱",
+      "expected_format": "h5ad / parquet / zarr",
+      "expected_content": "25.6M 细胞，7 个 CRISPRi screen，16 种细胞背景，包含 HCT116、HEK293T、HepG2、iPSC、Jurkat Resting、Jurkat Active、iPSC Multi-Diff",
+      "license": "CC BY-NC-SA 4.0",
+      "availability": "coming_soon",
+      "checked_at": "2026-09-05",
+      "local_path": "data/xatlas_pisces/"
+    },
+    {
+      "name": "X-Cell Mini 55M",
+      "category": "model_weights",
+      "source_url": "https://huggingface.co/Xaira-Therapeutics/X-Cell",
+      "paper_role": "X-Cell 小型模型，55M 参数，用于快速推理和测试",
+      "expected_format": "safetensors / bin / pt",
+      "expected_content": "模型权重文件，配置文件，tokenizer",
+      "license": "CC BY-NC-SA 4.0",
+      "availability": "coming_soon",
+      "checked_at": "2026-09-05",
+      "local_path": "data/models/xcell_mini/"
+    },
+    {
+      "name": "X-Cell Ultra 4.87B",
+      "category": "model_weights",
+      "source_url": "https://huggingface.co/Xaira-Therapeutics/X-Cell",
+      "paper_role": "X-Cell 大型模型，4.87B 参数，用于完整复现论文结果",
+      "expected_format": "safetensors / bin / pt",
+      "expected_content": "模型权重文件（可能分片），配置文件，tokenizer",
+      "license": "CC BY-NC-SA 4.0",
+      "availability": "coming_soon",
+      "checked_at": "2026-09-05",
+      "local_path": "data/models/xcell_ultra/"
+    },
+    {
+      "name": "X-Cell 官方代码",
+      "category": "code",
+      "source_url": "https://github.com/Xaira-Therapeutics/X-Cell",
+      "paper_role": "X-Cell 模型的官方推理和训练代码",
+      "expected_format": "Python 源码",
+      "expected_content": "模型定义、推理脚本、训练脚本、配置文件",
+      "license": "待确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "external/X-Cell/"
+    }
+  ]
+}

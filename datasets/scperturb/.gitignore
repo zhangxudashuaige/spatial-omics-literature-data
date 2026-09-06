@@ -1,0 +1,65 @@
+# Large data files - never commit to regular Git
+*.h5ad
+*.h5
+*.h5mu
+*.mtx
+*.mtx.gz
+*.fastq
+*.fastq.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.npy
+*.npz
+*.parquet
+*.feather
+*.loom
+*.rds
+*.RData
+
+# Data directories
+data/raw/
+data/processed/
+results/figures/*.png
+results/figures/*.pdf
+results/summaries/*.csv
+
+# Keep small example and README
+!examples/minimal_perturbation.h5ad
+!data/README.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/summaries/.gitkeep
+!results/figures/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

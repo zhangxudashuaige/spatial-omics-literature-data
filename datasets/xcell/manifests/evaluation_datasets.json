@@ -1,0 +1,66 @@
+{
+  "description": "X-Cell 外部评测数据集清单",
+  "last_updated": "2026-09-05",
+  "resources": [
+    {
+      "name": "Replogle-Nadig",
+      "category": "evaluation_dataset",
+      "source_url": "https://huggingface.co/datasets/arcinstitute/Replogle-Nadig-Preprint",
+      "paper_role": "外部评测集，用于评估 X-Cell 在未见扰动上的泛化能力",
+      "expected_format": "h5ad",
+      "expected_content": "CRISPRi 扰动单细胞表达数据，包含对照和单基因扰动",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/evaluation/replogle_nadig/"
+    },
+    {
+      "name": "Parse-1M",
+      "category": "evaluation_dataset",
+      "source_url": "https://huggingface.co/datasets/arcinstitute/State-Parse-Filtered",
+      "paper_role": "外部评测集，1M 细胞规模的扰动表达数据",
+      "expected_format": "h5ad / parquet",
+      "expected_content": "大规模 CRISPRi 筛选数据，多种细胞类型",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/evaluation/parse_1m/"
+    },
+    {
+      "name": "Tahoe-100M",
+      "category": "evaluation_dataset",
+      "source_url": "https://huggingface.co/datasets/tahoe-bio/Tahoe-100M",
+      "paper_role": "外部评测集，100M 细胞规模的子集，用于大规模验证",
+      "expected_format": "h5ad / zarr",
+      "expected_content": "100M 细胞扰动表达数据子集",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/evaluation/tahoe_100m/"
+    },
+    {
+      "name": "melanocyte progenitor",
+      "category": "evaluation_dataset",
+      "source_url": "待确认",
+      "paper_role": "外部评测集，黑素细胞祖细胞扰动数据",
+      "expected_format": "h5ad",
+      "expected_content": "黑素细胞祖细胞的 CRISPR 扰动表达谱",
+      "license": "需要人工确认",
+      "availability": "unconfirmed",
+      "checked_at": "2026-09-05",
+      "local_path": "data/evaluation/melanocyte_progenitor/"
+    },
+    {
+      "name": "primary human CD4+ T cells",
+      "category": "evaluation_dataset",
+      "source_url": "待确认",
+      "paper_role": "外部评测集，原代人类 CD4+ T 细胞扰动数据",
+      "expected_format": "h5ad",
+      "expected_content": "原代 CD4+ T 细胞的扰动表达谱",
+      "license": "需要人工确认",
+      "availability": "unconfirmed",
+      "checked_at": "2026-09-05",
+      "local_path": "data/evaluation/primary_t_cells/"
+    }
+  ]
+}

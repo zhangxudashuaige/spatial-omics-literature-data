@@ -1,0 +1,87 @@
+# Large data files - never commit to regular Git
+*.h5ad
+*.h5
+*.h5mu
+*.mtx
+*.mtx.gz
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.parquet
+*.feather
+*.loom
+*.rds
+*.RData
+*.tif
+*.tiff
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+
+# Data directories
+data/raw/
+data/processed/
+data/external/gene_ontology/*.obo
+data/external/gene_ontology/*.gaf
+models/
+results/predictions/
+results/figures/*.png
+results/figures/*.pdf
+results/metrics/*.csv
+
+# Graph data (large edge lists)
+graphs/coexpression/*.csv
+graphs/coexpression/*.pt
+graphs/coexpression/*.npz
+graphs/go_similarity/*.csv
+graphs/go_similarity/*.pt
+graphs/go_similarity/*.npz
+
+# Keep README and .gitkeep
+!data/README.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/gene_ontology/.gitkeep
+!graphs/coexpression/.gitkeep
+!graphs/go_similarity/.gitkeep
+!models/.gitkeep
+!results/predictions/.gitkeep
+!results/figures/.gitkeep
+!results/metrics/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

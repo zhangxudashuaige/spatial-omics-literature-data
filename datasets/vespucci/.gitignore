@@ -1,0 +1,54 @@
+# 大型数据文件 - 不提交普通 Git
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.cram
+
+# 完整表达矩阵
+*.mtx
+*.mtx.gz
+*.h5
+*.h5ad
+*.h5seurat
+*.rds
+*.RData
+*.rda
+*.loom
+
+# 大型图像
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.svs
+
+# 数据目录（保留 .gitkeep）
+data/simulated/*
+data/external/*
+data/processed/*
+!data/simulated/.gitkeep
+!data/external/.gitkeep
+!data/processed/.gitkeep
+
+# 校验文件（保留 .gitkeep）
+checksums/*
+!checksums/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+*.Rproj.user/
+
+# OS
+.DS_Store
+Thumbs.db

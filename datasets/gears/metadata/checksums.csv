@@ -1,0 +1,7 @@
+filename,filepath,sha256,md5,size_bytes,download_date,verified,notes
+norman_perturb_processed.h5ad,data/processed/norman/,,,,,,pending_download
+adamson_perturb_processed.h5ad,data/processed/adamson/,,,,,,pending_download
+dixit_perturb_processed.h5ad,data/processed/dixit/,,,,,,pending_download
+go-basic.obo,data/external/gene_ontology/,,,,,,pending_download
+coexpression_graph_edge_index.pt,graphs/coexpression/,,,,,,pending_build
+go_similarity_graph_edge_index.pt,graphs/go_similarity/,,,,,,pending_build

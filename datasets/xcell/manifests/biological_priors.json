@@ -1,0 +1,78 @@
+{
+  "description": "X-Cell 生物先验清单",
+  "last_updated": "2026-09-05",
+  "resources": [
+    {
+      "name": "GenePT",
+      "category": "biological_prior",
+      "source_url": "https://zenodo.org/records/10833191",
+      "paper_role": "基因文本嵌入先验，为每个基因提供自然语言描述的向量表示",
+      "expected_format": "h5 / npy / csv",
+      "expected_content": "基因名称到嵌入向量的映射，嵌入维度通常为 768 或 1024",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/priors/genept/"
+    },
+    {
+      "name": "ESM-2",
+      "category": "biological_prior",
+      "source_url": "https://github.com/facebookresearch/esm",
+      "paper_role": "蛋白质语言模型嵌入先验，为基因编码的蛋白质序列提供向量表示",
+      "expected_format": "pt / safetensors / h5",
+      "expected_content": "ESM-2 模型权重和预计算的蛋白质嵌入",
+      "license": "MIT (代码); 模型权重可能有额外限制",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/priors/esm2/"
+    },
+    {
+      "name": "STRING",
+      "category": "biological_prior",
+      "source_url": "https://stringdb-downloads.org/download/protein.network.embeddings.v12.0.h5",
+      "paper_role": "蛋白质-蛋白质相互作用网络嵌入先验，基于 STRING 数据库",
+      "expected_format": "h5",
+      "expected_content": "蛋白质网络嵌入向量，节点为基因/蛋白质",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/priors/string/"
+    },
+    {
+      "name": "DepMap 24Q4",
+      "category": "biological_prior",
+      "source_url": "https://plus.figshare.com/articles/dataset/DepMap_24Q4_Public/27993248",
+      "paper_role": "癌症依赖图谱先验，提供基因敲除/敲低的细胞存活率数据",
+      "expected_format": "csv / parquet",
+      "expected_content": "基因-细胞系依赖度矩阵，包含 CRISPR 和 RNAi 筛选数据",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/priors/depmap/"
+    },
+    {
+      "name": "JUMP Cell Painting",
+      "category": "biological_prior",
+      "source_url": "https://jump-cellpainting.broadinstitute.org/",
+      "paper_role": "细胞绘画表型先验，提供化合物/基因扰动后的细胞形态学特征",
+      "expected_format": "csv / parquet / sqlite",
+      "expected_content": "细胞形态学特征向量，包含化合物和基因扰动的表型谱",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/priors/cell_painting/"
+    },
+    {
+      "name": "scGPT",
+      "category": "biological_prior",
+      "source_url": "https://github.com/bowang-lab/scGPT",
+      "paper_role": "单细胞生成式预训练模型先验，提供基因和细胞的预训练嵌入",
+      "expected_format": "pt / bin",
+      "expected_content": "scGPT 模型权重和预计算的基因/细胞嵌入",
+      "license": "需要人工确认",
+      "availability": "public",
+      "checked_at": "2026-09-05",
+      "local_path": "data/priors/scgpt/"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+dataset_name,category,cancer_type,patient_or_cohort,accession,url,data_type,file_format,access_level,purpose,local_path,download_status,license_or_terms,notes
+Patient 5 scRNA-seq,A_AML_raw,AML,Patient 5,SRR30720408,https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR30720408,scRNA-seq raw reads,fastq.gz,public,患者单细胞转录组,data/raw/SRR30720408/,not_downloaded,SRA public,默认不自动下载;需用户确认
+Patient 6 scRNA-seq,A_AML_raw,AML,Patient 6,SRR30720407,https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR30720407,scRNA-seq raw reads,fastq.gz,public,患者单细胞转录组,data/raw/SRR30720407/,not_downloaded,SRA public,默认不自动下载;需用户确认
+Patient 12 scRNA-seq,A_AML_raw,AML,Patient 12,SRR30720406,https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR30720406,scRNA-seq raw reads,fastq.gz,public,患者单细胞转录组,data/raw/SRR30720406/,not_downloaded,SRA public,默认不自动下载;需用户确认
+AML EGA study 1,B_AML_controlled,AML,cohort,EGAS00001004614,https://ega-archive.org/studies/EGAS00001004614,scRNA-seq,multiple,controlled,AML受控数据,metadata_only,not_downloaded,EGA controlled,仅记录;需申请访问
+AML EGA study 2,B_AML_controlled,AML,cohort,EGAS00001004444,https://ega-archive.org/studies/EGAS00001004444,scRNA-seq,multiple,controlled,AML受控数据,metadata_only,not_downloaded,EGA controlled,仅记录;需申请访问
+HGSC EGA study 1,C_HGSC_controlled,HGSC,cohort,EGAS00001005010,https://ega-archive.org/studies/EGAS00001005010,scRNA-seq,multiple,controlled,HGSC受控数据,metadata_only,not_downloaded,EGA controlled,仅记录;需申请访问
+HGSC EGA study 2,C_HGSC_controlled,HGSC,cohort,EGAS00001005066,https://ega-archive.org/studies/EGAS00001005066,scRNA-seq,multiple,controlled,HGSC受控数据,metadata_only,not_downloaded,EGA controlled,仅记录;需申请访问
+Processed Seurat objects,D_processed,AML+HGSC,multiple,zenodo:13340927,https://doi.org/10.5281/zenodo.13340927,Seurat objects,rds,public,处理后单细胞对象,data/processed/,pending,Zenodo,优先下载;大文件不进Git
+LINCS 2020,E_model_training,multiple,cell lines,N/A,https://clue.io/data,drug-induced gene expression,gct,public,LightGBM训练-表达变化,data/external/lincs/,not_downloaded,LINCS terms,药物诱导基因表达变化
+PharmacoDB,E_model_training,multiple,cell lines,N/A,https://pharmacodb.ca/,drug dose-response,csv,public,LightGBM训练-剂量抑制率,data/external/pharmacodb/,not_downloaded,PharmacoDB terms,药物剂量-细胞抑制率
+PubChem,E_model_training,multiple,N/A,N/A,https://www.ncbi.nlm.nih.gov/pccompound,drug structures,sdf,public,LightGBM训练-药物结构,data/external/pubchem/,not_downloaded,PubChem terms,药物结构和分子指纹
+3CA pan-cancer,F_pan_cancer,multiple,multiple,N/A,https://www.weizmann.ac.il/sites/3CA,pan-cancer scRNA-seq,h5ad,public,泛癌参考数据,data/external/3ca/,not_downloaded,3CA terms,泛癌单细胞参考
+scTherapy code,G_code_env,multiple,N/A,N/A,https://github.com/kris-nader/scTherapy,source code,multiple,public,官方代码,external/scTherapy/,cloned,MIT,以submodule或clone关联
+scTherapy Zenodo code,G_code_env,multiple,N/A,zenodo:13340796,https://doi.org/10.5281/zenodo.13340796,source code,multiple,public,代码归档,metadata_only,not_downloaded,Zenodo,论文发表时的代码版本
+scTherapy Docker,G_code_env,multiple,N/A,N/A,https://hub.docker.com/r/kmnader/sctherapy,docker image,docker,public,运行环境,N/A,not_downloaded,Docker,预构建Docker镜像
+scTherapy Seurat v5 Docker,G_code_env,multiple,N/A,N/A,https://hub.docker.com/r/kmnader/sctherapy_v5,docker image,docker,public,Seurat v5运行环境,N/A,not_downloaded,Docker,Seurat v5版本Docker镜像

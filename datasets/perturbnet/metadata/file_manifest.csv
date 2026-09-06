@@ -1,0 +1,7 @@
+file_path,file_size_bytes,lfs,commit_hash,category,download_status,local_path,notes
+# 此文件由 scripts/inspect_huggingface.py 自动生成
+# 运行: python scripts/inspect_huggingface.py
+example_data/,,pending,,example_data,pending,data/example/,第一阶段下载
+data_paper/,,pending,,data_paper,pending,data/processed/data_paper/,第二阶段下载
+models/,,pending,,models,pending,data/model_weights/models/,第二阶段下载
+pretrained_model/,,pending,,pretrained_model,pending,data/model_weights/pretrained_model/,第二阶段下载

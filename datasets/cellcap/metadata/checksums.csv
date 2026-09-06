@@ -1,0 +1,5 @@
+filename,filepath,sha256,md5,size_bytes,download_date,verified,notes
+simulation_data.h5ad,data/raw/simulation_data.h5ad,,,,,,pending_download
+CellCap_1MPBMC_Mono.h5ad,data/raw/CellCap_1MPBMC_Mono.h5ad,,,,,,pending_download
+model.pt,models/CellCap_1MPBMC_Mono/model.pt,,,,,,pending_download
+norman_crispra.h5ad,data/processed/norman_crispra.h5ad,,,,,,pending_processing

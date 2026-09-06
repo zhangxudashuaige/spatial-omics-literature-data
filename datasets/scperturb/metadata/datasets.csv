@@ -1,0 +1,8 @@
+dataset_name,data_type,species,tissue,perturbation_type,accession,zenodo_record,url,file_format,approx_size,download_status,local_path,license,notes
+AdamsonWeissman2016,genetic_rna,human,K562,CRISPRi,GSM2406675,13350497,https://zenodo.org/records/13350497,h5ad,34.6 MB,pending,data/raw/AdamsonWeissman2016_GSM2406675_10X001.h5ad,CC BY 4.0,推荐首先下载
+NormanWeissman2019,genetic_rna,human,K562,CRISPRa,GSE133344,13350497,https://zenodo.org/records/13350497,h5ad,698.7 MB,pending,data/raw/NormanWeissman2019_filtered.h5ad,CC BY 4.0,根据磁盘空间选择下载
+scPerturb RNA panel,genetic_rna,multiple,multiple,multiple,N/A,13350497,https://zenodo.org/records/13350497,h5ad,~40 GB,not_downloaded,data/raw/,CC BY 4.0,完整RNA面板;不默认下载
+scPerturb protein panel,multimodal_rna_protein,multiple,multiple,multiple,N/A,13350497,https://zenodo.org/records/13350497,h5ad,large,not_downloaded,data/raw/,CC BY 4.0,RNA+蛋白质多模态
+scPerturb ATAC panel,atac,multiple,multiple,multiple,N/A,7058382,https://zenodo.org/records/7058382,h5ad,large,not_downloaded,data/raw/,CC BY 4.0,ATAC数据;单独Zenodo记录
+Drug perturbation datasets,drug_rna,multiple,multiple,drug,N/A,13350497,https://zenodo.org/records/13350497,h5ad,medium,pending,data/raw/,CC BY 4.0,药物扰动数据集
+Developmental/cytokine datasets,developmental_or_cytokine,multiple,multiple,developmental/cytokine,N/A,13350497,https://zenodo.org/records/13350497,h5ad,medium,pending,data/raw/,CC BY 4.0,发育和细胞因子扰动

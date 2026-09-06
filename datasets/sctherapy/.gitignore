@@ -1,0 +1,79 @@
+# Large data files - never commit to regular Git
+*.h5ad
+*.h5
+*.h5seurat
+*.rds
+*.RData
+*.rda
+*.mtx
+*.mtx.gz
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.cram
+*.vcf
+*.npy
+*.npz
+*.parquet
+*.feather
+*.loom
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Data directories
+data/raw/
+data/processed/
+data/external/
+data/source_data/
+
+# Keep README and .gitkeep
+!data/README.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+!data/source_data/.gitkeep
+
+# R
+.Rhistory
+.RData
+*.Rproj
+*.Rproj.user/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this data project, please cite the original paper."
+title: "scTherapy Data: Single-Cell Transcriptomes Identify Patient-Tailored Therapies"
+type: dataset
+authors:
+  - family-names: "Nader"
+    given-names: "Kris"
+  - name: "scTherapy Data Contributors"
+repository-code: "https://github.com/kris-nader/scTherapy"
+url: "https://www.nature.com/articles/s41467-024-52980-5"
+doi: "10.1038/s41467-024-52980-5"
+keywords:
+  - single-cell transcriptomics
+  - cancer
+  - drug response
+  - combination therapy
+  - AML
+  - HGSC
+  - LightGBM
+license: MIT

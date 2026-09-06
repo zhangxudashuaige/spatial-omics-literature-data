@@ -1,0 +1,30 @@
+# CellCap 人单核细胞数据配置
+data:
+  name: 1MPBMC_Mono
+  path: data/raw/CellCap_1MPBMC_Mono.h5ad
+  description: 1M PBMC 单核细胞亚群处理后 AnnData
+
+model:
+  hidden_size: 64
+  n_programs: 20
+  epochs: 200
+  batch_size: 512
+  learning_rate: 0.0005
+  device: cuda
+
+input:
+  expression_layer: null
+  target_key: X_target
+  covar_key: X_covar
+  filter_genes:
+    min_cells: 10
+    highly_variable: true
+    n_top_genes: 2000
+
+output:
+  save_dir: results/monocytes
+  model_path: models/CellCap_1MPBMC_Mono/model.pt
+  export_basal: true
+  export_programs: true
+  export_coefficients: true
+  export_activities: true

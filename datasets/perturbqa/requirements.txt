@@ -1,0 +1,25 @@
+# PerturbQA Data - Python Dependencies
+# 数据查看和探索所需的最小依赖
+
+# 数据处理
+numpy>=1.23
+pandas>=1.5
+scipy>=1.10
+scikit-learn>=1.2
+
+# 数据下载和校验
+requests>=2.28
+tqdm>=4.65
+
+# 可视化
+matplotlib>=3.7
+seaborn>=0.12
+
+# Jupyter
+jupyter>=1.0
+jupyterlab>=4.0
+ipykernel>=6.20
+
+# 可选: 单细胞数据 (如果需要处理原始 h5ad)
+# anndata>=0.9
+# scanpy>=1.9

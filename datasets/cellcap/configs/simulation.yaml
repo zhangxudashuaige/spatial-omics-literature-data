@@ -1,0 +1,24 @@
+# CellCap 模拟数据配置
+data:
+  name: simulation
+  path: data/raw/simulation_data.h5ad
+  description: CellCap 官方教程使用的合成模拟数据
+
+model:
+  hidden_size: 32
+  n_programs: 5
+  epochs: 100
+  batch_size: 256
+  learning_rate: 0.001
+  device: cpu
+
+input:
+  expression_layer: null  # 使用 .X
+  target_key: X_target
+  covar_key: X_covar
+
+output:
+  save_dir: results/simulation
+  export_basal: true
+  export_programs: true
+  export_coefficients: true

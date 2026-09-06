@@ -1,0 +1,64 @@
+# 大型数据文件 - 不提交普通 Git
+*.h5ad
+*.h5
+*.h5seurat
+*.parquet
+*.zarr
+*.loom
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.pth
+*.onnx
+
+# 数据目录（保留 .gitkeep）
+data/**
+!data/**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+logs/

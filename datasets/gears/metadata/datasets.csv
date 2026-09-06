@@ -1,0 +1,12 @@
+dataset_name,accession,cell_type,perturbation_tech,single_or_combinatorial,used_for_training,paper_role,original_url,file_format,file_size,download_status,local_path,license,notes
+Replogle 2022 RPE-1,GSE196826,RPE-1,CRISPRi,single,yes,大规模单扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196826,h5ad,large,pending,data/processed/replogle_rpe1/,CC BY 4.0,官方PertData可能支持;需确认名称
+Replogle 2022 K562,GSE196826,K562,CRISPRi,single,yes,大规模单扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196826,h5ad,large,pending,data/processed/replogle_k562/,CC BY 4.0,官方PertData可能支持;需确认名称
+Norman 2019,GSE133344,K562,CRISPRa,single+combinatorial,yes,组合扰动预测主要基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,h5ad,~300MB,pending,data/processed/norman/,CC BY 4.0,GEARS官方PertData直接支持
+Adamson 2016,GSE90546,K562,CRISPRi,combinatorial,yes,组合扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546,h5ad,medium,pending,data/processed/adamson/,CC BY 4.0,GEARS官方PertData直接支持
+Dixit 2016,GSE90063,K562,CRISPRi,single,yes,单扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063,h5ad,medium,pending,data/processed/dixit/,CC BY 4.0,GEARS官方PertData直接支持
+Jost 2020,GSE132080,mESC,CRISPRi,single,yes,时间序列扰动,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132080,h5ad,medium,pending,data/processed/jost/,CC BY 4.0,需从GEO单独下载
+Tian 2019,GSE124703,K562,CRISPRi,combinatorial,yes,组合扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124703,h5ad,medium,pending,data/processed/tian/,CC BY 4.0,需从GEO单独下载
+Replogle 2020,GSE146194,K562,CRISPRi,single,yes,单扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146194,h5ad,medium,pending,data/processed/replogle2020/,CC BY 4.0,需从GEO单独下载
+Horlbeck 2018,GSE116198,K562,CRISPRi,combinatorial,yes,组合扰动基准,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116198,h5ad,medium,pending,data/processed/horlbeck/,CC BY 4.0,需从GEO单独下载
+Tabula Sapiens,N/A,multiple,N/A,N/A,no,参考细胞类型注释,https://tabula-sapiens-portal.ds.czbiohub.org/,h5ad,large,not_downloaded,data/external/tabula_sapiens/,CC BY 4.0,参考数据;非必须
+Gene Ontology,N/A,N/A,N/A,N/A,no,构建GO相似度图,https://geneontology.org/,obo/gaf,small,pending,data/external/gene_ontology/,BSD-3,GO数据;用于构图

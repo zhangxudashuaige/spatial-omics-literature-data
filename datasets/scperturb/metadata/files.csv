@@ -1,0 +1,3 @@
+filename,data_type,file_size_bytes,download_url,md5,zenodo_version,local_path,download_status
+AdamsonWeissman2016_GSM2406675_10X001.h5ad,genetic_rna,36280000,https://zenodo.org/records/13350497/files/AdamsonWeissman2016_GSM2406675_10X001.h5ad,,13350497,data/raw/AdamsonWeissman2016_GSM2406675_10X001.h5ad,pending
+NormanWeissman2019_filtered.h5ad,genetic_rna,732600000,https://zenodo.org/records/13350497/files/NormanWeissman2019_filtered.h5ad,,13350497,data/raw/NormanWeissman2019_filtered.h5ad,pending

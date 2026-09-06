@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this data project, please cite the original paper."
+title: "PerturbNet Data: Multi-modal perturbation prediction from single-cell transcriptomics"
+type: dataset
+authors:
+  - name: "PerturbNet Data Contributors"
+repository-code: "https://github.com/welch-lab/PerturbNet"
+url: "https://doi.org/10.1038/s44320-025-00131-3"
+doi: "10.1038/s44320-025-00131-3"
+keywords:
+  - single-cell transcriptomics
+  - perturbation prediction
+  - drug response
+  - CRISPR
+  - protein mutation
+  - generative model
+license: MIT

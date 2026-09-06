@@ -1,0 +1,10 @@
+patient_or_cohort	cancer_type	database	accession	accession_type	purpose	notes
+Patient 5	AML	SRA	SRR30720408	SRA Run	AML患者5单细胞原始数据	公开访问;需prefetch或fasterq-dump
+Patient 6	AML	SRA	SRR30720407	SRA Run	AML患者6单细胞原始数据	公开访问;需prefetch或fasterq-dump
+Patient 12	AML	SRA	SRR30720406	SRA Run	AML患者12单细胞原始数据	公开访问;需prefetch或fasterq-dump
+AML cohort 1	AML	EGA	EGAS00001004614	EGA Study	AML受控数据	需申请访问权限
+AML cohort 2	AML	EGA	EGAS00001004444	EGA Study	AML受控数据	需申请访问权限
+HGSC cohort 1	HGSC	EGA	EGAS00001005010	EGA Study	HGSC受控数据	需申请访问权限
+HGSC cohort 2	HGSC	EGA	EGAS00001005066	EGA Study	HGSC受控数据	需申请访问权限
+AML+HGSC processed	multiple	Zenodo	13340927	Zenodo Record	处理后Seurat对象	公开访问;优先下载
+scTherapy code	multiple	Zenodo	13340796	Zenodo Record	代码归档	公开访问

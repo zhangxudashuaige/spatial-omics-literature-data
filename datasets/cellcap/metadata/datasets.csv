@@ -1,0 +1,7 @@
+dataset_name,accession,experiment_type,perturbation_type,file_format,download_url,controlled_access,auto_download_allowed,local_path,purpose,notes
+CellCap simulation data,N/A,simulation,synthetic,h5ad,https://github.com/broadinstitute/CellCap,no,yes,data/raw/simulation_data.h5ad,快速测试与模型验证,官方教程使用的合成数据;需确认实际下载链接
+EGA study,EGAS00001005376,scRNA-seq,unknown,N/A,https://ega-archive.org/studies/EGAS00001005376,yes,no,metadata_only,受控数据;仅记录,需申请访问权限
+EGA dataset,EGAD00001007764,scRNA-seq,unknown,N/A,https://ega-archive.org/datasets/EGAD00001007764,yes,no,metadata_only,受控数据;仅记录,需申请访问权限
+Norman 2019 CRISPRa,GSE133344,scRNA-seq,CRISPRa (single + combinatorial),h5ad,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,no,yes,data/processed/norman_crispra.h5ad,组合扰动预测评估,K562细胞;230种扰动;需从GEO补充文件下载并预处理
+CellCap 1MPBMC Mono,N/A,scRNA-seq,endogenous/perturbation,h5ad,https://github.com/broadinstitute/CellCap,no,pending,data/raw/CellCap_1MPBMC_Mono.h5ad,真实数据训练与复现,可能需要Git LFS;不伪造链接
+CellCap Mono model,N/A,model weights,N/A,pt,https://github.com/broadinstitute/CellCap,no,pending,models/CellCap_1MPBMC_Mono/model.pt,加载预训练模型导出响应程序,模型权重不进普通Git

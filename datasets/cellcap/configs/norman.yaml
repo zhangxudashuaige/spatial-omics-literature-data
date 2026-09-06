@@ -1,0 +1,38 @@
+# CellCap Norman CRISPRa 数据配置
+data:
+  name: norman_crispra
+  path: data/processed/norman_crispra.h5ad
+  description: Norman 2019 K562 CRISPRa 组合扰动数据
+  accession: GSE133344
+
+model:
+  hidden_size: 64
+  n_programs: 15
+  epochs: 150
+  batch_size: 512
+  learning_rate: 0.001
+  device: cuda
+
+input:
+  expression_layer: counts
+  target_key: X_target
+  covar_key: X_covar
+  filter_genes:
+    min_cells: 5
+    highly_variable: true
+    n_top_genes: 2000
+  split:
+    strategy: simulation  # 训练集扰动 / 测试集未见扰动
+    seed: 1
+    test_ratio: 0.2
+
+output:
+  save_dir: results/norman
+  export_basal: true
+  export_programs: true
+  export_coefficients: true
+  evaluation:
+    - mse_top20
+    - pearson
+    - direction_error
+    - precision_at_10

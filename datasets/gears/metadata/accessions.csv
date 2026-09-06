@@ -1,0 +1,9 @@
+dataset_name,accession,accession_type,database,url,cell_type,perturbation_type,notes
+Replogle 2022,GSE196826,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196826,RPE-1+K562,CRISPRi,包含RPE-1和K562两个细胞系
+Norman 2019,GSE133344,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,K562,CRISPRa,GEARS官方PertData直接支持
+Adamson 2016,GSE90546,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90546,K562,CRISPRi,GEARS官方PertData直接支持
+Dixit 2016,GSE90063,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063,K562,CRISPRi,GEARS官方PertData直接支持
+Jost 2020,GSE132080,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132080,mESC,CRISPRi,时间序列
+Tian 2019,GSE124703,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE124703,K562,CRISPRi,组合扰动
+Replogle 2020,GSE146194,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146194,K562,CRISPRi,单扰动
+Horlbeck 2018,GSE116198,GEO Series,GEO,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116198,K562,CRISPRi,组合扰动

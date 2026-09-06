@@ -1,0 +1,81 @@
+# Large data files - never commit to regular Git
+*.h5ad
+*.h5
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.npy
+*.npz
+*.parquet
+*.feather
+*.csv.gz
+*.tsv.gz
+*.json.gz
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Data directories (large zip and extracted data)
+data/benchmark/de/*.zip
+data/benchmark/de/*.json
+data/benchmark/de/*.csv
+data/benchmark/direction/*.zip
+data/benchmark/direction/*.json
+data/benchmark/direction/*.csv
+data/benchmark/gene_set_enrichment/*.zip
+data/benchmark/gene_set_enrichment/*.json
+data/benchmark/gene_set_enrichment/*.csv
+data/knowledge_graph/*.zip
+data/knowledge_graph/*.json
+data/knowledge_graph/*.csv
+data/gene_summaries/*.zip
+data/gene_summaries/*.json
+data/gene_summaries/*.txt
+data/model_outputs/*.zip
+data/model_outputs/*.json
+data/model_outputs/*.csv
+data/results/*.zip
+data/results/*.json
+data/results/*.csv
+
+# Keep .gitkeep and small metadata
+!data/benchmark/de/.gitkeep
+!data/benchmark/direction/.gitkeep
+!data/benchmark/gene_set_enrichment/.gitkeep
+!data/knowledge_graph/.gitkeep
+!data/gene_summaries/.gitkeep
+!data/model_outputs/.gitkeep
+!data/results/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

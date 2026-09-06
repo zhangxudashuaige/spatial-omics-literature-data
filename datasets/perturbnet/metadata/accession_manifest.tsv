@@ -1,0 +1,7 @@
+dataset	category	database	accession	accession_type	purpose	notes
+sci-Plex	B_drug	GEO	GSE139944	GEO Series	药物扰动单细胞数据	180种药物3细胞系
+Norman CRISPRa	C_crispr	GEO	GSE133344	GEO Series	CRISPRa组合扰动数据	K562细胞230种扰动
+Ursu TP53/KRAS	D_protein	GEO	GSE161824	GEO Series	TP53/KRAS蛋白质突变数据	A549细胞163种序列
+Jorge GATA1	D_protein	GEO	GSE215253	GEO Series	GATA1蛋白质突变数据	HSPC 257种序列
+PerturbNet reproduce	E_hf	Hugging Face	cyclopeta/PerturbNet_reproduce	HF Repository	作者整理的数据和模型	包含data_paper/example_data/models/pretrained_model
+BioStudies	F_source	BioStudies	S-SCDT-10_1038-S44320-025-00131-3	BioStudies Study	论文图表源数据	补充表格
