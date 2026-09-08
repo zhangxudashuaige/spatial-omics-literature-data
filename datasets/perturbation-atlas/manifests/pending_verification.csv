@@ -1,0 +1,7 @@
+dataset_id,name,reference_in_review,data_entry_status,notes,verification_priority
+perturb_atac,Perturb-ATAC,pending,pending,"从综述参考文献定位原论文后核对数据入口",medium
+perturb_share_seq,Perturb-SHARE-seq,pending,pending,"从综述参考文献定位原论文后核对数据入口",medium
+perturb_map,Perturb-map,pending,pending,"从综述参考文献定位原论文后核对数据入口",medium
+perturb_fish,Perturb-FISH,pending,pending,"从综述参考文献定位原论文后核对数据入口",low
+e3_perturb_seq,E3连接酶 Perturb-seq,pending,pending,"从综述参考文献定位原论文后核对数据入口",low
+mouse_brain_in_vivo,小鼠脑 in vivo Perturb-seq,pending,pending,"从综述参考文献定位原论文后核对数据入口",medium

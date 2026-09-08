@@ -1,0 +1,43 @@
+# 大型数据文件 - 不提交普通 Git
+data/**/raw/**
+!data/**/raw/.gitkeep
+data/**/processed/**
+!data/**/processed/.gitkeep
+
+# 表达矩阵和大型文件
+*.h5ad
+*.h5
+*.h5seurat
+*.rds
+*.RData
+*.rda
+*.loom
+*.mtx
+*.mtx.gz
+*.csv.gz
+*.tsv.gz
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.zip
+*.tar
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 临时
+*.tmp
+*.part
+tmp/

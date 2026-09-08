@@ -1,0 +1,48 @@
+# 大型图像和数据文件 - 不提交普通 Git
+data/**
+!data/**/.gitkeep
+
+# 图像数据
+*.tif
+*.tiff
+*.nd2
+*.czi
+*.lsm
+*.png
+*.jpg
+*.jpeg
+
+# 视频
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# 数组
+*.npy
+*.npz
+*.zarr
+
+# 模型权重
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# 压缩
+*.zip
+*.tar
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+alfi_cellcycle,ALFI细胞周期数据,human,细胞系,live-cell imaging,figshare:23798451,https://doi.org/10.6084/m9.figshare.23798451,source-specific,not_downloaded,,cell-cycle;imaging,"对应论文s41597-023-02540-1"
+microglia_dynamorph,Microglia/DynaMorph数据,mouse,小胶质细胞,live-cell imaging,dynamorph,https://github.com/mehta-lab/dynamorph,BSD-3,not_downloaded,,microglia;dynamorph;imaging,"示例数据Google Drive；完整数据可能超过30GB"
+dynaclr_infection,DynaCLR感染与细胞器演示,human,细胞系,live-cell imaging,google-drive,https://drive.google.com/drive/folders/1SeQcWQcTF3Xfvz4XU_2DzMzGSxc-Hkgb,source-specific,not_downloaded,,infection;organelle;demo,"登革病毒与Zika数据不得未经核对混合；演示视频不是训练数据"

@@ -1,0 +1,5 @@
+software_name,repo_url,package_name,install_method,import_name,version_commit,version_tag,purpose,notes
+VisCy,https://github.com/mehta-lab/VisCy,viscy,pip install viscy,viscy,pending,pending,代码,"DynaCLR主要代码框架；核对论文v2对应版本"
+napari-iohub,https://github.com/czbiohub-sf/napari-iohub,napari-iohub,pip install napari-iohub,napari_iohub,pending,pending,可视化,"多维图像可视化"
+ultrack,https://github.com/royerlab/ultrack,ultrack,pip install ultrack,ultrack,pending,pending,追踪,"细胞追踪；轨迹ID和亲子关系"
+waveorder,https://github.com/mehta-lab/waveorder,waveorder,pip install waveorder,waveorder,pending,pending,相位重建,"相位成像重建"

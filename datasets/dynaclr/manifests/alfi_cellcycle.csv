@@ -1,0 +1,6 @@
+file_id,file_name,category,format,size_reported,size_actual,url,version,license,access_level,download_status,local_path,checksum,checksum_type,notes
+alfi_raw,alfi_cellcycle_raw,raw_image,tif/nd2,pending,pending,https://doi.org/10.6084/m9.figshare.23798451,pending,source-specific,public,not_downloaded,data/alfi_cellcycle/,,,"ALFI细胞周期原始图像；对应论文s41597-023-02540-1"
+alfi_processed,alfi_cellcycle_processed,processed_image,tif/zarr,pending,pending,https://doi.org/10.6084/m9.figshare.23798451,pending,source-specific,public,not_downloaded,data/alfi_cellcycle/,,,"处理后图像；需从figshare核对实际文件列表"
+alfi_segmentation,alfi_cellcycle_segmentation,segmentation,tif/png,pending,pending,https://doi.org/10.6084/m9.figshare.23798451,pending,source-specific,public,not_downloaded,data/alfi_cellcycle/,,,"分割掩膜或细胞中心位置"
+alfi_tracking,alfi_cellcycle_tracking,tracking,csv/xml,pending,pending,https://doi.org/10.6084/m9.figshare.23798451,pending,source-specific,public,not_downloaded,data/alfi_cellcycle/,,,"轨迹ID、帧号和亲子关系"
+alfi_labels,alfi_cellcycle_labels,labels,csv,pending,pending,https://doi.org/10.6084/m9.figshare.23798451,pending,source-specific,public,not_downloaded,data/alfi_cellcycle/,,,"细胞周期阶段标签；人工标签/模型预测/伪标签分开记录"

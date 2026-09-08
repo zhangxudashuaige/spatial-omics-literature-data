@@ -1,0 +1,10 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+dixit_2016,Dixit 2016 Perturb-seq,human,K562,scRNA-seq,GSE90063,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063,CC BY 4.0,verified,,gene-perturbation;crispri,"已在gears模块登记"
+norman_2019,Norman 2019 CRISPRa,human,K562,scRNA-seq,GSE133344,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344,CC BY 4.0,verified,,gene-perturbation;crispra;combinatorial,"已在cellcap/gears/perturbnet/scperturb模块登记"
+replogle_2022,Replogle 2022 CRISPRi,human,"K562;RPE-1",scRNA-seq,GSE146194,https://gwps.wi.mit.edu/,CC BY 4.0,verified,,gene-perturbation;crispri;genome-scale,"已在gears/xcell模块登记"
+sciplex_2019,sci-Plex 药物扰动,human,"K562;A549;MCF7",scRNA-seq,GSE139944,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139944,CC BY 4.0,verified,,drug-perturbation,"已在perturbnet模块登记"
+perturb_cite_seq,Perturb-CITE-seq,human,"Jurkat;HEK293T",scRNA+protein,SCP1064,https://singlecell.broadinstitute.org/single_cell/study/SCP1064,source-specific,verified,,multi-omics;crispri,"处理后矩阵公开；原始数据DUOS受控需申请"
+funk_2022,Funk 2022 图像表型,human,HeLa,microscopy,S-BIAD394,https://vesuvius.wi.mit.edu/,source-specific,verified,,image-phenotype;crispri,"分别登记原始图像处理后图像单细胞特征基因级表型"
+choose_2023,CHOOSE 类器官扰动,human,脑类器官,scRNA-seq+genotyping,"Zenodo:7083558",https://zenodo.org/records/7083558,CC BY 4.0,verified,,organoid;crispri,"处理后Seurat对象Zenodo；原始数据ArrayExpress"
+saunders_2023,Saunders 2023 zscape,zebrafish,胚胎,scRNA-seq,GSE202639,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE202639,CC BY 4.0,verified,,in-vivo;embryo;crispri,"保留胚胎ID时间扰动批次细胞类型"
+compressed_perturb_seq,Compressed Perturb-seq,human,K562,scRNA-seq,FR-Perturb,https://github.com/douglasyao/FR-Perturb,source-specific,verified,,compressed;crispri,"分别登记conventional cell-pooling guide-pooling；混合液滴不能默认当成单个细胞"

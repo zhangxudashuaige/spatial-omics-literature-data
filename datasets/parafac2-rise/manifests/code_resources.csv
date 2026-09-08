@@ -1,0 +1,3 @@
+project_name,repo_url,package_name,install_method,import_name,version_commit,version_tag,notes,local_path
+RISE,https://github.com/meyer-lab/RISE,scrise,pip install scrise,scrise,pending,pending,"当前包名为scrise；不要直接套用旧版安装或导入方式",code_refs/
+PARAFAC2,https://github.com/meyer-lab/parafac2,parafac2,pip install parafac2,parafac2,pending,pending,"PARAFAC2张量分解实现",code_refs/

@@ -1,0 +1,12 @@
+source_id,source_type,source_module,target_id,target_type,target_module,relationship,notes
+norman_2019,original,GEO GSE133344,norman_gears,processed,gears,harmonized,"GEARS官方预处理的Norman数据"
+norman_2019,original,GEO GSE133344,norman_scperturb,processed,scperturb,harmonized,"scPerturb统一处理的Norman数据"
+norman_2019,original,GEO GSE133344,norman_perturbnet,processed,perturbnet,subset,"PerturbNet使用的Norman数据子集"
+norman_2019,original,GEO GSE133344,norman_cellcap,processed,cellcap,subset,"CellCap使用的Norman数据子集"
+replogle_2022,original,gwps.wi.mit.edu,replogle_gears,processed,gears,harmonized,"GEARS官方支持的Replogle数据"
+replogle_2022,original,gwps.wi.mit.edu,replogle_xcell,processed,xcell,subset,"X-Cell评测使用的Replogle-Nadig数据"
+replogle_2022,original,gwps.wi.mit.edu,replogle_causalbench,benchmark,CausalBench,benchmark,"CausalBench使用Replogle数据进行基因网络推断评测"
+sciplex_2019,original,GEO GSE139944,sciplex_perturbnet,processed,perturbnet,subset,"PerturbNet使用的sci-Plex数据"
+dixit_2016,original,GSE90063,dixit_gears,processed,gears,harmonized,"GEARS官方支持的Dixit数据"
+norman_2019,original,GEO GSE133344,norman_scperturb_atlas,benchmark,scperturb,benchmark,"scPerturb作为扰动数据库收录Norman"
+replogle_2022,original,gwps.wi.mit.edu,replogle_scperturb_atlas,benchmark,scperturb,benchmark,"scPerturb作为扰动数据库收录Replogle"

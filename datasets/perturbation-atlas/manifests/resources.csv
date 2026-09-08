@@ -1,0 +1,10 @@
+resource_id,name,type,url,purpose,existing_module,notes
+scperturb_db,scPerturb,database,https://www.sanderlab.org/scPerturb/,"扰动数据库，统一处理多个Perturb-seq数据集",scperturb,"RNA数据zenodo 7041848；ATAC数据zenodo 7058381"
+causalbench,CausalBench,benchmark,https://github.com/causalbench/causalbench,"单细胞扰动的基因网络推断评测基准",,"注意不要混入名称相同的其他CausalBench项目；与Replogle数据关联"
+norman_code,Norman Perturbseq_GI,code,https://github.com/thomasmaxwellnorman/Perturbseq_GI,"Norman 2019官方分析代码",gears,""
+sciplex_code,sci-plex,code,https://github.com/cole-trapnell-lab/sci-plex,"sci-Plex官方分析代码",perturbnet,""
+perturb_cite_code,Perturb-CITE-seq,code,https://github.com/klarman-cell-observatory/Perturb-CITE-seq,"Perturb-CITE-seq官方代码和访问说明",,""
+zscape_code,sdg-zfish,code,https://github.com/cole-trapnell-lab/sdg-zfish,"Saunders/zscape官方代码",,""
+fr_perturb_code,FR-Perturb,code,https://github.com/douglasyao/FR-Perturb,"Compressed Perturb-seq官方代码",,""
+vesuvius,Vesuvius,platform,https://vesuvius.wi.mit.edu/,"Funk 2022图像数据浏览平台",,""
+gwps,Genome-wide Perturb-seq,platform,https://gwps.wi.mit.edu/,"Replogle 2022数据浏览平台",gears,""

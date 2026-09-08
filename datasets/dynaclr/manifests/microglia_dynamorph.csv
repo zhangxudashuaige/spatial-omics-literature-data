@@ -1,0 +1,5 @@
+file_id,file_name,category,format,size_reported,size_actual,url,version,license,access_level,download_status,local_path,checksum,checksum_type,notes
+dynamorph_code,dynamorph_code,code,git,pending,pending,https://github.com/mehta-lab/dynamorph,pending,BSD-3,public,not_downloaded,code_refs/,,,"DynaMorph官方代码；不是数据集"
+dynamorph_example,dynamorph_example_data,example_image,tif/nd2,pending,pending,https://drive.google.com/drive/folders/11GoWDwaBo1PE5FO5tcnGCOzA4pzjf-Tk,pending,source-specific,public,not_downloaded,data/microglia_dynamorph/,,,"小胶质细胞示例数据；Google Drive需手动确认文件列表"
+dynamorph_full,dynamorph_full_data,full_training,tif/nd2,pending,pending,https://github.com/mehta-lab/dynamorph,pending,source-specific,public,not_downloaded,data/microglia_dynamorph/,,,"完整训练数据；可能超过30GB，需先列出文件大小再确认"
+dynamorph_tracking,dynamorph_tracking,tracking,csv,pending,pending,https://github.com/mehta-lab/dynamorph,pending,source-specific,public,not_downloaded,data/microglia_dynamorph/,,,"追踪结果；轨迹ID和帧号"

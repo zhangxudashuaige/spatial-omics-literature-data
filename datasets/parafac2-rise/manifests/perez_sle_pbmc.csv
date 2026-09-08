@@ -1,0 +1,5 @@
+file_id,file_name,category,format,size_reported,size_actual,url,version,license,access_level,download_status,local_path,checksum,checksum_type,notes
+perez_soft,GSE174188_family.soft,metadata,soft,pending,pending,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE174nnn/GSE174188/soft/GSE174188_family.soft.gz,pending,CC BY 4.0,public,not_downloaded,data/perez_sle_pbmc/metadata/,,,"GEO系列元数据；包含样本和平台信息"
+perez_series_matrix,GSE174188_series_matrix,processed_matrix, txt.gz,pending,pending,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE174nnn/GSE174188/matrix/,pending,CC BY 4.0,public,not_downloaded,data/perez_sle_pbmc/processed/,,,"GEO系列矩阵；需核对实际文件列表"
+perez_supplementary,GSE174188_supplementary,processed_matrix,h5ad/rds,pending,pending,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174188,pending,CC BY 4.0,public,not_downloaded,data/perez_sle_pbmc/processed/,,,"GEO补充文件；可能包含作者处理后的表达矩阵"
+perez_sample_metadata,GSE174188_sample_metadata,metadata,csv,pending,pending,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174188,pending,CC BY 4.0,public,not_downloaded,data/perez_sle_pbmc/metadata/,,,"样本级元数据；供体ID、样本ID、批次、疾病状态"
