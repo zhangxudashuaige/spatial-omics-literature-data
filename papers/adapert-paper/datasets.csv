@@ -1,0 +1,7 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+k562_perturb,K562 CRISPRi扰动,human,K562,scRNA-seq,Replogle 2022,https://gwps.wi.mit.edu/,CC BY 4.0,not_downloaded,,gene-perturbation;crispri,"大规模CRISPRi；补充资源不等于完整单细胞计数"
+rpe1_perturb,RPE1 CRISPRi扰动,human,RPE1,scRNA-seq,Replogle 2022,https://gwps.wi.mit.edu/,CC BY 4.0,not_downloaded,,gene-perturbation;crispri,"大规模CRISPRi"
+jurkat_perturb,JURKAT扰动,human,JURKAT,scRNA-seq,pending,pending,pending,pending,,gene-perturbation,"原始编号未核实；不能下载任意同名细胞系数据"
+hepg2_perturb,HEPG2扰动,human,HEPG2,scRNA-seq,pending,pending,pending,pending,,gene-perturbation,"原始编号未核实"
+string_v115,STRING v11.5人类知识图,human,multiple,knowledge_graph,STRING v11.5,https://string-db.org/,CC BY 4.0,not_downloaded,,knowledge-graph;protein-protein,"保存原始边与置信度；派生图单独存放"
+genept_embedding,GenePT基因语义嵌入,human,multiple,gene_embedding,zenodo:10833191,https://zenodo.org/records/10833191,source-specific,not_downloaded,,gene-embedding;semantic,"记录模型名称、维度、基因键和版本；不调用付费API"

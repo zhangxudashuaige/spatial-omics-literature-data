@@ -64,3 +64,6 @@ forward-paper,"FORWARD: A Learning Framework for Logical Network Perturbations t
 parafac2-rise-paper,"PARAFAC2-RISE",2025,Cell Systems,10.1016/j.cels.2025.101294,"tensor decomposition;single-cell perturbation;RISE",published,"model:parafac2-rise;data-module:datasets/parafac2-rise"
 perturbation-atlas-review,"Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas",2024,Cell,10.1016/j.cell.2024.07.035,"perturbation biology;foundation model;review",published,"review;data-module:datasets/perturbation-atlas;status:index-only"
 dynaclr-paper,"DynaCLR",2024,arXiv,2410.11281,"self-supervised learning;live-cell imaging;contrastive learning",preprint,"model:dynaclr;data-module:datasets/dynaclr"
+adapert-paper,"AdaPert",2026,arXiv,2602.18885,"adaptive perturbation prediction;knowledge graph;gene embedding",preprint,"model:adapert;data-module:datasets/adapert;status:code-pending"
+pertkge-paper,"PertKGE",2024,bioRxiv,10.1101/2024.04.08.588632,"knowledge graph embedding;drug target;perturbation",preprint,"model:pertkge;data-module:datasets/pertkge;category:drug-target-prediction"
+presage-paper,"PRESAGE",2025,bioRxiv,10.1101/2025.06.03.657653,"gene perturbation response;multi-prior fusion;gene embedding",preprint,"model:presage;data-module:datasets/presage;category:gene-perturbation-response;status:reuse-existing"

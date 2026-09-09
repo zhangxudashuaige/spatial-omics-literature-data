@@ -1,0 +1,8 @@
+resource_name,presage_role,existing_module,existing_path,relation,notes
+Replogle,训练/评估数据,gears,datasets/gears/,reuse,"GEARS模块中已有Replogle处理数据，不重复下载"
+Replogle,外部评测数据,xcell,datasets/xcell/,reuse,"xcell模块中有Replogle-Nadig评测数据"
+scPerturb RNA,训练/评估数据,scperturb,datasets/scperturb/,reuse,"scperturb模块中有统一处理的扰动数据"
+scPerturb ATAC,多组学先验,scperturb,datasets/scperturb/,reuse,"scperturb模块中有ATAC数据"
+DepMap 24Q4,基因先验,xcell,datasets/xcell/,reuse,"xcell模块中有DepMap数据清单"
+GenePT,基因语义嵌入,adapert,datasets/adapert/,reuse,"adapert模块中有GenePT资源清单"
+STRING v11.5,知识图先验,adapert,datasets/adapert/,reuse,"adapert模块中有STRING资源清单"

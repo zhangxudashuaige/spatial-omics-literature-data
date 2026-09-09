@@ -1,0 +1,13 @@
+resource_id,category,name,source_url,version,file_format,size_reported,license,access_level,download_status,local_path,notes
+pertkge_data_package,author_data,PertKGE作者数据与模型,https://drive.google.com/file/d/1jFo0dDAnUOzMoKHFqPRM4pd_loTFwmMa/view,pending,zip,pending,source-specific,public,registered,data/raw/pertkge_package/,"Google Drive数据包；需手动确认文件列表；不猜测包内有模型权重"
+cause_txt,author_data,cause.txt,derived_from_package,pending,txt,pending,source-specific,public,not_downloaded,data/raw/pertkge_package/,,,"三元组文件之一；需实际核验内容和列顺序"
+process_txt,author_data,process.txt,derived_from_package,pending,txt,pending,source-specific,public,not_downloaded,data/raw/pertkge_package/,,,"三元组文件之一；需实际核验内容和列顺序"
+effect_txt,author_data,effect.txt,derived_from_package,pending,txt,pending,source-specific,public,not_downloaded,data/raw/pertkge_package/,,,"三元组文件之一；需实际核验内容和列顺序"
+test_txt,author_data,test.txt,derived_from_package,pending,txt,pending,source-specific,public,not_downloaded,data/raw/pertkge_package/,,,"测试集三元组；需实际核验划分方式"
+entity_mapping,author_data,实体编号映射,derived_from_package,pending,tsv,pending,source-specific,public,not_downloaded,data/raw/pertkge_package/,,,"entity2id映射；需实际核验"
+relation_mapping,author_data,关系编号映射,derived_from_package,pending,tsv,pending,source-specific,public,not_downloaded,data/raw/pertkge_package/,,,"relation2id映射；需实际核验"
+model_weights,author_data,模型权重,derived_from_package,pending,pt/bin,pending,source-specific,public,pending,data/raw/pertkge_package/,,,"不猜测包内有模型权重；需实际核验"
+lincs_phase1,upstream,LINCS Phase I,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742,pending,gctx/gct,pending,CC BY 4.0,public,registered,data/raw/lincs/,,,"LINCS L1000 Phase I；上游表达数据"
+lincs_phase2,upstream,LINCS Phase II,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138,pending,gctx/gct,pending,CC BY 4.0,public,registered,data/raw/lincs/,,,"LINCS L1000 Phase II；上游表达数据"
+docking_grid,case,对接网格,https://drive.google.com/drive/folders/1wPcn7EaQldWbXONrRVd-ZOcBsNo6IXHw,pending,mol2/pdb,pending,source-specific,public,registered,data/raw/docking/,,,"案例与对接资源；不默认包含全部湿实验原始数据"
+pertkge_code,code,PertKGE官方代码,https://github.com/myzhengSIMM/PertKGE,pending,git,pending,MIT,public,registered,code_refs/,,,"记录commit哈希和访问日期；区分2024预印本与当前仓库版本"

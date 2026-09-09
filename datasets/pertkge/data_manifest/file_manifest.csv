@@ -1,0 +1,7 @@
+file_path,file_name,format,size_reported,size_actual,content_description,purpose,source,checksum,checksum_type,verification_status,notes
+pending,cause.txt,txt,pending,pending,待核验,三元组,作者数据包,,not_verified,"需实际下载后核验内容和列顺序；不根据名称猜测"
+pending,process.txt,txt,pending,pending,待核验,三元组,作者数据包,,not_verified,"需实际下载后核验内容和列顺序"
+pending,effect.txt,txt,pending,pending,待核验,三元组,作者数据包,,not_verified,"需实际下载后核验内容和列顺序"
+pending,test.txt,txt,pending,pending,待核验,测试集,作者数据包,,not_verified,"需实际下载后核验划分方式"
+pending,entity2id.txt,tsv,pending,pending,待核验,实体映射,作者数据包,,not_verified,"需实际核验"
+pending,relation2id.txt,tsv,pending,pending,待核验,关系映射,作者数据包,,not_verified,"需实际核验"

@@ -1,0 +1,8 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+pertkge_triplets,PertKGE知识图谱三元组,multiple,multiple,knowledge_graph,author_data,https://drive.google.com/file/d/1jFo0dDAnUOzMoKHFqPRM4pd_loTFwmMa/view,source-specific,registered,,knowledge-graph;drug-target;triplets,"cause.txt/process.txt/effect.txt/test.txt；需实际核验内容"
+entity_mapping,实体编号映射,multiple,multiple,metadata,author_data,derived_from_package,source-specific,not_downloaded,,entity2id,"需实际核验"
+relation_mapping,关系编号映射,multiple,multiple,metadata,author_data,derived_from_package,source-specific,not_downloaded,,relation2id,"需实际核验"
+lincs_phase1,LINCS Phase I,human,multiple,transcriptomics,GSE92742,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE92742,CC BY 4.0,registered,,lincs;l1000;upstream,"LINCS L1000 Phase I；上游表达数据"
+lincs_phase2,LINCS Phase II,human,multiple,transcriptomics,GSE70138,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138,CC BY 4.0,registered,,lincs;l1000;upstream,"LINCS L1000 Phase II"
+docking_grid,对接网格,multiple,multiple,molecular_docking,author_data,https://drive.google.com/drive/folders/1wPcn7EaQldWbXONrRVd-ZOcBsNo6IXHw,source-specific,registered,,docking;case-study,"案例与对接资源；不默认包含全部湿实验原始数据"
+pertkge_code,PertKGE官方代码,multiple,multiple,code,github,https://github.com/myzhengSIMM/PertKGE,MIT,registered,,code,"记录commit哈希；区分2024预印本与当前仓库版本"

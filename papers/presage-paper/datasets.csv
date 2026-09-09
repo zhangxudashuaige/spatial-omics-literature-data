@@ -1,0 +1,12 @@
+dataset_id,name,organism,tissue,modality,accession,source_url,license,status,sha256,tags,notes
+presage_h5ad,PRESAGE 5个h5ad文件,human,multiple,scRNA-seq,zenodo:15587986,https://zenodo.org/records/15587986,source-specific,registered,,perturbation;h5ad;cache,"包含5个h5ad；不猜测包内有模型权重；需实际解压核验"
+gse264667,GSE264667,human,multiple,scRNA-seq,GSE264667,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264667,CC BY 4.0,registered,,perturbation;geo,"PRESAGE相关GEO数据"
+scperturb_rna,scPerturb RNA数据,human,multiple,scRNA-seq,zenodo:7041849,https://zenodo.org/records/7041849,CC BY 4.0,reused,,scperturb;reuse,"复用已有scperturb模块"
+replogle_data,Replogle数据,human,"K562;RPE-1",scRNA-seq,gwps,https://gwps.wi.mit.edu/,CC BY 4.0,reused,,replogle;reuse,"复用已有gears和xcell模块"
+depmap_data,DepMap数据,human,multiple,functional_genomics,DepMap 24Q4,https://plus.figshare.com/articles/dataset/DepMap_24Q4_Public/27993248,CC BY 4.0,reused,,depmap;prior;reuse,"复用已有xcell模块"
+genept_embedding,GenePT嵌入,human,multiple,gene_embedding,zenodo:10833191,https://zenodo.org/records/10833191,source-specific,reused,,gene-embedding;prior;reuse,"复用已有adapert模块"
+string_v115,STRING v11.5,human,multiple,knowledge_graph,STRING v11.5,https://string-db.org/,CC BY 4.0,reused,,knowledge-graph;prior;reuse,"复用已有adapert模块"
+processed_response,处理后的平均响应,human,multiple,processed,derived,derived,source-specific,not_generated,,processed;average-response,"归一化对数表达减对照均值再按扰动求平均；HVG外可能补回被扰动基因"
+gene_mask,基因映射与缺失掩码,human,multiple,metadata,derived,derived,source-specific,not_generated,,gene-mask;missing,"输入基因与输出响应基因的区别"
+train_test_split,训练验证测试划分,human,multiple,metadata,derived_from_cache,derived,source-specific,not_downloaded,,split;official,"官方划分；测试扰动真实响应不加入训练"
+presage_code,PRESAGE官方代码,human,multiple,code,github,https://github.com/Genentech/PRESAGE,source-specific,registered,,code,"代码与评估工具"
